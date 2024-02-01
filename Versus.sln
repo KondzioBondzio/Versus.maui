@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9FE6D5EA-A46
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versus.App", "src\Versus.App\Versus.App.csproj", "{F66D0664-E85C-421E-B061-A74F4A7C6A5C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Versus.Core", "src\Versus.Core\Versus.Core.csproj", "{3BEA66BA-6598-4BDB-8315-E1998F6D37DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,11 +20,16 @@ Global
 		{F66D0664-E85C-421E-B061-A74F4A7C6A5C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{F66D0664-E85C-421E-B061-A74F4A7C6A5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F66D0664-E85C-421E-B061-A74F4A7C6A5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BEA66BA-6598-4BDB-8315-E1998F6D37DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BEA66BA-6598-4BDB-8315-E1998F6D37DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BEA66BA-6598-4BDB-8315-E1998F6D37DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BEA66BA-6598-4BDB-8315-E1998F6D37DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F66D0664-E85C-421E-B061-A74F4A7C6A5C} = {9FE6D5EA-A464-4BEA-BC59-51F138A746F2}
+		{3BEA66BA-6598-4BDB-8315-E1998F6D37DF} = {9FE6D5EA-A464-4BEA-BC59-51F138A746F2}
 	EndGlobalSection
 EndGlobal
