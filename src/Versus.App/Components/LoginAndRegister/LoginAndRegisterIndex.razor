@@ -1,5 +1,96 @@
-﻿<h3>LoginAndRegisterIndex</h3>
+﻿@page "/"
+@layout EmptyLayout
+<div class=" justify-content-center">
+
+    <div class="col-12 text-center align-self-center py-5">
+        <h1><span>V</span><span>e</span><span>r</span><span>s</span><span>u</span><span>s</span></h1>
+        <div class="section pb-5 pt-5 pt-sm-2 text-center">
+            <h6 class="mb-0 pb-3"><strong style="margin-right:20px">@* @Localizer["Log_in"] *@ Zaloguj </strong> <strong>@* @Localizer["Register"] *@ Rejestruj</strong></h6>
+            <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+            <label for="reg-log"></label>
+            <div class="card-3d-wrap mx-auto">
+                <div class="card-3d-wrapper">
+                    <div class="card-front">
+                        <div class="center-wrap">
+                            <div class="section text-center">
+                                <h4 class="mb-4 pb-3"> @* @Localizer["Login_panel"] *@Panel logowania</h4>
+                                <div class="form-group">
+                                    <input type="email" class="form-style" placeholder="E-mail">@* @Localizer["E_mail"] *@
+                                </div>
+                                <div class="form-group mt-2">
+                                    <input type="password" class="form-style" placeholder="Hasło">@* @Localizer["Password"] *@
+                                </div>@* @Localizer["Log_in"] *@
+                                <RadzenButton Text="Zaloguj" Click="changePage" class="btn mt-5" ButtonStyle="Radzen.ButtonStyle.Secondary" />
+                                <p class="mb-0 mt-4 text-center"><a href="/Matchmaking" class="link">Zapomniałeś hasła ?</a></p>@* @Localizer["Forgot_password"] *@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <div class="center-wrap">
+                            <div class="section text-center">
+                                <h4 class="mb-1 pb-3">Rejestracja</h4>
+                                <div class="form-group">
+                                    <input type="text" class="form-style" placeholder="Login">@* @Localizer["Login"] *@
+                                </div>
+                                <div class="form-group mt-2">
+                                    <input type="email" class="form-style" placeholder="E-mail">@* @Localizer["E_mail"] *@
+                                </div>
+                                <div class="form-group mt-2">
+                                    <input type="password" class="form-style" placeholder="Hasło">@* @Localizer["Password"] *@
+                                </div>
+                                <div class="form-group mt-2">
+                                    <input type="password" class="form-style" placeholder="Powtórz hasło">@* @Localizer["Repeat_password"] *@
+                                </div>
+
+                                <RadzenSelectBar @bind-Value=@value TValue="int" class="mt-4">
+                                    <Items>
+                                        @foreach (var dataItem in data)
+                                        {
+                                            <RadzenSelectBarItem Text="@dataItem.Name" Value="@dataItem.Id" Disabled="@(dataItem.IsDisabled.HasValue ? dataItem.IsDisabled.Value : false)" Visible="@(dataItem.IsVisible.HasValue ? dataItem.IsVisible.Value : true)" />
+                                        }
+                                    </Items>
+                                </RadzenSelectBar>
+
+                                <RadzenButton Text="Zarejestruj" class="btn mt-2" Click="changePage" ButtonStyle="Radzen.ButtonStyle.Secondary" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 @code {
 
+    int value = 1;
+    int osobaID = 10023;
+    public class MyObject
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public bool? IsDisabled { get; set; }
+        public bool? IsVisible { get; set; }
+    }
+    IEnumerable<MyObject> data = new MyObject[]
+        {
+        new MyObject() {
+            Id = 1,
+            Name = "Polski"
+        },
+        new MyObject() {
+            Id = 2,
+            Name = "English"
+        },
+
+        };
+    public void changePage()
+    {
+
+        // NavManager.NavigateTo("/Matchmaking");
+
+
+    }
 }
