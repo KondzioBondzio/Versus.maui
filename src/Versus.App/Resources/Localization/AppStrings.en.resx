@@ -1,21 +1,408 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <root>
-    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-        <xsd:element name="root" msdata:IsDataSet="true">
-            
-        </xsd:element>
-    </xsd:schema>
-    <resheader name="resmimetype">
-        <value>text/microsoft-resx</value>
-    </resheader>
-    <resheader name="version">
-        <value>1.3</value>
-    </resheader>
-    <resheader name="reader">
-        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
-    <resheader name="writer">
-        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-    </resheader>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Account_AccountInformation" xml:space="preserve">
+    <value>Account information</value>
+  </data>
+  <data name="Account_AreYouSure" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="Account_BlockFormToast" xml:space="preserve">
+    <value>The language change form has been blocked</value>
+  </data>
+  <data name="Account_ChangeEmail" xml:space="preserve">
+    <value>Change email</value>
+  </data>
+  <data name="Account_ChangeEmailPart1" xml:space="preserve">
+    <value>Additional verification is required in order to change the email to another one. You need to verify the old email address,</value>
+  </data>
+  <data name="Account_ChangeEmailPart2" xml:space="preserve">
+    <value>, to change it.</value>
+  </data>
+  <data name="Account_ChangePassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="Account_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Account_DateOfBirth" xml:space="preserve">
+    <value>Date of birth</value>
+  </data>
+  <data name="Account_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Account_Enter_email" xml:space="preserve">
+    <value>Enter email</value>
+  </data>
+  <data name="Account_Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="Account_Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Account_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Account_NeverShareEmail" xml:space="preserve">
+    <value>We'll never share your email with anyone else.</value>
+  </data>
+  <data name="Account_New_password" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="Account_OldPassword" xml:space="preserve">
+    <value>Old password</value>
+  </data>
+  <data name="Account_PersonalData" xml:space="preserve">
+    <value>Personal data</value>
+  </data>
+  <data name="Account_RepeatPassword" xml:space="preserve">
+    <value>Repeat password</value>
+  </data>
+  <data name="Account_SendVerifyCode" xml:space="preserve">
+    <value>Send verification code</value>
+  </data>
+  <data name="Account_Surname" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="Account_UnlockedFormToast" xml:space="preserve">
+    <value>The password change form has been unlocked</value>
+  </data>
+  <data name="Account_VerifyEmail" xml:space="preserve">
+    <value>Verify email address</value>
+  </data>
+  <data name="Account_Voivodeship" xml:space="preserve">
+    <value>Voivodeship</value>
+  </data>
+  <data name="FriendList_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="FriendList_Draws" xml:space="preserve">
+    <value>Draws</value>
+  </data>
+  <data name="FriendList_FriendList" xml:space="preserve">
+    <value>Friends list</value>
+  </data>
+  <data name="FriendList_Game" xml:space="preserve">
+    <value>Game</value>
+  </data>
+  <data name="FriendList_NumberOfMatches" xml:space="preserve">
+    <value>Number of matches</value>
+  </data>
+  <data name="FriendList_Player" xml:space="preserve">
+    <value>Player</value>
+  </data>
+  <data name="FriendList_Wins" xml:space="preserve">
+    <value>Wins</value>
+  </data>
+  <data name="HowToPlay_Devices" xml:space="preserve">
+    <value>Devices</value>
+  </data>
+  <data name="HowToPlay_Devices_description" xml:space="preserve">
+    <value>In order to take full advantage of the Versus application, you need to download the Versus mobile application, which is used to verify matches at the place of the skirmish. Applications can be downloaded from the Play Store for Android and the iOS App Store.</value>
+  </data>
+  <data name="HowToPlay_HowToPlay" xml:space="preserve">
+    <value>How to play ?</value>
+  </data>
+  <data name="HowToPlay_PreliminaryInformation" xml:space="preserve">
+    <value>Preliminary information</value>
+  </data>
+  <data name="HowToPlay_Step1" xml:space="preserve">
+    <value>Step I</value>
+  </data>
+  <data name="HowToPlay_Step1description" xml:space="preserve">
+    <value>To start playing Versus, the first step is to find an opponent in the matchmaking tab. To do this, go to the matchmaking tab and select the preferred way to join the game.&lt;br&gt;&lt;br&gt;The first option is to join the queue, in which you need to complete the filters based on which the opponent will be matched.&lt;br&gt; The second option is to announce the match together with the location, description and date, and then waiting for the acceptance of these conditions by the opponent.&lt;br&gt; It is also possible to join the advertisement yourself.</value>
+  </data>
+  <data name="HowToPlay_Step2" xml:space="preserve">
+    <value>Step II</value>
+  </data>
+  <data name="HowToPlay_Step2description" xml:space="preserve">
+    <value>The next step is to go to the matches tab, where you can find all available games accepted by you or your opponent. &lt;br&gt;In this section, you can communicate with your opponent via chat, which allows you to set the date and location of the match, as well as accept the match when using the queue filter. &lt;br&gt;&lt;br&gt;For matches found through an ad, we will be able to see the status of the match and make changes to the date and location.</value>
+  </data>
+  <data name="HowToPlay_Step3" xml:space="preserve">
+    <value>Step III</value>
+  </data>
+  <data name="HowToPlay_Step3description" xml:space="preserve">
+    <value>The last step is to verify the match using the mobile application at the meeting place.&lt;br&gt;To do this, download the Versus application from the Play or App Store, then select the current match in the "Matches" tab and scan the QR code using the opponent's device. This will allow you to start the match.&lt;br&gt;&lt;br&gt;After the match is over, enter the score and scan the QR code again, which will confirm the official match result.</value>
+  </data>
+  <data name="HowToPlay_VersusDescription" xml:space="preserve">
+    <value>Versus is an application aimed at joint sports games between players. Thanks to it, we can meet new people and experience a lot of interesting sports matches. Compete with friends, improve your skills and climb the Versus Rank.</value>
+  </data>
+  <data name="LoginAndRegister_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="LoginAndRegister_ForgotPassword" xml:space="preserve">
+    <value>Have you forgotten your password ?</value>
+  </data>
+  <data name="LoginAndRegister_Login" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="LoginAndRegister_LoginPanel" xml:space="preserve">
+    <value>Lost</value>
+  </data>
+  <data name="LoginAndRegister_LoginSłownie" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginAndRegister_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="LoginAndRegister_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="LoginAndRegister_RepeatPassword" xml:space="preserve">
+    <value>Repeat password</value>
+  </data>
+  <data name="Matches_Deadline" xml:space="preserve">
+    <value>Deadline</value>
+  </data>
+  <data name="Matches_Functions" xml:space="preserve">
+    <value>Functions</value>
+  </data>
+  <data name="Matches_GameName" xml:space="preserve">
+    <value>Game name</value>
+  </data>
+  <data name="Matches_Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Matches_PhotoOpponent" xml:space="preserve">
+    <value>Photo of the opponent</value>
+  </data>
+  <data name="Matches_Sport" xml:space="preserve">
+    <value>Sport</value>
+  </data>
+  <data name="Matches_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Matchmaking_Age" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="Matchmaking_Announcement" xml:space="preserve">
+    <value>Announcement</value>
+  </data>
+  <data name="Matchmaking_Any" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="Matchmaking_Beginner" xml:space="preserve">
+    <value>Beginner</value>
+  </data>
+  <data name="Matchmaking_ChooseGame" xml:space="preserve">
+    <value>Choose Game</value>
+  </data>
+  <data name="Matchmaking_Filters" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="Matchmaking_Game" xml:space="preserve">
+    <value>Game</value>
+  </data>
+  <data name="Matchmaking_Level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="Matchmaking_Master" xml:space="preserve">
+    <value>Master</value>
+  </data>
+  <data name="Matchmaking_Men" xml:space="preserve">
+    <value>Men</value>
+  </data>
+  <data name="Matchmaking_OpponentGender" xml:space="preserve">
+    <value>Opponent's gender</value>
+  </data>
+  <data name="Matchmaking_Queue" xml:space="preserve">
+    <value>Queue</value>
+  </data>
+  <data name="Matchmaking_SearchOpponent" xml:space="preserve">
+    <value>Search for an opponent</value>
+  </data>
+  <data name="Matchmaking_ShowResult" xml:space="preserve">
+    <value>Show result</value>
+  </data>
+  <data name="Matchmaking_Women" xml:space="preserve">
+    <value>Women</value>
+  </data>
+  <data name="Shared_Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Shared_ChangeLanguage" xml:space="preserve">
+    <value>Change language</value>
+  </data>
+  <data name="Shared_Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="Shared_LogOut" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+  <data name="Shared_Matches" xml:space="preserve">
+    <value>Matches</value>
+  </data>
+  <data name="Shared_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Shared_PreliminaryInformation" xml:space="preserve">
+    <value>Preliminary information</value>
+  </data>
+  <data name="Shared_Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Shared_Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Shared_Stats" xml:space="preserve">
+    <value>Stats</value>
+  </data>
+  <data name="Shared_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Shared_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Statistics_Bilard" xml:space="preserve">
+    <value>Billiard</value>
+  </data>
+  <data name="Statistics_Bowling" xml:space="preserve">
+    <value>Bowling</value>
+  </data>
+  <data name="Statistics_Cards" xml:space="preserve">
+    <value>Cards</value>
+  </data>
+  <data name="Statistics_Chess" xml:space="preserve">
+    <value>Chess</value>
+  </data>
+  <data name="Statistics_Draws" xml:space="preserve">
+    <value>Draws</value>
+  </data>
+  <data name="Statistics_GeneralStatistics" xml:space="preserve">
+    <value>General statistics</value>
+  </data>
+  <data name="Statistics_NumberOfMatches" xml:space="preserve">
+    <value>Number of matches</value>
+  </data>
+  <data name="Statistics_Others" xml:space="preserve">
+    <value>Others</value>
+  </data>
+  <data name="Statistics_SportStatistics" xml:space="preserve">
+    <value>Statistics from the selected sport</value>
+  </data>
+  <data name="Statistics_Stats" xml:space="preserve">
+    <value>Stats</value>
+  </data>
+  <data name="Statistics_Tenis" xml:space="preserve">
+    <value>Tenis</value>
+  </data>
+  <data name="Statistics_Wins" xml:space="preserve">
+    <value>Wins</value>
+  </data>
 </root>
