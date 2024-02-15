@@ -1,5 +1,4 @@
-﻿
-body {
+﻿body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     line-height: 1.7;
@@ -10,25 +9,13 @@ body {
     padding-top: 0;
 }
 
-a:hover {
-    text-decoration: none;
-}
-
-.link:hover {
-    color: #dc3545;
-}
-
-a {
-    color: #ffffff;
+.full-height {
+    min-height: 91vh;
 }
 
 p {
     font-weight: 500;
     font-size: 14px;
-}
-
-h4 {
-    font-weight: 600;
 }
 
 h6 span {
@@ -40,10 +27,6 @@ h6 span {
     position: relative;
     width: 100%;
     display: block;
-}
-
-.full-height {
-    min-height: 91vh;
 }
 
 [type="checkbox"]:checked,
@@ -127,49 +110,6 @@ h6 span {
     transform: rotateY(180deg);
 }
 
-.center-wrap {
-    position: absolute;
-    width: 100%;
-    padding: 0 18px;
-    top: 50%;
-    left: 0;
-    transform: translate3d(0, -50%, 35px) perspective(100px);
-    z-index: 20;
-    display: block;
-}
-
-.form-group {
-    position: relative;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-.form-style {
-    padding: 13px 20px;
-    height: 48px;
-    width: 100%;
-    font-weight: 500;
-    border-radius: 4px;
-    font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0.5px;
-    outline: none;
-    color: #c4c3ca;
-    background-color: #1f2029;
-    border: none;
-    -webkit-transition: all 200ms linear;
-    transition: all 200ms linear;
-    box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
-}
-
-    .form-style:focus,
-    .form-style:active {
-        border: none;
-        outline: none;
-        box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
-    }
-
 .input-icon {
     position: absolute;
     top: 0;
@@ -181,8 +121,6 @@ h6 span {
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
-
-
 
 h1 {
     font: 300 80px/1 courier;

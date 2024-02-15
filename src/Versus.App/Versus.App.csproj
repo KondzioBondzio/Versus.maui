@@ -115,7 +115,11 @@
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </EmbeddedResource>
       <Content Remove="Platforms\iOS\appsettings.json" />
+      <None Remove="Components\LoginAndRegister\Components\LoginPanel.razor.css" />
+      <None Remove="Components\LoginAndRegister\Components\RegisterPanel.razor.css" />
       <None Remove="Components\LoginAndRegister\LoginAndRegisterIndex.razor.css" />
+      <Content Include="Components\LoginAndRegister\Components\LoginPanel.razor.css" />
+      <Content Include="Components\LoginAndRegister\Components\RegisterPanel.razor.css" />
       <Content Include="Components\LoginAndRegister\LoginAndRegisterIndex.razor.css" />
       <EmbeddedResource Include="Platforms\iOS\appsettings.json">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>

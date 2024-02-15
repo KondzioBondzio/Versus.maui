@@ -1,0 +1,19 @@
+﻿<div class="center-wrap">
+    <div class="section text-center">
+        <h4 class="mb-4 pb-3"> @* @Localizer["Login_panel"] *@Panel logowania</h4>
+        <div class="form-group">
+            <input type="email" class="form-style" placeholder="E-mail">@* @Localizer["E_mail"] *@
+        </div>
+        <div class="form-group mt-2">
+            <input type="password" class="form-style" placeholder="Hasło">@* @Localizer["Password"] *@
+        </div>@* @Localizer["Log_in"] *@
+        <RadzenButton Text="Zaloguj" Click="changePage" class="btn mt-5" ButtonStyle="Radzen.ButtonStyle.Secondary" />
+        <p class="mb-0 mt-4 text-center"><a href="/Matchmaking" class="link">Zapomniałeś hasła ?</a></p>@* @Localizer["Forgot_password"] *@
+    </div>
+</div>
+@code {
+    public void changePage()
+    {
+        // NavManager.NavigateTo("/Matchmaking");
+    }
+}
