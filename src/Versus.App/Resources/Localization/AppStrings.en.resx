@@ -189,6 +189,30 @@
   <data name="Account_Voivodeship" xml:space="preserve">
     <value>Voivodeship</value>
   </data>
+  <data name="Auth_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Auth_ForgotPassword" xml:space="preserve">
+    <value>Have you forgotten your password ?</value>
+  </data>
+  <data name="Auth_Login" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="Auth_LoginPanel" xml:space="preserve">
+    <value>Lost</value>
+  </data>
+  <data name="Auth_LoginSłownie" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Auth_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Auth_Register" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="Auth_RepeatPassword" xml:space="preserve">
+    <value>Repeat password</value>
+  </data>
   <data name="FriendList_City" xml:space="preserve">
     <value>City</value>
   </data>
@@ -242,30 +266,6 @@
   </data>
   <data name="HowToPlay_VersusDescription" xml:space="preserve">
     <value>Versus is an application aimed at joint sports games between players. Thanks to it, we can meet new people and experience a lot of interesting sports matches. Compete with friends, improve your skills and climb the Versus Rank.</value>
-  </data>
-  <data name="LoginAndRegister_Email" xml:space="preserve">
-    <value>E-mail</value>
-  </data>
-  <data name="LoginAndRegister_ForgotPassword" xml:space="preserve">
-    <value>Have you forgotten your password ?</value>
-  </data>
-  <data name="LoginAndRegister_Login" xml:space="preserve">
-    <value>Log in</value>
-  </data>
-  <data name="LoginAndRegister_LoginPanel" xml:space="preserve">
-    <value>Lost</value>
-  </data>
-  <data name="LoginAndRegister_LoginSłownie" xml:space="preserve">
-    <value>Login</value>
-  </data>
-  <data name="LoginAndRegister_Password" xml:space="preserve">
-    <value>Password</value>
-  </data>
-  <data name="LoginAndRegister_Register" xml:space="preserve">
-    <value>Register</value>
-  </data>
-  <data name="LoginAndRegister_RepeatPassword" xml:space="preserve">
-    <value>Repeat password</value>
   </data>
   <data name="Matches_Deadline" xml:space="preserve">
     <value>Deadline</value>

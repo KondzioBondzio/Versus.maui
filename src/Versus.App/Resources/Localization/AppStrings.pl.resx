@@ -189,6 +189,30 @@
   <data name="Account_Voivodeship" xml:space="preserve">
     <value>Województwo</value>
   </data>
+  <data name="Auth_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Auth_ForgotPassword" xml:space="preserve">
+    <value>Zapomniałeś hasła ?</value>
+  </data>
+  <data name="Auth_Login" xml:space="preserve">
+    <value>Zaloguj</value>
+  </data>
+  <data name="Auth_LoginPanel" xml:space="preserve">
+    <value>Logowanie</value>
+  </data>
+  <data name="Auth_LoginSłownie" xml:space="preserve">
+    <value>LoginAndRegister_Login</value>
+  </data>
+  <data name="Auth_Password" xml:space="preserve">
+    <value>Hasło</value>
+  </data>
+  <data name="Auth_Register" xml:space="preserve">
+    <value>Zarejestruj</value>
+  </data>
+  <data name="Auth_RepeatPassword" xml:space="preserve">
+    <value>Powtórz hasło</value>
+  </data>
   <data name="FriendList_City" xml:space="preserve">
     <value>Miasto</value>
   </data>
@@ -242,30 +266,6 @@
   </data>
   <data name="HowToPlay_VersusDescription" xml:space="preserve">
     <value>Versus to aplikacja mająca na celu wspólne sportowe rozgrywki między graczami. Dzięki niej możemy poznać nowe osoby i doświadczyć dużo ciekawych potyczek sportowych. Rywalizuj z przyjaciółmi, polepszaj swoje umiejętności i wspinaj się w rankingu Versus.</value>
-  </data>
-  <data name="LoginAndRegister_Email" xml:space="preserve">
-    <value>E-mail</value>
-  </data>
-  <data name="LoginAndRegister_ForgotPassword" xml:space="preserve">
-    <value>Zapomniałeś hasła ?</value>
-  </data>
-  <data name="LoginAndRegister_Login" xml:space="preserve">
-    <value>Zaloguj</value>
-  </data>
-  <data name="LoginAndRegister_LoginPanel" xml:space="preserve">
-    <value>Logowanie</value>
-  </data>
-  <data name="LoginAndRegister_LoginSłownie" xml:space="preserve">
-    <value>LoginAndRegister_Login</value>
-  </data>
-  <data name="LoginAndRegister_Password" xml:space="preserve">
-    <value>Hasło</value>
-  </data>
-  <data name="LoginAndRegister_Register" xml:space="preserve">
-    <value>Zarejestruj</value>
-  </data>
-  <data name="LoginAndRegister_RepeatPassword" xml:space="preserve">
-    <value>Powtórz hasło</value>
   </data>
   <data name="Matches_Deadline" xml:space="preserve">
     <value>Termin</value>

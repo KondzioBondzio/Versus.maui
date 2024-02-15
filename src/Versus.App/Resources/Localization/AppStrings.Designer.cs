@@ -277,6 +277,78 @@ namespace Versus.App.Resources.Localization {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu E-mail.
+        /// </summary>
+        internal static string Auth_Email {
+            get {
+                return ResourceManager.GetString("Auth_Email", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Have you forgotten your password ?.
+        /// </summary>
+        internal static string Auth_ForgotPassword {
+            get {
+                return ResourceManager.GetString("Auth_ForgotPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Log in.
+        /// </summary>
+        internal static string Auth_Login {
+            get {
+                return ResourceManager.GetString("Auth_Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Lost.
+        /// </summary>
+        internal static string Auth_LoginPanel {
+            get {
+                return ResourceManager.GetString("Auth_LoginPanel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Login.
+        /// </summary>
+        internal static string Auth_LoginSłownie {
+            get {
+                return ResourceManager.GetString("Auth_LoginSłownie", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Password.
+        /// </summary>
+        internal static string Auth_Password {
+            get {
+                return ResourceManager.GetString("Auth_Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Register.
+        /// </summary>
+        internal static string Auth_Register {
+            get {
+                return ResourceManager.GetString("Auth_Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Repeat password.
+        /// </summary>
+        internal static string Auth_RepeatPassword {
+            get {
+                return ResourceManager.GetString("Auth_RepeatPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu City.
         /// </summary>
         internal static string FriendList_City {
@@ -435,78 +507,6 @@ namespace Versus.App.Resources.Localization {
         internal static string HowToPlay_VersusDescription {
             get {
                 return ResourceManager.GetString("HowToPlay_VersusDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu E-mail.
-        /// </summary>
-        internal static string LoginAndRegister_Email {
-            get {
-                return ResourceManager.GetString("LoginAndRegister_Email", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Have you forgotten your password ?.
-        /// </summary>
-        internal static string LoginAndRegister_ForgotPassword {
-            get {
-                return ResourceManager.GetString("LoginAndRegister_ForgotPassword", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Log in.
-        /// </summary>
-        internal static string LoginAndRegister_Login {
-            get {
-                return ResourceManager.GetString("LoginAndRegister_Login", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Lost.
-        /// </summary>
-        internal static string LoginAndRegister_LoginPanel {
-            get {
-                return ResourceManager.GetString("LoginAndRegister_LoginPanel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Login.
-        /// </summary>
-        internal static string LoginAndRegister_LoginSłownie {
-            get {
-                return ResourceManager.GetString("LoginAndRegister_LoginSłownie", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Password.
-        /// </summary>
-        internal static string LoginAndRegister_Password {
-            get {
-                return ResourceManager.GetString("LoginAndRegister_Password", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Register.
-        /// </summary>
-        internal static string LoginAndRegister_Register {
-            get {
-                return ResourceManager.GetString("LoginAndRegister_Register", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Repeat password.
-        /// </summary>
-        internal static string LoginAndRegister_RepeatPassword {
-            get {
-                return ResourceManager.GetString("LoginAndRegister_RepeatPassword", resourceCulture);
             }
         }
         
