@@ -18,8 +18,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Services\" />
-      <Folder Include="ViewModels\" />
+      <ProjectReference Include="..\..\..\Versus.api\src\Versus.Shared\Versus.Shared.csproj" />
     </ItemGroup>
 
 </Project>
