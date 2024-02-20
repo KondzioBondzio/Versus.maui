@@ -1,4 +1,5 @@
-﻿using Versus.Core.Services;
+﻿using Versus.Core.Exceptions;
+using Versus.Core.Services;
 using Versus.Shared.Auth;
 
 var httpClient = new HttpClient
@@ -24,9 +25,9 @@ static async Task Register(ApiClient apiClient)
     {
         await apiClient.PostAsync(endpoint, request);
     }
-    catch (Exception ex)
+    catch (ApiException ex)
     {
-        Console.WriteLine(ex);
+        Console.WriteLine(ex.Error?.Detail);
     }
 }
 
@@ -50,8 +51,8 @@ static async Task Login(ApiClient apiClient)
         Console.WriteLine($"Access Token:   {response.AccessToken}");
         Console.WriteLine($"Refresh Token:  {response.RefreshToken}");
     }
-    catch (Exception ex)
+    catch (ApiException ex)
     {
-        Console.WriteLine(ex);
+        Console.WriteLine(ex.Error?.Detail);
     }
 }

@@ -3,6 +3,8 @@ using System.Net.Http.Headers;
 using System.Net.Http.Json;
 using System.Text;
 using System.Text.Json;
+using Versus.Core.Exceptions;
+using Versus.Shared;
 using Versus.Shared.Auth;
 
 namespace Versus.Core.Services;
@@ -35,14 +37,23 @@ public class ApiClient
     {
         var response = await SendAsync(uri, HttpMethod.Get, null, cancellationToken);
         cancellationToken.ThrowIfCancellationRequested();
-        response.EnsureSuccessStatusCode();
+        if (!response.IsSuccessStatusCode)
+        {
+            var error = await GetErrorDetails(response, cancellationToken);
+            throw new ApiException(response.StatusCode, error);
+        }
     }
 
     public async Task<TResult?> GetAsync<TResult>(string uri, CancellationToken cancellationToken = default)
     {
         var response = await SendAsync(uri, HttpMethod.Get, null, cancellationToken);
         cancellationToken.ThrowIfCancellationRequested();
-        response.EnsureSuccessStatusCode();
+        if (!response.IsSuccessStatusCode)
+        {
+            var error = await GetErrorDetails(response, cancellationToken);
+            throw new ApiException(response.StatusCode, error);
+        }
+
         return await response.Content.ReadFromJsonAsync<TResult>(cancellationToken);
     }
 
@@ -57,10 +68,15 @@ public class ApiClient
 
         var response = await SendAsync(uri, HttpMethod.Post, content, cancellationToken);
         cancellationToken.ThrowIfCancellationRequested();
-        response.EnsureSuccessStatusCode();
+        if (!response.IsSuccessStatusCode)
+        {
+            var error = await GetErrorDetails(response, cancellationToken);
+            throw new ApiException(response.StatusCode, error);
+        }
     }
 
-    public async Task<TResult?> PostAsync<TRequest, TResult>(string uri, TRequest? value, CancellationToken cancellationToken = default)
+    public async Task<TResult?> PostAsync<TRequest, TResult>(string uri, TRequest? value,
+        CancellationToken cancellationToken = default)
     {
         HttpContent? content = null;
         if (value != null)
@@ -71,7 +87,12 @@ public class ApiClient
 
         var response = await SendAsync(uri, HttpMethod.Post, content, cancellationToken);
         cancellationToken.ThrowIfCancellationRequested();
-        response.EnsureSuccessStatusCode();
+        if (!response.IsSuccessStatusCode)
+        {
+            var error = await GetErrorDetails(response, cancellationToken);
+            throw new ApiException(response.StatusCode, error);
+        }
+
         return await response.Content.ReadFromJsonAsync<TResult>(cancellationToken);
     }
 
@@ -86,10 +107,15 @@ public class ApiClient
 
         var response = await SendAsync(uri, HttpMethod.Put, content, cancellationToken);
         cancellationToken.ThrowIfCancellationRequested();
-        response.EnsureSuccessStatusCode();
+        if (!response.IsSuccessStatusCode)
+        {
+            var error = await GetErrorDetails(response, cancellationToken);
+            throw new ApiException(response.StatusCode, error);
+        }
     }
 
-    public async Task<TResult?> PutAsync<TRequest, TResult>(string uri, TRequest? value, CancellationToken cancellationToken = default)
+    public async Task<TResult?> PutAsync<TRequest, TResult>(string uri, TRequest? value,
+        CancellationToken cancellationToken = default)
     {
         HttpContent? content = null;
         if (value != null)
@@ -100,7 +126,12 @@ public class ApiClient
 
         var response = await SendAsync(uri, HttpMethod.Put, content, cancellationToken);
         cancellationToken.ThrowIfCancellationRequested();
-        response.EnsureSuccessStatusCode();
+        if (!response.IsSuccessStatusCode)
+        {
+            var error = await GetErrorDetails(response, cancellationToken);
+            throw new ApiException(response.StatusCode, error);
+        }
+
         return await response.Content.ReadFromJsonAsync<TResult>(cancellationToken);
     }
 
@@ -115,10 +146,15 @@ public class ApiClient
 
         var response = await SendAsync(uri, HttpMethod.Delete, content, cancellationToken);
         cancellationToken.ThrowIfCancellationRequested();
-        response.EnsureSuccessStatusCode();
+        if (!response.IsSuccessStatusCode)
+        {
+            var error = await GetErrorDetails(response, cancellationToken);
+            throw new ApiException(response.StatusCode, error);
+        }
     }
 
-    public async Task<TResult?> DeleteAsync<TRequest, TResult>(string uri, TRequest? value, CancellationToken cancellationToken = default)
+    public async Task<TResult?> DeleteAsync<TRequest, TResult>(string uri, TRequest? value,
+        CancellationToken cancellationToken = default)
     {
         HttpContent? content = null;
         if (value != null)
@@ -129,7 +165,13 @@ public class ApiClient
 
         var response = await SendAsync(uri, HttpMethod.Delete, content, cancellationToken);
         cancellationToken.ThrowIfCancellationRequested();
-        response.EnsureSuccessStatusCode();
+
+        if (!response.IsSuccessStatusCode)
+        {
+            var error = await GetErrorDetails(response, cancellationToken);
+            throw new ApiException(response.StatusCode, error);
+        }
+
         return await response.Content.ReadFromJsonAsync<TResult>(cancellationToken);
     }
 
@@ -158,5 +200,24 @@ public class ApiClient
         response.EnsureSuccessStatusCode();
         var content = await response.Content.ReadFromJsonAsync<RefreshTokenResponse>(cancellationToken);
         return (content!.AccessToken, content.RefreshToken);
+    }
+
+    private static async Task<ApiError?> GetErrorDetails(HttpResponseMessage response,
+        CancellationToken cancellationToken)
+    {
+        try
+        {
+            string content = await response.Content.ReadAsStringAsync(cancellationToken);
+            if (!string.IsNullOrEmpty(content))
+            {
+                return JsonSerializer.Deserialize<ApiError>(content);
+            }
+        }
+        catch
+        {
+            // ignored
+        }
+
+        return default;
     }
 }
