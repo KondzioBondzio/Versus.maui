@@ -38,7 +38,7 @@ public static class DependencyInjection
             .CreateLogger();
 
         services.AddLogging(options => { options.AddSerilog(); });
-
+        services.AddLocalization();
         AppDomain.CurrentDomain.UnhandledException += (_, args) =>
         {
             var exception = args.ExceptionObject as Exception;

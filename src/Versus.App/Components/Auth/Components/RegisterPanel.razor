@@ -1,17 +1,17 @@
 ﻿<div class="center-wrap">
     <div class="section text-center">
-        <h4 class="mb-1 pb-3">Rejestracja</h4>
+        <h4 class="mb-1 pb-3">@Localizer["Auth_Registration"]</h4>
         <div class="form-group">
-            <input type="text" class="form-style" placeholder="Login">@* @Localizer["Login"] *@
+            <input type="text" class="form-style" placeholder="@Localizer["Auth_LoginSłownie"]">
         </div>
         <div class="form-group mt-2">
-            <input type="email" class="form-style" placeholder="E-mail">@* @Localizer["E_mail"] *@
+            <input type="email" class="form-style" placeholder="@Localizer["Auth_Email"] ">
         </div>
         <div class="form-group mt-2">
-            <input type="password" class="form-style" placeholder="Hasło">@* @Localizer["Password"] *@
+            <input type="password" class="form-style" placeholder="@Localizer["Auth_Password"]">
         </div>
         <div class="form-group mt-2">
-            <input type="password" class="form-style" placeholder="Powtórz hasło">@* @Localizer["Repeat_password"] *@
+            <input type="password" class="form-style" placeholder="@Localizer["Auth_RepeatPassword"]">
         </div>
 
         <RadzenSelectBar @bind-Value=@value TValue="int" class="mt-4">
@@ -23,7 +23,7 @@
             </Items>
         </RadzenSelectBar>
 
-        <RadzenButton Text="Zarejestruj" class="btn mt-2" Click="changePage" ButtonStyle="Radzen.ButtonStyle.Secondary" />
+        <RadzenButton Text="@Localizer["Auth_Register"]" class="btn mt-2" Click="changePage" ButtonStyle="Radzen.ButtonStyle.Secondary" />
     </div>
 </div>
 @code {
@@ -37,18 +37,16 @@
         public bool? IsDisabled { get; set; }
         public bool? IsVisible { get; set; }
     }
-    IEnumerable<MyObject> data = new MyObject[]
-        {
-        new MyObject() {
-            Id = 1,
-            Name = "Polski"
-        },
-        new MyObject() {
-            Id = 2,
-            Name = "English"
-        },
+    private IEnumerable<MyObject> data;
 
+    protected override void OnInitialized()
+    {
+        data = new MyObject[]
+        {
+            new MyObject() { Id = 1, Name = Localizer["Auth_Polish"] },
+            new MyObject() { Id = 2, Name = Localizer["Auth_English"] },
         };
+    }
     public void changePage()
     {
         // NavManager.NavigateTo("/Matchmaking");

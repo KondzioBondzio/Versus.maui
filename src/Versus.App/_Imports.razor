@@ -10,5 +10,9 @@
 @using Versus.App.Components.Layout
 @using Versus.Core.Components
 @using Radzen.Blazor
+@using Versus.App.Resources.Localization;
+@using Microsoft.Extensions.Localization;
 @using System.Globalization
-
+@using Microsoft.AspNetCore.Http
+@inject NavigationManager NavManager
+@inject IStringLocalizer<AppStrings> Localizer

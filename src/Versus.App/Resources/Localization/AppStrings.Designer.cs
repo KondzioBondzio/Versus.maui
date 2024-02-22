@@ -286,6 +286,15 @@ namespace Versus.App.Resources.Localization {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu English.
+        /// </summary>
+        internal static string Auth_English {
+            get {
+                return ResourceManager.GetString("Auth_English", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Have you forgotten your password ?.
         /// </summary>
         internal static string Auth_ForgotPassword {
@@ -304,7 +313,7 @@ namespace Versus.App.Resources.Localization {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Lost.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Login.
         /// </summary>
         internal static string Auth_LoginPanel {
             get {
@@ -331,11 +340,29 @@ namespace Versus.App.Resources.Localization {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Polish.
+        /// </summary>
+        internal static string Auth_Polish {
+            get {
+                return ResourceManager.GetString("Auth_Polish", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Register.
         /// </summary>
         internal static string Auth_Register {
             get {
                 return ResourceManager.GetString("Auth_Register", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Registration.
+        /// </summary>
+        internal static string Auth_Registration {
+            get {
+                return ResourceManager.GetString("Auth_Registration", resourceCulture);
             }
         }
         
