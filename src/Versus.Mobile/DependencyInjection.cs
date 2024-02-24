@@ -1,6 +1,9 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.FileProviders;
 using Serilog;
+using Versus.Core.Services;
+using Versus.Core.Services.Session;
+using Versus.Mobile.Services.Session;
 
 namespace Versus.Mobile;
 
@@ -29,6 +32,11 @@ public static class DependencyInjection
     {
         services.AddLocalization();
 
+        HttpClient httpClient = new() { BaseAddress = new Uri(configuration["ApiAddress"]!) };
+        services.AddSingleton(new ApiClient(httpClient));
+        services.AddSingleton<ISession, SecureStorageSession>();
+        services.AddSingleton<SessionManager>();
+
         servicesDelegate(configuration, services);
         return services;
     }
@@ -40,7 +48,7 @@ public static class DependencyInjection
             .CreateLogger();
 
         services.AddLogging(options => { options.AddSerilog(); });
-        services.AddLocalization();
+
         AppDomain.CurrentDomain.UnhandledException += (_, args) =>
         {
             var exception = args.ExceptionObject as Exception;

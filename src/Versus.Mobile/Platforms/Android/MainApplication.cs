@@ -4,7 +4,7 @@ using Droid = Versus.Mobile.Platforms.Android;
 
 namespace Versus.Mobile;
 
-[Application]
+[Application(UsesCleartextTraffic = true)]
 public class MainApplication : MauiApplication
 {
     public MainApplication(IntPtr handle, JniHandleOwnership ownership)

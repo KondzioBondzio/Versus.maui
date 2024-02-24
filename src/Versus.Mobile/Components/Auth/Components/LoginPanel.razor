@@ -1,19 +1,68 @@
-﻿<div class="center-wrap">
+﻿@using Versus.Core.Services.Session
+@using Versus.Core.Exceptions
+@using Radzen
+@implements IDisposable
+@inject SessionManager SessionManager
+
+<div class="center-wrap">
     <div class="section text-center">
-        <h4 class="mb-4 pb-3"> @Localizer["Auth_LoginPanel"] </h4>
-        <div class="form-group">
-            <input type="email" class="form-style" placeholder="@Localizer["Auth_Email"] ">
-        </div>
-        <div class="form-group mt-2">
-            <input type="password" class="form-style" placeholder="@Localizer["Auth_Password"] ">
-        </div>
-        <RadzenButton Text="@Localizer["Auth_Login"]" Click="changePage" class="btn mt-5" ButtonStyle="Radzen.ButtonStyle.Secondary" />
-        <p class="mb-0 mt-4 text-center"><a href="/Matchmaking" class="link">@Localizer["Auth_ForgotPassword"]</a></p> 
+        <h4 class="mb-4 pb-3">@Localizer["Auth_LoginPanel"]</h4>
+        <EditForm EditContext="_editContext" OnValidSubmit="Submit" FormName="FormRegister">
+            <div class="form-group">
+                <InputText @bind-Value="Model!.Login" class="form-style" placeholder="@Localizer["Auth_Email"]"/>
+            </div>
+            <div class="form-group mt-2">
+                @* <input type="password" class="form-style" placeholder="@Localizer["Auth_Password"] "> *@
+            </div>
+            <RadzenButton Text="@Localizer["Auth_Login"]" ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" class="btn mt-5"/>
+        </EditForm>
+        <p class="mb-0 mt-4 text-center">
+            <a href="/Matchmaking" class="link">@Localizer["Auth_ForgotPassword"]</a>
+        </p>
     </div>
 </div>
+
 @code {
-    public void changePage()
+
+    private EditContext? _editContext;
+
+    [SupplyParameterFromForm]
+    public LoginViewModel? Model { get; set; }
+
+    private ValidationMessageStore? _validationStore;
+
+    protected override void OnInitialized()
     {
-        // NavManager.NavigateTo("/Matchmaking");
+        Model ??= new LoginViewModel();
+        _editContext = new EditContext(Model);
+        _editContext.OnValidationRequested += HandleValidationRequested;
     }
+
+    private void HandleValidationRequested(object? sender, ValidationRequestedEventArgs e)
+    {
+        _validationStore?.Clear();
+
+        // handle validation
+    }
+
+    private async Task Submit()
+    {
+        try
+        {
+            await SessionManager.LoginAsync(Model!);
+        }
+        catch (ApiException ex)
+        {
+            // handle error codes
+        }
+    }
+
+    public void Dispose()
+    {
+        if (_editContext is not null)
+        {
+            _editContext.OnValidationRequested -= HandleValidationRequested;
+        }
+    }
+
 }
