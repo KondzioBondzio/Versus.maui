@@ -64,12 +64,22 @@ h1 {
     white-space: nowrap;
     color: whitesmoke;
 }
-
+a {
+    color: #ffffff;
+    text-decoration: underline;
+}
 span {
     display: inline-block;
     animation: stretch 2.5s cubic-bezier(0.4, 1.4, 0.75, 0.9) infinite;
     transform-origin: center;
 }
+.terms-checkbox {
+    display: flex;
+    align-items: center;
+}
 
+    .terms-checkbox label {
+        margin-left: 8px; 
+    }
 
 

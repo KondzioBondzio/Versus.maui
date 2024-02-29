@@ -1,4 +1,6 @@
-﻿<div class="center-wrap">
+﻿@using Radzen
+@using MudBlazor
+<div class="center-wrap">
     <div class="section text-center">
         <h4 class="mb-1 pb-3">@Localizer["Auth_Registration"]</h4>
         <div class="form-group">
@@ -11,25 +13,21 @@
             <input type="password" class="form-style" placeholder="@Localizer["Auth_Password"]">
         </div>
         <div class="form-group mt-2">
-            <input type="password" class="form-style" placeholder="@Localizer["Auth_RepeatPassword"]">
+            <input type="password" class="form-style" placeholder="@Localizer["Auth_RepeatPassword"]">            
         </div>
-
-        <RadzenSelectBar @bind-Value=@value TValue="int" class="mt-4">
-            <Items>
-                @foreach (var dataItem in data)
-                {
-                    <RadzenSelectBarItem Text="@dataItem.Name" Value="@dataItem.Id" Disabled="@(dataItem.IsDisabled.HasValue ? dataItem.IsDisabled.Value : false)" Visible="@(dataItem.IsVisible.HasValue ? dataItem.IsVisible.Value : true)" />
-                }
-            </Items>
-        </RadzenSelectBar>
-
-        <RadzenButton Text="@Localizer["Auth_Register"]" class="btn mt-2" Click="changePage" ButtonStyle="Radzen.ButtonStyle.Secondary" />
+        <div class="terms-checkbox ">
+            <MudCheckBox  @bind-Value="@Basic_CheckBox" LabelPosition="LabelPosition.Start" Color="Color.Secondary"></MudCheckBox>
+            <label>@Localizer["Auth_AgreePart1"] <a href="https://onet.pl" target="_blank">@Localizer["Auth_AgreePart2"]</a></label>
+        </div>
+        <RadzenButton Text="@Localizer["Auth_Register"]" class="btn mt-2" Click="changePage" ButtonStyle="Radzen.ButtonStyle.Secondary" Style="color: white; width:100%" />
+         
     </div>
 </div>
 @code {
 
     int value = 1;
     int osobaID = 10023;
+    private bool Basic_CheckBox = false;
     public class MyObject
     {
         public int Id { get; set; }
@@ -39,14 +37,6 @@
     }
     private IEnumerable<MyObject> data;
 
-    protected override void OnInitialized()
-    {
-        data = new MyObject[]
-        {
-            new MyObject() { Id = 1, Name = Localizer["Auth_Polish"] },
-            new MyObject() { Id = 2, Name = Localizer["Auth_English"] },
-        };
-    }
     public void changePage()
     {
         // NavManager.NavigateTo("/Matchmaking");

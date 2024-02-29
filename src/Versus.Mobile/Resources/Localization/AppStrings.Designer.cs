@@ -10,8 +10,8 @@
 
 namespace Versus.Mobile.Resources.Localization {
     using System;
-
-
+    
+    
     /// <summary>
     ///   Klasa zasobu wymagająca zdefiniowania typu do wyszukiwania zlokalizowanych ciągów itd.
     /// </summary>
@@ -23,15 +23,15 @@ namespace Versus.Mobile.Resources.Localization {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class AppStrings {
-
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
         internal AppStrings() {
         }
-
+        
         /// <summary>
         /// Zwraca buforowane wystąpienie ResourceManager używane przez tę klasę.
         /// </summary>
@@ -45,7 +45,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Przesłania właściwość CurrentUICulture bieżącego wątku dla wszystkich
         ///   przypadków przeszukiwania zasobów za pomocą tej klasy zasobów wymagającej zdefiniowania typu.
@@ -59,7 +59,7 @@ namespace Versus.Mobile.Resources.Localization {
                 resourceCulture = value;
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Account information.
         /// </summary>
@@ -68,7 +68,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_AccountInformation", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Are you sure?.
         /// </summary>
@@ -77,7 +77,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_AreYouSure", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu The language change form has been blocked.
         /// </summary>
@@ -86,7 +86,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_BlockFormToast", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Change email.
         /// </summary>
@@ -95,7 +95,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_ChangeEmail", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Additional verification is required in order to change the email to another one. You need to verify the old email address,.
         /// </summary>
@@ -104,7 +104,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_ChangeEmailPart1", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu , to change it..
         /// </summary>
@@ -113,7 +113,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_ChangeEmailPart2", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Change password.
         /// </summary>
@@ -122,7 +122,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_ChangePassword", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu City.
         /// </summary>
@@ -131,7 +131,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_City", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Date of birth.
         /// </summary>
@@ -140,7 +140,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_DateOfBirth", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu E-mail.
         /// </summary>
@@ -149,7 +149,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_Email", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Enter email.
         /// </summary>
@@ -158,7 +158,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_Enter_email", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Gender.
         /// </summary>
@@ -167,7 +167,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_Gender", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Language.
         /// </summary>
@@ -176,7 +176,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_Language", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Name.
         /// </summary>
@@ -185,7 +185,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_Name", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu We&apos;ll never share your email with anyone else..
         /// </summary>
@@ -194,7 +194,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_NeverShareEmail", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu New password.
         /// </summary>
@@ -203,7 +203,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_New_password", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Old password.
         /// </summary>
@@ -212,7 +212,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_OldPassword", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Personal data.
         /// </summary>
@@ -221,7 +221,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_PersonalData", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Repeat password.
         /// </summary>
@@ -230,7 +230,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_RepeatPassword", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Send verification code.
         /// </summary>
@@ -239,7 +239,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_SendVerifyCode", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Surname.
         /// </summary>
@@ -248,7 +248,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_Surname", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu The password change form has been unlocked.
         /// </summary>
@@ -257,7 +257,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_UnlockedFormToast", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Verify email address.
         /// </summary>
@@ -266,7 +266,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_VerifyEmail", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Voivodeship.
         /// </summary>
@@ -275,7 +275,25 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Account_Voivodeship", resourceCulture);
             }
         }
-
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu I agree to the.
+        /// </summary>
+        internal static string Auth_AgreePart1 {
+            get {
+                return ResourceManager.GetString("Auth_AgreePart1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu terms &amp; conditions.
+        /// </summary>
+        internal static string Auth_AgreePart2 {
+            get {
+                return ResourceManager.GetString("Auth_AgreePart2", resourceCulture);
+            }
+        }
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu E-mail.
         /// </summary>
@@ -284,7 +302,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Auth_Email", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu English.
         /// </summary>
@@ -302,7 +320,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Auth_ForgotPassword", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Log in.
         /// </summary>
@@ -311,7 +329,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Auth_Login", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Login.
         /// </summary>
@@ -320,7 +338,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Auth_LoginPanel", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Login.
         /// </summary>
@@ -329,7 +347,16 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Auth_LoginSłownie", resourceCulture);
             }
         }
-
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu or log in with.
+        /// </summary>
+        internal static string Auth_LogWithSocial {
+            get {
+                return ResourceManager.GetString("Auth_LogWithSocial", resourceCulture);
+            }
+        }
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Password.
         /// </summary>
@@ -338,7 +365,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Auth_Password", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Polish.
         /// </summary>
@@ -356,7 +383,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Auth_Register", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Registration.
         /// </summary>
@@ -374,7 +401,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Auth_RepeatPassword", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu City.
         /// </summary>
@@ -383,7 +410,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("FriendList_City", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Draws.
         /// </summary>
@@ -392,7 +419,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("FriendList_Draws", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Friends list.
         /// </summary>
@@ -401,7 +428,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("FriendList_FriendList", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Game.
         /// </summary>
@@ -410,7 +437,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("FriendList_Game", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Number of matches.
         /// </summary>
@@ -419,7 +446,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("FriendList_NumberOfMatches", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Player.
         /// </summary>
@@ -428,7 +455,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("FriendList_Player", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wins.
         /// </summary>
@@ -437,7 +464,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("FriendList_Wins", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Devices.
         /// </summary>
@@ -446,7 +473,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("HowToPlay_Devices", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu In order to take full advantage of the Versus application, you need to download the Versus mobile application, which is used to verify matches at the place of the skirmish. Applications can be downloaded from the Play Store for Android and the iOS App Store..
         /// </summary>
@@ -455,7 +482,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("HowToPlay_Devices_description", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu How to play ?.
         /// </summary>
@@ -464,7 +491,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("HowToPlay_HowToPlay", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Preliminary information.
         /// </summary>
@@ -473,7 +500,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("HowToPlay_PreliminaryInformation", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Step I.
         /// </summary>
@@ -482,7 +509,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("HowToPlay_Step1", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu To start playing Versus, the first step is to find an opponent in the matchmaking tab. To do this, go to the matchmaking tab and select the preferred way to join the game.&lt;br&gt;&lt;br&gt;The first option is to join the queue, in which you need to complete the filters based on which the opponent will be matched.&lt;br&gt; The second option is to announce the match together with the location, description and date, and then waiting for the acceptance of these conditions by the opponent.&lt;br&gt; It is also possible to join the a [obcięto pozostałą część ciągu]&quot;;.
         /// </summary>
@@ -491,7 +518,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("HowToPlay_Step1description", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Step II.
         /// </summary>
@@ -500,7 +527,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("HowToPlay_Step2", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu The next step is to go to the matches tab, where you can find all available games accepted by you or your opponent. &lt;br&gt;In this section, you can communicate with your opponent via chat, which allows you to set the date and location of the match, as well as accept the match when using the queue filter. &lt;br&gt;&lt;br&gt;For matches found through an ad, we will be able to see the status of the match and make changes to the date and location..
         /// </summary>
@@ -509,7 +536,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("HowToPlay_Step2description", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Step III.
         /// </summary>
@@ -518,7 +545,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("HowToPlay_Step3", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu The last step is to verify the match using the mobile application at the meeting place.&lt;br&gt;To do this, download the Versus application from the Play or App Store, then select the current match in the &quot;Matches&quot; tab and scan the QR code using the opponent&apos;s device. This will allow you to start the match.&lt;br&gt;&lt;br&gt;After the match is over, enter the score and scan the QR code again, which will confirm the official match result..
         /// </summary>
@@ -527,7 +554,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("HowToPlay_Step3description", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Versus is an application aimed at joint sports games between players. Thanks to it, we can meet new people and experience a lot of interesting sports matches. Compete with friends, improve your skills and climb the Versus Rank..
         /// </summary>
@@ -536,7 +563,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("HowToPlay_VersusDescription", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Deadline.
         /// </summary>
@@ -545,7 +572,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matches_Deadline", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Functions.
         /// </summary>
@@ -554,7 +581,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matches_Functions", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Game name.
         /// </summary>
@@ -563,7 +590,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matches_GameName", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Location.
         /// </summary>
@@ -572,7 +599,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matches_Location", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Photo of the opponent.
         /// </summary>
@@ -581,7 +608,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matches_PhotoOpponent", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Sport.
         /// </summary>
@@ -590,7 +617,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matches_Sport", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Status.
         /// </summary>
@@ -599,7 +626,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matches_Status", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Age.
         /// </summary>
@@ -608,7 +635,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_Age", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Announcement.
         /// </summary>
@@ -617,7 +644,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_Announcement", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Any.
         /// </summary>
@@ -626,7 +653,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_Any", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Beginner.
         /// </summary>
@@ -635,7 +662,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_Beginner", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Choose Game.
         /// </summary>
@@ -644,7 +671,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_ChooseGame", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Filters.
         /// </summary>
@@ -653,7 +680,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_Filters", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Game.
         /// </summary>
@@ -662,7 +689,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_Game", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Level.
         /// </summary>
@@ -671,7 +698,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_Level", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Master.
         /// </summary>
@@ -680,7 +707,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_Master", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Men.
         /// </summary>
@@ -689,7 +716,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_Men", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Opponent&apos;s gender.
         /// </summary>
@@ -698,7 +725,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_OpponentGender", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Queue.
         /// </summary>
@@ -707,7 +734,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_Queue", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Search for an opponent.
         /// </summary>
@@ -716,7 +743,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_SearchOpponent", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Show result.
         /// </summary>
@@ -725,7 +752,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_ShowResult", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Women.
         /// </summary>
@@ -734,7 +761,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Matchmaking_Women", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Cancel.
         /// </summary>
@@ -743,7 +770,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Shared_Cancel", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Change language.
         /// </summary>
@@ -752,7 +779,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Shared_ChangeLanguage", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Clear.
         /// </summary>
@@ -761,7 +788,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Shared_Clear", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Log out.
         /// </summary>
@@ -770,7 +797,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Shared_LogOut", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Matches.
         /// </summary>
@@ -779,7 +806,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Shared_Matches", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu No.
         /// </summary>
@@ -788,7 +815,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Shared_No", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Preliminary information.
         /// </summary>
@@ -797,7 +824,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Shared_PreliminaryInformation", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Save.
         /// </summary>
@@ -806,7 +833,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Shared_Save", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Settings.
         /// </summary>
@@ -815,7 +842,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Shared_Settings", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Stats.
         /// </summary>
@@ -824,7 +851,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Shared_Stats", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Status.
         /// </summary>
@@ -833,7 +860,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Shared_Status", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Yes.
         /// </summary>
@@ -842,7 +869,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Shared_Yes", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Billiard.
         /// </summary>
@@ -851,7 +878,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Statistics_Bilard", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Bowling.
         /// </summary>
@@ -860,7 +887,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Statistics_Bowling", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Cards.
         /// </summary>
@@ -869,7 +896,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Statistics_Cards", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Chess.
         /// </summary>
@@ -878,7 +905,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Statistics_Chess", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Draws.
         /// </summary>
@@ -887,7 +914,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Statistics_Draws", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu General statistics.
         /// </summary>
@@ -896,7 +923,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Statistics_GeneralStatistics", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Number of matches.
         /// </summary>
@@ -905,7 +932,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Statistics_NumberOfMatches", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Others.
         /// </summary>
@@ -914,7 +941,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Statistics_Others", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Statistics from the selected sport.
         /// </summary>
@@ -923,7 +950,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Statistics_SportStatistics", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Stats.
         /// </summary>
@@ -932,7 +959,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Statistics_Stats", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Tenis.
         /// </summary>
@@ -941,7 +968,7 @@ namespace Versus.Mobile.Resources.Localization {
                 return ResourceManager.GetString("Statistics_Tenis", resourceCulture);
             }
         }
-
+        
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Wins.
         /// </summary>

@@ -189,6 +189,12 @@
   <data name="Account_Voivodeship" xml:space="preserve">
     <value>Województwo</value>
   </data>
+  <data name="Auth_AgreePart1" xml:space="preserve">
+    <value>Akceptuję </value>
+  </data>
+  <data name="Auth_AgreePart2" xml:space="preserve">
+    <value>regulamin i politykę prywatności</value>
+  </data>
   <data name="Auth_Email" xml:space="preserve">
     <value>E-mail</value>
   </data>
@@ -206,6 +212,9 @@
   </data>
   <data name="Auth_LoginSłownie" xml:space="preserve">
     <value>Login</value>
+  </data>
+  <data name="Auth_LogWithSocial" xml:space="preserve">
+    <value>lub zaloguj się za pomocą</value>
   </data>
   <data name="Auth_Password" xml:space="preserve">
     <value>Hasło</value>

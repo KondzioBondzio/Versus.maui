@@ -1,6 +1,7 @@
 ﻿@using Versus.Core.Services.Session
 @using Versus.Core.Exceptions
 @using Radzen
+@using MudBlazor
 @implements IDisposable
 @inject SessionManager SessionManager
 
@@ -8,17 +9,35 @@
     <div class="section text-center">
         <h4 class="mb-4 pb-3">@Localizer["Auth_LoginPanel"]</h4>
         <EditForm EditContext="_editContext" OnValidSubmit="Submit" FormName="FormRegister">
-            <div class="form-group">
-                <InputText @bind-Value="Model!.Login" class="form-style" placeholder="@Localizer["Auth_Email"]"/>
+            <div class="form-group mt-2">
+                @* <InputText @bind-Value="Model!.Login" class="form-style" placeholder="@Localizer["Auth_Email"]"/> *@
+                <input type="email" class="form-style" placeholder="@Localizer["Auth_Email"] ">
             </div>
             <div class="form-group mt-2">
-                @* <input type="password" class="form-style" placeholder="@Localizer["Auth_Password"] "> *@
+                 <input type="password" class="form-style" placeholder="@Localizer["Auth_Password"] "> 
             </div>
-            <RadzenButton Text="@Localizer["Auth_Login"]" ButtonType="ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" class="btn mt-5"/>
+              <div class="form-group ">
+                <RadzenButton Text="@Localizer["Auth_Login"]" ButtonType="Radzen.ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" class="btn mt-3" Style="width:100%" />
+            </div>
+            <p class="mb-0 mt-4 text-center">
+                <a href="/Matchmaking" class="link">@Localizer["Auth_ForgotPassword"]</a>
+            </p>
+            <h4 class="mt-4" style="font-size:15px">@Localizer["Auth_LogWithSocial"]</h4>
+            <div class="form-group mt-2">
+                <RadzenButton Image="images/radzen-nuget.png" ButtonStyle="ButtonStyle.Light" Style="color: white; background-color: #3b5998;width:100%">
+                    <MudIconButton Icon="@Icons.Custom.Brands.Facebook" Color="Color.Primary" Style="width:20px;height:15px"> </MudIconButton>
+               Facebook
+            </RadzenButton>
+            </div>
+            <div class="form-group mt-2">
+                <RadzenButton Image="images/radzen-nuget.png" ButtonStyle="ButtonStyle.Secondary" Style="color: white; width:100%">
+                    <MudIconButton Icon="@Icons.Custom.Brands.Google" Color="Color.Primary" Style="width:20px;height:15px">
+                    </MudIconButton>
+                    Google
+                </RadzenButton>
+            </div>
         </EditForm>
-        <p class="mb-0 mt-4 text-center">
-            <a href="/Matchmaking" class="link">@Localizer["Auth_ForgotPassword"]</a>
-        </p>
+       
     </div>
 </div>
 
