@@ -68,6 +68,9 @@ a {
     color: #ffffff;
     text-decoration: underline;
 }
+label {
+    font-size: 13px;
+}
 span {
     display: inline-block;
     animation: stretch 2.5s cubic-bezier(0.4, 1.4, 0.75, 0.9) infinite;
