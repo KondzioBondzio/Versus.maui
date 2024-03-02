@@ -1,0 +1,58 @@
+﻿@using Microsoft.Extensions.Logging
+@using Versus.Core.Services.Localization
+@using System.Globalization
+@inherits LayoutComponentBase
+
+<div class="container-fluid px-0 px-md-2">
+    <aside>
+        <div class="versus-navbar p-2">
+            <button type="button" class="btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div>
+                <button type="button" class="btn">
+                    <i class="fa-solid fa-circle-half-stroke"></i>
+                </button>
+                <button type="button" class="btn" @onclick="ChangeLanguage">
+                    <i class="fa-solid fa-language"></i>
+                </button>
+            </div>
+        </div>
+    </aside>
+
+    <main class="container">
+        @Body
+    </main>
+</div>
+
+@code {
+
+    [Inject]
+    private NavigationManager? NavigationManager { get; set; }
+
+    [Inject]
+    private ILogger<MainLayout>? Logger { get; set; }
+
+    private void ChangeLanguage()
+    {
+        var cultures = LanguageManager.GetAvailableCultures().ToList();
+        var currentCulture = CultureInfo.CurrentCulture;
+        Logger?.LogDebug("Cultures: {cultures}", string.Join(",", cultures.Select(x => x.TwoLetterISOLanguageName)));
+        Logger?.LogDebug("Current culture: {culture}", currentCulture.TwoLetterISOLanguageName);
+
+        var index = cultures.FindIndex(x => x.TwoLetterISOLanguageName == currentCulture.TwoLetterISOLanguageName);
+        var nextCulture = cultures.ElementAtOrDefault(index + 1) ?? cultures.FirstOrDefault();
+        if (nextCulture == null)
+        {
+            return;
+        }
+
+        CultureInfo.DefaultThreadCurrentCulture = nextCulture;
+        CultureInfo.DefaultThreadCurrentUICulture = nextCulture;
+        Logger?.LogDebug("New culture: {culture}", nextCulture.TwoLetterISOLanguageName);
+
+        NavigationManager?.NavigateTo(NavigationManager.Uri, true);
+    }
+
+}

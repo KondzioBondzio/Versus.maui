@@ -1,0 +1,53 @@
+﻿@page "/"
+@using Versus.Core.Resources.Localization
+@using Microsoft.Extensions.Localization
+@using Versus.Core.Components.Auth.Components
+@inject IStringLocalizer<AppStrings> Localizer
+
+<div class="row">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-4 mx-auto">
+        <div class="row">
+            <div class="col-6 col-md-8 col-lg-6 col-xl-4 mx-auto">
+                <img src="_content/Versus.Core/images/VersusLogo.png" class="img-fluid" alt="app_logo"/>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="row my-5">
+                <div class="col text-end">
+                    <span>@Localizer["Auth_Login"]</span>
+                </div>
+                <div class="col">
+                    <label class="versus-switch flex-grow-1 d-block mx-auto">
+                        <input type="checkbox" onchange="document.querySelector('.versus-flip-container').classList.toggle('flipped')">
+                        <span class="versus-slider"></span>
+                    </label>
+                </div>
+                <div class="col">
+                    <span>@Localizer["Auth_Registration"]</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="versus-flip-container">
+            <div class="versus-flip-item">
+                <div class="versus-flip-item-front">
+                    <div class="card">
+                        <div class="card-body">
+                            <LoginPanel/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="versus-flip-item">
+                <div class="versus-flip-item-back">
+                    <div class="card">
+                        <div class="card-body">
+                            <RegisterPanel/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

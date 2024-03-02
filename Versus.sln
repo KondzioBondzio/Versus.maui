@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Versus.Shared", "..\Versus.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Versus.ApiClient.Console", "src\Versus.ApiClient.Console\Versus.ApiClient.Console.csproj", "{A33402D9-71BE-4D97-95B0-A30E4DF90BE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Versus.Web", "src\Versus.Web\Versus.Web.csproj", "{C9672D82-D393-4568-9C12-CB93F03B4961}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{A33402D9-71BE-4D97-95B0-A30E4DF90BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A33402D9-71BE-4D97-95B0-A30E4DF90BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A33402D9-71BE-4D97-95B0-A30E4DF90BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9672D82-D393-4568-9C12-CB93F03B4961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9672D82-D393-4568-9C12-CB93F03B4961}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9672D82-D393-4568-9C12-CB93F03B4961}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9672D82-D393-4568-9C12-CB93F03B4961}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{3BEA66BA-6598-4BDB-8315-E1998F6D37DF} = {9FE6D5EA-A464-4BEA-BC59-51F138A746F2}
 		{C5287273-3FC0-43C0-94A2-6768F0730D10} = {9FE6D5EA-A464-4BEA-BC59-51F138A746F2}
 		{A33402D9-71BE-4D97-95B0-A30E4DF90BE1} = {9FE6D5EA-A464-4BEA-BC59-51F138A746F2}
+		{C9672D82-D393-4568-9C12-CB93F03B4961} = {9FE6D5EA-A464-4BEA-BC59-51F138A746F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3A55B57-95C3-4641-B1F4-01998FAFC940}

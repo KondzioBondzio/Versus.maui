@@ -1,0 +1,136 @@
+@import url("bootstrap-overrides.css");
+@import url("mudblazor-overrides.css");
+@import url("radzen-overrides.css");
+
+html, body {
+    font-family: "Roboto", serif;
+    height: 100vh;
+    background: url("../images/Background.jpg") center/cover no-repeat;
+}
+
+.brand-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.brand-google {
+    background: #dd4b39;
+    color: white;
+}
+
+/* versus-flip */
+.versus-flip-container {
+    perspective: 1000px;
+    display: block; /* Make it a block-level element */
+}
+
+.versus-flip-item {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.versus-flip-container.flipped .versus-flip-item {
+    transform: rotateY(180deg);
+}
+
+.versus-flip-item-front, .versus-flip-item-back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.versus-flip-item-front {
+}
+
+.versus-flip-item-back {
+    transform: rotateY(180deg);
+}
+
+/* versus-navbar */
+.versus-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.versus-navbar .btn {
+    width: initial;
+}
+
+/* versus-separator */
+.versus-separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.versus-separator::before,
+.versus-separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid lightgray;
+}
+
+.versus-separator:not(:empty)::before {
+    margin-right: 1em;
+}
+
+.versus-separator:not(:empty)::after {
+    margin-left: 1em;
+}
+
+/* versus-switch */
+.versus-switch {
+    position: relative;
+    display: inline-block;
+    margin: auto 5px;
+    width: 32px;
+    height: 16px;
+}
+
+.versus-switch > input {
+    display: none;
+}
+
+.versus-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px;
+    transition: .4s;
+
+    background: lightgray;
+}
+
+.versus-slider:before {
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: -12px;
+    top: -4px;
+    border-radius: 50%;
+    transition: .4s;
+
+    content: '';
+    background: white;
+    box-shadow: 0 2px 2px lightgray;
+}
+
+.versus-switch > input:checked + .versus-slider {
+    background-color: #007bff;
+}
+
+.versus-switch > input:checked + .versus-slider:before {
+    transform: translateX(32px);
+
+    background: #007bff;
+    box-shadow: 0 2px 2px lightgray;
+}

@@ -1,0 +1,96 @@
+﻿@using Versus.Core.Services.Session
+@using Versus.Core.Resources.Localization
+@using Microsoft.Extensions.Localization
+@using Versus.Core.Exceptions
+@implements IDisposable
+@inject IStringLocalizer<AppStrings> Localizer
+
+<div class="">
+    <div class="text-center mb-5">
+        <h2>
+            <div>
+                <i class="fas fa-user"></i>
+            </div>
+            <span>@Localizer["Auth_Login"]</span>
+        </h2>
+    </div>
+    <EditForm EditContext="_editContext" OnValidSubmit="Submit" FormName="FormLogin">
+        <div class="mb-2">
+            <label class="form-label d-block text-center">@Localizer["Auth_Email"]</label>
+            <InputText @bind-Value="Model!.Login" type="email" class="form-control text-center" placeholder="@Localizer["Auth_Email"]"/>
+        </div>
+
+        <div class="mb-2">
+            <label class="form-label d-block text-center">@Localizer["Auth_Password"]</label>
+            <InputText @bind-Value="Model!.Password" type="password" class="form-control text-center" placeholder="@Localizer["Auth_Password"]"/>
+        </div>
+
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary py-3 w-100 w-md-auto">@Localizer["Auth_SignIn"]</button>
+        </div>
+    </EditForm>
+    <div class="d-flex justify-content-end mt-2">
+        <a href="#" class="text-muted">@Localizer["Auth_ForgotPassword"]</a>
+    </div>
+
+    <div class="versus-separator my-4">or</div>
+    <div class="d-flex flex-column">
+        <button type="button" class="btn btn-secondary my-1 brand-facebook">
+            <div class="d-flex flex-row align-items-center">
+                <i class="fa-brands fa-facebook-f"></i>
+                <span class="flex-grow-1 mx-2">Facebook</span>
+            </div>
+        </button>
+        <button type="button" class="btn btn-secondary my-1 brand-google">
+            <div class="d-flex flex-row align-items-center">
+                <i class="fa-brands fa-google"></i>
+                <span class="flex-grow-1 mx-2">Google</span>
+            </div>
+        </button>
+    </div>
+</div>
+
+@code {
+
+    private EditContext? _editContext;
+
+    [SupplyParameterFromForm]
+    public LoginViewModel? Model { get; set; }
+
+    private ValidationMessageStore? _validationStore;
+
+    protected override void OnInitialized()
+    {
+        Model ??= new LoginViewModel();
+        _editContext = new EditContext(Model);
+        _editContext.OnValidationRequested += HandleValidationRequested;
+    }
+
+    private void HandleValidationRequested(object? sender, ValidationRequestedEventArgs e)
+    {
+        _validationStore?.Clear();
+
+        // handle validation
+    }
+
+    private void Submit()
+    {
+        try
+        {
+            // ...
+        }
+        catch (ApiException)
+        {
+            // handle error codes
+        }
+    }
+
+    public void Dispose()
+    {
+        if (_editContext is not null)
+        {
+            _editContext.OnValidationRequested -= HandleValidationRequested;
+        }
+    }
+
+}

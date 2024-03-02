@@ -13,12 +13,46 @@
 
     <ItemGroup>
         <PackageReference Include="CommunityToolkit.Diagnostics" Version="8.2.2" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.0" />
-        <PackageReference Include="Radzen.Blazor" Version="4.24.7" />
+      <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.2"/>
+      <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="8.0.2"/>
+      <PackageReference Include="MudBlazor" Version="6.16.0"/>
+      <PackageReference Include="Radzen.Blazor" Version="4.25.9"/>
     </ItemGroup>
 
     <ItemGroup>
       <ProjectReference Include="..\..\..\Versus.api\src\Versus.Shared\Versus.Shared.csproj" />
     </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="Components\Auth\Components\LoginPanel.razor"/>
+    <AdditionalFiles Include="Components\Auth\Components\RegisterPanel.razor"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Localization\AppStrings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppStrings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Localization\AppStrings.pl.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppStrings.pl.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Localization\AppStrings.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppStrings.pl.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\Localization\AppStrings.de.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppStrings.pl.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\Localization\AppStrings.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AppStrings.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
 
 </Project>

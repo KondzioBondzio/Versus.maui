@@ -1,11 +1,11 @@
 ﻿namespace Versus.Mobile;
 
-public partial class App : Application
+public partial class App
 {
-	public App()
-	{
-		InitializeComponent();
+    public App()
+    {
+        InitializeComponent();
 
-		MainPage = new MainPage();
-	}
+        MainPage = new MainPage();
+    }
 }
