@@ -1,0 +1,18 @@
+﻿:root {
+    --vs-primary: #2b2e38;
+    --vs-secondary: #040404;
+}
+.vs-bg-primary {
+    background-color: var(--vs-primary);
+}
+.vs-bg-secondary {
+    background-color: var(--vs-secondary);
+}
+.vs-link {
+    text-decoration:underline;
+    color:white;
+}
+.vs-text-shadow {
+    text-shadow: 1px 1px 1px red, 2px 2px 1px #ff0000e6;
+    color:white;
+}

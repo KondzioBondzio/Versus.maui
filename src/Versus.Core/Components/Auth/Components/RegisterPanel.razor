@@ -7,34 +7,35 @@
 
 <div class="">
     <div class="text-center mb-5">
-        <h2>
+        <h3>           
             <div>
-                <i class="fas fa-user"></i>
+                <i class="fas fa-user" style="color:white"></i>
             </div>
-            <span>@Localizer["Auth_Registration"]</span>
-        </h2>
+            <span class="vs-text-shadow">@Localizer["Auth_Registration"]</span>
+        </h3>
     </div>
     <EditForm EditContext="_editContext" OnValidSubmit="Submit" FormName="FormRegister">
         <div class="mb-2">
-            <label class="form-label d-block text-center">@Localizer["Auth_Email"]</label>
-            <InputText @bind-Value="Model!.Login" type="email" class="form-control text-center" placeholder="@Localizer["Auth_Email"]"/>
+            <InputText @bind-Value="Model!.Login" type="email" class="vs-form-style" placeholder="@Localizer["Auth_Email"]" />
         </div>
 
+        <div class="mb-2">    
+            <InputText @bind-Value="Model!.Password" type="password" class="vs-form-style" placeholder="@Localizer["Auth_Password"]" />
+        </div>
         <div class="mb-2">
-            <label class="form-label d-block text-center">@Localizer["Auth_Password"]</label>
-            <InputText @bind-Value="Model!.Password" type="password" class="form-control text-center" placeholder="@Localizer["Auth_Password"]"/>
+            <InputText @bind-Value="Model!.RepeatPassword" type="password" class="vs-form-style" placeholder="@Localizer["Auth_RepeatPassword"]" />
         </div>
 
-        <div class="mb-3 form-check">
+        <div class="mb-3 mt-3 form-check">
             <InputCheckbox @bind-Value="Model!.AcceptedTos" class="form-check-input"/>
             <label class="form-check-label">
-                <span>@Localizer["Auth_AcceptToS"]</span>
-                <a href="#" class="text-primary">@Localizer["Auth_ToS"]</a>
+                <span style="color:white;font-size:small">@Localizer["Auth_AcceptToS"]</span>
+                <a href="#" class="vs-link">@Localizer["Auth_ToS"]</a>
             </label>
         </div>
 
         <div class="text-center mt-3">
-            <button type="submit" class="btn btn-primary py-3 w-100 w-md-auto">@Localizer["Auth_Register"]</button>
+            <RadzenButton Text="@Localizer["Auth_Register"]" class="btn py-3 w-100 w-md-auto" ButtonType="Radzen.ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" />
         </div>
     </EditForm>
 </div>

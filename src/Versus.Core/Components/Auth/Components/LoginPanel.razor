@@ -7,33 +7,31 @@
 
 <div class="">
     <div class="text-center mb-5">
-        <h2>
+        <h3>
             <div>
-                <i class="fas fa-user"></i>
+                <i class="fas fa-user" style="color:white"></i>
             </div>
-            <span>@Localizer["Auth_Login"]</span>
-        </h2>
+            <span class="vs-text-shadow">@Localizer["Auth_Login"]</span>
+        </h3>
     </div>
     <EditForm EditContext="_editContext" OnValidSubmit="Submit" FormName="FormLogin">
         <div class="mb-2">
-            <label class="form-label d-block text-center">@Localizer["Auth_Email"]</label>
-            <InputText @bind-Value="Model!.Login" type="email" class="form-control text-center" placeholder="@Localizer["Auth_Email"]"/>
+            <InputText @bind-Value="Model!.Login" type="email" class="vs-form-style" placeholder="@Localizer["Auth_Email"]" />
         </div>
 
-        <div class="mb-2">
-            <label class="form-label d-block text-center">@Localizer["Auth_Password"]</label>
-            <InputText @bind-Value="Model!.Password" type="password" class="form-control text-center" placeholder="@Localizer["Auth_Password"]"/>
+        <div class="mb-2">        
+            <InputText @bind-Value="Model!.Password" type="password" class="vs-form-style" placeholder="@Localizer["Auth_Password"]" />
         </div>
 
         <div class="text-center mt-3">
-            <button type="submit" class="btn btn-primary py-3 w-100 w-md-auto">@Localizer["Auth_SignIn"]</button>
+            <RadzenButton Text="@Localizer["Auth_SignIn"]" class="btn py-3 w-100 w-md-auto" ButtonType="Radzen.ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" />
         </div>
     </EditForm>
     <div class="d-flex justify-content-end mt-2">
-        <a href="#" class="text-muted">@Localizer["Auth_ForgotPassword"]</a>
+        <a href="#" class="vs-link ">@Localizer["Auth_ForgotPassword"]</a>
     </div>
 
-    <div class="versus-separator my-4">or</div>
+    <div class="vs-separator vs-text-shadow my-4">or</div>
     <div class="d-flex flex-column">
         <button type="button" class="btn btn-secondary my-1 brand-facebook">
             <div class="d-flex flex-row align-items-center">

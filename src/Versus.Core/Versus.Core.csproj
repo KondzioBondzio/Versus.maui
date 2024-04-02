@@ -13,10 +13,10 @@
 
     <ItemGroup>
         <PackageReference Include="CommunityToolkit.Diagnostics" Version="8.2.2" />
-      <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.2"/>
-      <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="8.0.2"/>
-      <PackageReference Include="MudBlazor" Version="6.16.0"/>
-      <PackageReference Include="Radzen.Blazor" Version="4.25.9"/>
+      <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.2" />
+      <PackageReference Include="Microsoft.Extensions.Localization.Abstractions" Version="8.0.2" />
+      <PackageReference Include="MudBlazor" Version="6.16.0" />
+      <PackageReference Include="Radzen.Blazor" Version="4.29.1" />
     </ItemGroup>
 
     <ItemGroup>
@@ -24,8 +24,8 @@
     </ItemGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="Components\Auth\Components\LoginPanel.razor"/>
-    <AdditionalFiles Include="Components\Auth\Components\RegisterPanel.razor"/>
+    <AdditionalFiles Include="Components\Auth\Components\LoginPanel.razor" />
+    <AdditionalFiles Include="Components\Auth\Components\RegisterPanel.razor" />
   </ItemGroup>
 
   <ItemGroup>

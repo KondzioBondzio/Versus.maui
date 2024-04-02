@@ -15,33 +15,33 @@
         <div class="">
             <div class="row my-5">
                 <div class="col text-end">
-                    <span>@Localizer["Auth_Login"]</span>
+                    <span class="vs-text-shadow">@Localizer["Auth_Login"]</span>
                 </div>
                 <div class="col">
-                    <label class="versus-switch flex-grow-1 d-block mx-auto">
-                        <input type="checkbox" onchange="document.querySelector('.versus-flip-container').classList.toggle('flipped')">
-                        <span class="versus-slider"></span>
+                    <label class="vs-switch flex-grow-1 d-block mx-auto">
+                        <input type="checkbox" onchange="document.querySelector('.vs-flip-container').classList.toggle('flipped')">
+                        <span class="vs-slider"></span>
                     </label>
                 </div>
                 <div class="col">
-                    <span>@Localizer["Auth_Registration"]</span>
+                    <span class="vs-text-shadow">@Localizer["Auth_Registration"]</span>
                 </div>
             </div>
         </div>
 
-        <div class="versus-flip-container">
-            <div class="versus-flip-item">
-                <div class="versus-flip-item-front">
-                    <div class="card">
+        <div class="vs-flip-container">
+            <div class="vs-flip-item">
+                <div class="vs-flip-item-front">
+                    <div class="card vs-bg-primary">
                         <div class="card-body">
                             <LoginPanel/>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="versus-flip-item">
-                <div class="versus-flip-item-back">
-                    <div class="card">
+            <div class="vs-flip-item">
+                <div class="vs-flip-item-back">
+                    <div class="card vs-bg-primary">
                         <div class="card-body">
                             <RegisterPanel/>
                         </div>
