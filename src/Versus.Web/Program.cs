@@ -1,5 +1,6 @@
 using MudBlazor.Services;
 using Serilog;
+using Versus.Core.Services.Countries;
 using Versus.Web.Components;
 using _Imports = Versus.Core.Components._Imports;
 
@@ -14,7 +15,7 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 builder.Services.AddMudServices();
-
+builder.Services.AddSingleton<CountryService>();
 builder.Services.AddLocalization();
 builder.Services.AddLogging(options =>
 {

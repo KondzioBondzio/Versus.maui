@@ -4,6 +4,7 @@
 @using Versus.Core.Exceptions
 @implements IDisposable
 @inject IStringLocalizer<AppStrings> Localizer
+@inject NavigationManager NavManager
 
 <div class="">
     <div class="text-center mb-5">
@@ -75,7 +76,8 @@
     {
         try
         {
-            // ...
+            // ...  // Przeładuj stronę, aby zastosować zmiany
+            NavManager.NavigateTo("/Matchmaking");
         }
         catch (ApiException)
         {
