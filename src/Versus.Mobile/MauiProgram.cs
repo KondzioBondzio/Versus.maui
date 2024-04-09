@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Maui;
 using Microsoft.Extensions.Configuration;
 using MudBlazor.Services;
+using Versus.Core.Services.Countries;
 
 namespace Versus.Mobile;
 
@@ -19,6 +20,7 @@ public static class MauiProgram
 
         builder.Services.AddMauiBlazorWebView();
         builder.Services.AddMudServices();
+        builder.Services.AddSingleton<CountryService>();
 
 #if DEBUG
         builder.Services.AddBlazorWebViewDeveloperTools();

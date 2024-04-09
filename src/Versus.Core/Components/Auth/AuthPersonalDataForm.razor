@@ -23,101 +23,76 @@
                         <div>
                             <i class="fas fa-user" style="color:white"></i>
                         </div>
-                        <span class="vs-text-shadow">@Localizer["Auth_Login"]</span>
+                        <span class="vs-text-shadow">Uzupełnij dane</span>
                     </h3>
-                </div>      <MudGrid>
-
-                    <MudItem xs="12" sm="6" md="4">
-                        <MudAutocomplete T="string" Label="US States" @bind-Value="value1" SearchFunc="@Search1" Variant="MudBlazor.Variant.Outlined" ShowProgressIndicator="true" />
-                    </MudItem>
-                </MudGrid>
+                </div>     
                 <EditForm EditContext="_editContext" OnValidSubmit="Submit" FormName="FormLogin">
                     <div class="mb-2">
-                        <InputText @bind-Value="Model!.Nickname" type="email" class="vs-form-style" placeholder="@Localizer["Auth_Email"]" />
+                        <RadzenDropDown Placeholder="Wybierz narodowość" @ref=@radzenDropDown @bind-SearchText=SearchText FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" FilterOperator="StringFilterOperator.StartsWith" AllowFiltering="true"
+                                        Data=@countries TextProperty="Name" ValueProperty="Code" AllowClear="true" @bind-Value=value class="vs-form-style" Name="DropDownFiltering" />
                     </div>
-                    <MudGrid>
-
-                        <MudItem xs="12" sm="6" md="4">
-                            <MudAutocomplete T="string" Label="US States" @bind-Value="value1" SearchFunc="@Search1" Variant="MudBlazor.Variant.Outlined" ShowProgressIndicator="true" />
-                        </MudItem>
-                    </MudGrid>
                     <div class="mb-2">
-                        <InputText @bind-Value="Model!.Name" type="password" class="vs-form-style" placeholder="@Localizer["Auth_Password"]" />
+                        <InputText @bind-Value="Model!.Nickname" class="vs-form-style" placeholder="Nickname" />
                     </div>
-
-                    <MudSelect  T="string" Label="Wybierz kraj" Placeholder="Wyszukaj kraj..." @bind-Value="selectedCountry" SearchFunc="@SearchCountries">
-                        @foreach (var country in countries)
-                        {
-                            <MudSelectItem Value="@country.Code">@country.Name</MudSelectItem>
-                        }
-                    </MudSelect>
-
+              
+                    <div class="mb-2">
+                        <InputText @bind-Value="Model!.Name" class="vs-form-style" placeholder="Imię" />
+                    </div>
+                    <div class="mb-2">
+                        <InputNumber @bind-Value="Model!.Age" class="vs-form-style" placeholder="Wiek" />
+                    </div>
+                    <div class="mb-2">
+                        <InputText @bind-Value="Model!.Gender"  class="vs-form-style" placeholder="Płeć" />
+                    </div>
+                    <div class="mb-2">
+                        <InputText @bind-Value="Model!.Language"  class="vs-form-style" placeholder="Język" />
+                    </div>
+                    <div class="mb-2">
+                        <InputFile OnChange="HandleFileSelected" @bind-Value="Model!.Photo" class="vs-form-style" placeholder="Zdjęcie" />
+                    </div>
                     <div class="text-center mt-3">
-                        <RadzenButton Text="@Localizer["Auth_SignIn"]" ButtonType="Radzen.ButtonType.Submit" class="btn py-3 w-100 w-md-auto" ButtonStyle="ButtonStyle.Secondary" />
+                        <RadzenButton Text="Zatwierdź" ButtonType="Radzen.ButtonType.Submit" class="btn py-3 w-100 w-md-auto" ButtonStyle="ButtonStyle.Secondary" />
                     </div>
                 </EditForm>
-                <MudGrid>
 
-                <MudItem xs="12" sm="6" md="4">
-                    <MudAutocomplete T="string" Label="US States" @bind-Value="value1" SearchFunc="@Search1" Variant="MudBlazor.Variant.Outlined" ShowProgressIndicator="true" />
-                </MudItem>
-           </MudGrid>
 
             </div>
         </div>
     </div>
 </div>
 @code {
+        private string selectedCountry;
+        private EditContext? _editContext;
+        RadzenDropDown<string> radzenDropDown;
+        IEnumerable<Country> countries;
+        string value;
 
+        protected override async Task OnInitializedAsync()
+        {
+            await base.OnInitializedAsync();
 
-    private string value1;
-    private string[] states =
-    {
-        "Alabama", "Alaska", "American Samoa", "Arizona",
-        "Arkansas", "California", "Colorado", "Connecticut",
-        "Delaware", "District of Columbia", "Federated States of Micronesia",
-        "Florida", "Georgia", "Guam", "Hawaii", "Idaho",
-        "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky",
-        "Louisiana", "Maine", "Marshall Islands", "Maryland",
-        "Massachusetts", "Michigan", "Minnesota", "Mississippi",
-        "Missouri", "Montana", "Nebraska", "Nevada",
-        "New Hampshire", "New Jersey", "New Mexico", "New York",
-        "North Carolina", "North Dakota", "Northern Mariana Islands", "Ohio",
-        "Oklahoma", "Oregon", "Palau", "Pennsylvania", "Puerto Rico",
-        "Rhode Island", "South Carolina", "South Dakota", "Tennessee",
-        "Texas", "Utah", "Vermont", "Virgin Island", "Virginia",
-        "Washington", "West Virginia", "Wisconsin", "Wyoming",
-    };
+            countries = await CountryService.GetCountriesAsync();
 
-    private async Task<IEnumerable<string>> Search1(string value)
-    {
-        // In real life use an asynchronous function for fetching data from an api.
-        await Task.Delay(3);
+        }
 
-        // if text is null or empty, show complete list
-        if (string.IsNullOrEmpty(value))
-            return states;
-        return states.Where(x => x.Contains(value, StringComparison.InvariantCultureIgnoreCase));
-    }
+        string searchText = "";
 
+        public string SearchText
+        {
+            get
+            {
+                return searchText;
+            }
+            set
+            {
+                if (searchText != value)
+                {
+                    searchText = value;
+                   
+                }
+            }
+        }
 
-
-
-    private string selectedCountry;
-    private IEnumerable<Country> countries;// Załaduj swoje kraje tutaj
-
-    private EditContext? _editContext;
-
-    protected override async Task OnInitializedAsync()
-    {
-        countries = await CountryService.GetCountriesAsync();
-    }
-
-    private Func<string, Task<IEnumerable<string>>> SearchCountries => async (searchText) =>
-    {
-    return await Task.FromResult(countries.Where(c => c.Name.Contains(searchText, StringComparison.InvariantCultureIgnoreCase))
-                                           .Select(c => c.Code));
-    };
     [SupplyParameterFromForm]
     public AuthPersonalDataViewModel? Model { get; set; }
 
@@ -157,6 +132,20 @@
             _editContext.OnValidationRequested -= HandleValidationRequested;
         }
     }
+    private async Task HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        if (file != null)
+        {
+            // Przykładowo odczytujemy plik jako strumień danych
+            using var stream = file.OpenReadStream();
 
+            // Tutaj można by przesłać strumień do serwera lub zapisać w pamięci
+            // ...
+
+            // Ustawienie właściwości Photo, jeśli chcesz przechowywać tylko informację o pliku
+            Model.Photo = file;
+        }
+    }
 
 }

@@ -39,7 +39,7 @@
             <RadzenButton Text="@Localizer["Auth_Register"]" class="btn py-3 w-100 w-md-auto" ButtonType="Radzen.ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" />
         </div>
     </EditForm>
-    <RadzenButton Text="@Localizer["Auth_Register"]" class="btn py-3 w-100 w-md-auto" Click="changePage" ButtonStyle="ButtonStyle.Secondary" />
+
 </div>
 
 @code {
@@ -76,13 +76,8 @@
             // handle error codes
         }
     }
-    private void changePage()
-    {
-       
-            NavManager.NavigateTo("/AuthPersonalDataForm");
-   
-       
-    }
+
+
     public void Dispose()
     {
         if (_editContext is not null)
