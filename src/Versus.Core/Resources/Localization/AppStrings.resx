@@ -150,4 +150,28 @@
   <data name="Auth_RepeatPassword" xml:space="preserve">
     <value />
   </data>
+  <data name="Auth_Age" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Auth_CompleteData" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Auth_Confirm" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Auth_Gender" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Auth_Lang" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Auth_Name" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Auth_Nationality" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Auth_Photo" xml:space="preserve">
+    <value />
+  </data>
 </root>

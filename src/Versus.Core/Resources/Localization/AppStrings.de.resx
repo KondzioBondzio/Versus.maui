@@ -120,8 +120,17 @@
   <data name="Auth_AcceptToS" xml:space="preserve">
     <value>Ich stimme dem zu</value>
   </data>
+  <data name="Auth_Age" xml:space="preserve">
+    <value>Alter</value>
+  </data>
   <data name="Auth_AlternativeLogin" xml:space="preserve">
     <value>oder</value>
+  </data>
+  <data name="Auth_CompleteData" xml:space="preserve">
+    <value>Vervollständigen Sie die Daten</value>
+  </data>
+  <data name="Auth_Confirm" xml:space="preserve">
+    <value>Bestätigen</value>
   </data>
   <data name="Auth_Email" xml:space="preserve">
     <value>E-mail adresse</value>
@@ -129,11 +138,26 @@
   <data name="Auth_ForgotPassword" xml:space="preserve">
     <value>Passwort vergessen?</value>
   </data>
+  <data name="Auth_Gender" xml:space="preserve">
+    <value>Geschlecht</value>
+  </data>
+  <data name="Auth_Lang" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
   <data name="Auth_Login" xml:space="preserve">
     <value>Anmeldung</value>
   </data>
+  <data name="Auth_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Auth_Nationality" xml:space="preserve">
+    <value>Wählen Sie Ihre Nationalität aus</value>
+  </data>
   <data name="Auth_Password" xml:space="preserve">
     <value>Passwort</value>
+  </data>
+  <data name="Auth_Photo" xml:space="preserve">
+    <value>Foto</value>
   </data>
   <data name="Auth_Register" xml:space="preserve">
     <value>Registrieren</value>

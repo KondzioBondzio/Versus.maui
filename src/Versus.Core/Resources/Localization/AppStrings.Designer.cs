@@ -72,9 +72,36 @@ namespace Versus.Core.Resources.Localization {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
         /// </summary>
+        internal static string Auth_Age {
+            get {
+                return ResourceManager.GetString("Auth_Age", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
         internal static string Auth_AlternativeLogin {
             get {
                 return ResourceManager.GetString("Auth_AlternativeLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Auth_CompleteData {
+            get {
+                return ResourceManager.GetString("Auth_CompleteData", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Auth_Confirm {
+            get {
+                return ResourceManager.GetString("Auth_Confirm", resourceCulture);
             }
         }
         
@@ -99,6 +126,24 @@ namespace Versus.Core.Resources.Localization {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
         /// </summary>
+        internal static string Auth_Gender {
+            get {
+                return ResourceManager.GetString("Auth_Gender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Auth_Lang {
+            get {
+                return ResourceManager.GetString("Auth_Lang", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
         internal static string Auth_Login {
             get {
                 return ResourceManager.GetString("Auth_Login", resourceCulture);
@@ -108,9 +153,36 @@ namespace Versus.Core.Resources.Localization {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
         /// </summary>
+        internal static string Auth_Name {
+            get {
+                return ResourceManager.GetString("Auth_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Auth_Nationality {
+            get {
+                return ResourceManager.GetString("Auth_Nationality", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
         internal static string Auth_Password {
             get {
                 return ResourceManager.GetString("Auth_Password", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Auth_Photo {
+            get {
+                return ResourceManager.GetString("Auth_Photo", resourceCulture);
             }
         }
         

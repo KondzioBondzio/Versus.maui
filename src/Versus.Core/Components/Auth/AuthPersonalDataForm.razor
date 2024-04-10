@@ -23,12 +23,12 @@
                         <div>
                             <i class="fas fa-user" style="color:white"></i>
                         </div>
-                        <span class="vs-text-shadow">Uzupełnij dane</span>
+                        <span class="vs-text-shadow">@Localizer["Auth_CompleteData"]</span>
                     </h3>
                 </div>     
                 <EditForm EditContext="_editContext" OnValidSubmit="Submit" FormName="FormLogin">
                     <div class="mb-2">
-                        <RadzenDropDown Placeholder="Wybierz narodowość" @ref=@radzenDropDown @bind-SearchText=SearchText FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" FilterOperator="StringFilterOperator.StartsWith" AllowFiltering="true"
+                        <RadzenDropDown Placeholder="@Localizer["Auth_Nationality"]" @ref=@radzenDropDown @bind-SearchText=SearchText FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" FilterOperator="StringFilterOperator.StartsWith" AllowFiltering="true"
                                         Data=@countries TextProperty="Name" ValueProperty="Code" AllowClear="true" @bind-Value=value class="vs-form-style" Name="DropDownFiltering" />
                     </div>
                     <div class="mb-2">
@@ -36,22 +36,22 @@
                     </div>
               
                     <div class="mb-2">
-                        <InputText @bind-Value="Model!.Name" class="vs-form-style" placeholder="Imię" />
+                        <InputText @bind-Value="Model!.Name" class="vs-form-style" placeholder="@Localizer["Auth_Name"]" />
                     </div>
                     <div class="mb-2">
-                        <InputNumber @bind-Value="Model!.Age" class="vs-form-style" placeholder="Wiek" />
+                        <InputNumber @bind-Value="Model!.Age" class="vs-form-style" placeholder="@Localizer["Auth_Age"]" />
                     </div>
                     <div class="mb-2">
-                        <InputText @bind-Value="Model!.Gender"  class="vs-form-style" placeholder="Płeć" />
+                        <InputText @bind-Value="Model!.Gender" class="vs-form-style" placeholder="@Localizer["Auth_Gender"]" />
                     </div>
                     <div class="mb-2">
-                        <InputText @bind-Value="Model!.Language"  class="vs-form-style" placeholder="Język" />
+                        <InputText @bind-Value="Model!.Language" class="vs-form-style" placeholder="@Localizer["Auth_Lang"]" />
                     </div>
                     <div class="mb-2">
-                        <InputFile OnChange="HandleFileSelected" @bind-Value="Model!.Photo" class="vs-form-style" placeholder="Zdjęcie" />
+                        <InputFile OnChange="HandleFileSelected" @bind-Value="Model!.Photo" class="vs-form-style" />
                     </div>
                     <div class="text-center mt-3">
-                        <RadzenButton Text="Zatwierdź" ButtonType="Radzen.ButtonType.Submit" class="btn py-3 w-100 w-md-auto" ButtonStyle="ButtonStyle.Secondary" />
+                        <RadzenButton Text="@Localizer["Auth_Confirm"]" ButtonType="Radzen.ButtonType.Submit" class="btn py-3 w-100 w-md-auto" ButtonStyle="ButtonStyle.Secondary" />
                     </div>
                 </EditForm>
 
@@ -116,7 +116,7 @@
     {
         try
         {
-         
+            NavManager.NavigateTo("/Matchmaking");
            
         }
         catch (ApiException)
