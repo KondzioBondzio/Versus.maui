@@ -1,7 +1,7 @@
 ﻿
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class=" d-flex justify-content-end" >
-        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <button class="btn" type="button" style="width: 40px;margin-right: 5px;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
             <i class="fas fa-bars"></i>
         </button>
     </div>
@@ -17,13 +17,14 @@
         </div>
      </div>
     <div class="row m-auto d-flex justify-content-center mt-2">
-        <div class="col-4 text-center d-block mb-0 font-weight-light"><h2 style="font-family: serif;">124</h2><span>Games</span></div>
-        <div class="col-4 text-center d-block mb-0 font-weight-light"><h2 style="font-family: serif;">84</h2><span>Wins</span></div>
-        <div class="col-4 text-center d-block mb-0 font-weight-light"><h2 style="font-family: serif;">40</h2><span>Loses</span></div>
+        <div style="min-width:60px" class="col-4  text-center d-block mb-0 font-weight-light"><h3 style="font-family: serif;">124</h3><span><MudIcon  Icon="@Icons.Material.Outlined.VideogameAsset" Title="Reddit" /></span></div>
+        <div style="min-width:60px" class="col-4 text-center d-block mb-0 font-weight-light"><h3 style="font-family: serif;">84</h3><span><i class="fa fa-trophy" aria-hidden="true"></i></span></div>
+        <div style="min-width:60px" class="col-4 text-center d-block mb-0 font-weight-light"><h3 style="font-family: serif;">40</h3><span><i class="fa fa-times" aria-hidden="true"></i></span></div>
      </div>
-    <div class="offcanvas-body mt-5">
-        
-        <MudPaper Width="250px" Elevation="0">
+    
+    <div class="offcanvas-body mt-3">
+        <div class="row m-auto"> <MudDivider DividerType="DividerType.FullWidth" /></div>
+        <MudPaper  Elevation="0">
             <MudNavMenu Rounded="true" Margin="Margin.Dense" Color="Color.Primary" Class="pa-2">
                 <MudNavLink Href="/HomePage" Icon="@Icons.Material.Filled.Dashboard">Home</MudNavLink>
                 <MudNavLink Href="/MatchmakingPage" Icon="@Icons.Material.Filled.Handshake">Matchmaking</MudNavLink>
@@ -34,7 +35,7 @@
                 <MudNavLink Href="/SettingsPage" Icon="@Icons.Material.Filled.Settings">Settings</MudNavLink>
             </MudNavMenu>
         </MudPaper>
-  
+
         <RadzenButton Text="Log Out" class="btn py-3 w-100 w-md-auto mt-5" ButtonType="Radzen.ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" />
     </div>
 </div>
