@@ -9,11 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versus.Mobile", "src\Versus
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versus.Core", "src\Versus.Core\Versus.Core.csproj", "{3BEA66BA-6598-4BDB-8315-E1998F6D37DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Versus.Shared", "..\Versus.api\src\Versus.Shared\Versus.Shared.csproj", "{C5287273-3FC0-43C0-94A2-6768F0730D10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versus.Shared", "..\Versus.api\src\Versus.Shared\Versus.Shared.csproj", "{C5287273-3FC0-43C0-94A2-6768F0730D10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Versus.ApiClient.Console", "src\Versus.ApiClient.Console\Versus.ApiClient.Console.csproj", "{A33402D9-71BE-4D97-95B0-A30E4DF90BE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versus.ApiClient.Console", "src\Versus.ApiClient.Console\Versus.ApiClient.Console.csproj", "{A33402D9-71BE-4D97-95B0-A30E4DF90BE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Versus.Web", "src\Versus.Web\Versus.Web.csproj", "{C9672D82-D393-4568-9C12-CB93F03B4961}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versus.Web", "src\Versus.Web\Versus.Web.csproj", "{C9672D82-D393-4568-9C12-CB93F03B4961}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

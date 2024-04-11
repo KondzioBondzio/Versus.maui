@@ -69,15 +69,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="CommunityToolkit.Maui" Version="7.0.1" />
+    <PackageReference Include="CommunityToolkit.Maui" Version="8.0.1" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="8.0.2"/>
-    <PackageReference Include="Microsoft.Extensions.Localization" Version="8.0.2" />
-    <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.7"/>
-    <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.7"/>
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.7"/>
+    <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="8.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="8.0.3" />
+    <PackageReference Include="Microsoft.Maui.Controls" Version="8.0.14" />
+    <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="8.0.14" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Maui" Version="8.0.14" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Maui.Essentials" Version="8.0.7"/>
+    <PackageReference Include="Microsoft.Maui.Essentials" Version="8.0.14" />
     <PackageReference Include="Serilog.Extensions.Logging" Version="8.0.0" />
     <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.0" />
     <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
@@ -132,7 +132,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\Localization\"/>
+    <Folder Include="Resources\Localization\" />
   </ItemGroup>
 
 </Project>

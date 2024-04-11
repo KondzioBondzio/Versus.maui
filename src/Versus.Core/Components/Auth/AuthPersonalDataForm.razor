@@ -1,0 +1,146 @@
+﻿@using Versus.Core.Exceptions
+@using Versus.Core.Services.Countries
+@using Versus.Core.Resources.Localization
+@using Microsoft.Extensions.Localization
+@using Versus.Core.Services.Session
+@using MudBlazor
+@inject IStringLocalizer<AppStrings> Localizer
+@inject CountryService CountryService
+@inject NavigationManager NavManager
+@page "/AuthPersonalDataForm"
+
+<div class="row">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-4 mx-auto">
+        <div class="card vs-bg-primary">
+            <div class="card-body">
+                <div class="text-center mb-5">
+                    <h3>
+                        <div>
+                            <i class="fas fa-user" style="color:white"></i>
+                        </div>
+                        <span class="vs-text-shadow">@Localizer["Auth_CompleteData"]</span>
+                    </h3>
+                </div>     
+                <EditForm EditContext="_editContext" OnValidSubmit="Submit" FormName="FormLogin">
+                    <div class="mb-2">
+                        <RadzenDropDown Placeholder="@Localizer["Auth_Nationality"]" @ref=@radzenDropDown @bind-SearchText=SearchText FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" FilterOperator="StringFilterOperator.StartsWith" AllowFiltering="true"
+                                        Data=@countries TextProperty="Name" ValueProperty="Code" AllowClear="true" @bind-Value=value class="vs-form-style" Name="DropDownFiltering" />
+                    </div>
+                    <div class="mb-2">
+                        <InputText @bind-Value="Model!.Nickname" class="vs-form-style" placeholder="Nickname" />
+                    </div>
+              
+                    <div class="mb-2">
+                        <InputText @bind-Value="Model!.Name" class="vs-form-style" placeholder="@Localizer["Auth_Name"]" />
+                    </div>
+                    <div class="mb-2">
+                        <InputNumber @bind-Value="Model!.Age" class="vs-form-style" placeholder="@Localizer["Auth_Age"]" />
+                    </div>
+                    <div class="mb-2">
+                        <InputText @bind-Value="Model!.Gender" class="vs-form-style" placeholder="@Localizer["Auth_Gender"]" />
+                    </div>
+                    <div class="mb-2">
+                        <InputText @bind-Value="Model!.Language" class="vs-form-style" placeholder="@Localizer["Auth_Lang"]" />
+                    </div>
+                    <div class="mb-2">
+                        <InputFile OnChange="HandleFileSelected" @bind-Value="Model!.Photo" class="vs-form-style" />
+                    </div>
+                    <div class="text-center mt-3">
+                        <RadzenButton Text="@Localizer["Auth_Confirm"]" ButtonType="Radzen.ButtonType.Submit" class="btn py-3 w-100 w-md-auto" ButtonStyle="ButtonStyle.Secondary" />
+                    </div>
+                </EditForm>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+@code {
+        private string selectedCountry;
+        private EditContext? _editContext;
+        RadzenDropDown<string> radzenDropDown;
+        IEnumerable<Country> countries;
+        string value;
+
+        protected override async Task OnInitializedAsync()
+        {
+            await base.OnInitializedAsync();
+
+            countries = await CountryService.GetCountriesAsync();
+
+        }
+
+        string searchText = "";
+
+        public string SearchText
+        {
+            get
+            {
+                return searchText;
+            }
+            set
+            {
+                if (searchText != value)
+                {
+                    searchText = value;
+                   
+                }
+            }
+        }
+
+    [SupplyParameterFromForm]
+    public AuthPersonalDataViewModel? Model { get; set; }
+
+    private ValidationMessageStore? _validationStore;
+
+    protected override void OnInitialized()
+    {
+        Model ??= new AuthPersonalDataViewModel();
+        _editContext = new EditContext(Model);
+        _editContext.OnValidationRequested += HandleValidationRequested;
+    }
+
+    private void HandleValidationRequested(object? sender, ValidationRequestedEventArgs e)
+    {
+        _validationStore?.Clear();
+
+        // handle validation
+    }
+
+    private void Submit()
+    {
+        try
+        {
+            NavManager.NavigateTo("/HomePage");
+           
+        }
+        catch (ApiException)
+        {
+            // handle error codes
+        }
+    }
+
+    public void Dispose()
+    {
+        if (_editContext is not null)
+        {
+            _editContext.OnValidationRequested -= HandleValidationRequested;
+        }
+    }
+    private async Task HandleFileSelected(InputFileChangeEventArgs e)
+    {
+        var file = e.File;
+        if (file != null)
+        {
+            // Przykładowo odczytujemy plik jako strumień danych
+            using var stream = file.OpenReadStream();
+
+            // Tutaj można by przesłać strumień do serwera lub zapisać w pamięci
+            // ...
+
+            // Ustawienie właściwości Photo, jeśli chcesz przechowywać tylko informację o pliku
+            Model.Photo = file;
+        }
+    }
+
+}

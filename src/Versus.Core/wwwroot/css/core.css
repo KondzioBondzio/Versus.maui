@@ -155,6 +155,19 @@ html, body {
     font-size: small;
 }
 .form-control::placeholder {
-    color: #ccc; /* Jasny kolor tekstu dla kontrastu */
-    opacity: 1; /* Zapewnia pe³n¹ widocznoœæ koloru */
+    color: #ccc;
+    opacity: 1; 
+}
+@media (max-width: 500px) {
+    .offcanvas {
+        --bs-offcanvas-width: 85%!important; 
+    }
+}
+.offcanvas {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1)); 
+    backdrop-filter: blur(10px); 
+}
+
+.offcanvas-header, .offcanvas-body {
+    background-color: transparent;
 }
