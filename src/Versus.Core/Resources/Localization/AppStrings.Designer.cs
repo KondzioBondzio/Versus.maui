@@ -230,5 +230,68 @@ namespace Versus.Core.Resources.Localization {
                 return ResourceManager.GetString("Auth_ToS", resourceCulture);
             }
         }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Sidebar_Friends {
+            get {
+                return ResourceManager.GetString("Sidebar_Friends", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Sidebar_Home {
+            get {
+                return ResourceManager.GetString("Sidebar_Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Sidebar_HowToPlay {
+            get {
+                return ResourceManager.GetString("Sidebar_HowToPlay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Sidebar_Matches {
+            get {
+                return ResourceManager.GetString("Sidebar_Matches", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Sidebar_Matchmaking {
+            get {
+                return ResourceManager.GetString("Sidebar_Matchmaking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Sidebar_Settings {
+            get {
+                return ResourceManager.GetString("Sidebar_Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Sidebar_Stats {
+            get {
+                return ResourceManager.GetString("Sidebar_Stats", resourceCulture);
+            }
+        }
     }
 }

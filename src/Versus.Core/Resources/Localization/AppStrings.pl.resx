@@ -174,4 +174,25 @@
   <data name="Auth_Photo" xml:space="preserve">
     <value>Zdjęcie</value>
   </data>
+  <data name="Sidebar_Friends" xml:space="preserve">
+    <value>Przyjaciele</value>
+  </data>
+  <data name="Sidebar_Home" xml:space="preserve">
+    <value>Strona główna</value>
+  </data>
+  <data name="Sidebar_HowToPlay" xml:space="preserve">
+    <value>Jak grać?</value>
+  </data>
+  <data name="Sidebar_Matches" xml:space="preserve">
+    <value>Mecze</value>
+  </data>
+  <data name="Sidebar_Matchmaking" xml:space="preserve">
+    <value>Rozgrywki</value>
+  </data>
+  <data name="Sidebar_Settings" xml:space="preserve">
+    <value>Ustawienia</value>
+  </data>
+  <data name="Sidebar_Stats" xml:space="preserve">
+    <value>Statystyki</value>
+  </data>
 </root>

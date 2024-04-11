@@ -26,16 +26,17 @@
         <div class="row m-auto"> <MudDivider DividerType="DividerType.FullWidth" /></div>
         <MudPaper  Elevation="0">
             <MudNavMenu Rounded="true" Margin="Margin.Dense" Color="Color.Primary" Class="pa-2">
-                <MudNavLink Href="/HomePage" Icon="@Icons.Material.Filled.Dashboard">Home</MudNavLink>
-                <MudNavLink Href="/MatchmakingPage" Icon="@Icons.Material.Filled.Handshake">Matchmaking</MudNavLink>
-                <MudNavLink Href="/MatchesPage" Icon="@Icons.Material.Outlined.VideogameAsset">Matches</MudNavLink>
-                <MudNavLink Href="/FriendsPage" Icon="@Icons.Material.Filled.Groups3">Friends</MudNavLink>
-                <MudNavLink Href="/StatsPage" Icon="@Icons.Material.Filled.QueryStats">Stats</MudNavLink>
-                <MudNavLink Href="/thelab" Icon="@Icons.Material.Filled.Info">How to play?</MudNavLink>
-                <MudNavLink Href="/SettingsPage" Icon="@Icons.Material.Filled.Settings">Settings</MudNavLink>
+                <MudNavLink Href="/HomePage" Icon="@Icons.Material.Filled.Dashboard">@Localizer["Sidebar_Home"]</MudNavLink>
+                    <MudNavLink Href="/MatchmakingPage" Icon="@Icons.Material.Filled.Handshake">@Localizer["Sidebar_Matchmaking"]</MudNavLink>
+                    <MudNavLink Href="/MatchesPage" Icon="@Icons.Material.Outlined.VideogameAsset">@Localizer["Sidebar_Matches"]</MudNavLink>
+                    <MudNavLink Href="/FriendsPage" Icon="@Icons.Material.Filled.Groups3">@Localizer["Sidebar_Friends"]</MudNavLink>
+                    <MudNavLink Href="/StatsPage" Icon="@Icons.Material.Filled.QueryStats">@Localizer["Sidebar_Stats"]</MudNavLink>
+                    <MudNavLink Href="/thelab" Icon="@Icons.Material.Filled.Info">@Localizer["Sidebar_HowToPlay"]</MudNavLink>
+                    <MudNavLink Href="/SettingsPage" Icon="@Icons.Material.Filled.Settings">@Localizer["Sidebar_Settings"]</MudNavLink>
             </MudNavMenu>
         </MudPaper>
 
         <RadzenButton Text="Log Out" class="btn py-3 w-100 w-md-auto mt-5" ButtonType="Radzen.ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" />
     </div>
 </div>
+

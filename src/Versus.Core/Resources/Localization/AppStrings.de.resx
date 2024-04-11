@@ -174,4 +174,25 @@
   <data name="Auth_ToS" xml:space="preserve">
     <value>Geschäftsbedingungen</value>
   </data>
+  <data name="Sidebar_Friends" xml:space="preserve">
+    <value>Freunde</value>
+  </data>
+  <data name="Sidebar_Home" xml:space="preserve">
+    <value>Heim</value>
+  </data>
+  <data name="Sidebar_HowToPlay" xml:space="preserve">
+    <value>Spielanleitung?</value>
+  </data>
+  <data name="Sidebar_Matches" xml:space="preserve">
+    <value>Streichhölzer</value>
+  </data>
+  <data name="Sidebar_Matchmaking" xml:space="preserve">
+    <value>Wettbewerbe</value>
+  </data>
+  <data name="Sidebar_Settings" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="Sidebar_Stats" xml:space="preserve">
+    <value>Statistiken</value>
+  </data>
 </root>
