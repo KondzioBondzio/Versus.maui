@@ -16,9 +16,7 @@ static async Task Register(ApiClient apiClient)
     const string endpoint = "api/Auth/register";
     var request = new RegisterRequest
     {
-        Login = "",
-        Password = "",
-        Email = ""
+        Login = "", Password = "", Email = ""
     };
 
     try
@@ -27,7 +25,15 @@ static async Task Register(ApiClient apiClient)
     }
     catch (ApiException ex)
     {
-        Console.WriteLine(ex.Error?.Detail);
+        IDictionary<string, string[]> errors = ex.Error?.Errors ?? new Dictionary<string, string[]>();
+        foreach (KeyValuePair<string, string[]> error in errors)
+        {
+            Console.WriteLine($"# {error.Key}");
+            foreach (string item in error.Value)
+            {
+                Console.WriteLine(item);
+            }
+        }
     }
 }
 
@@ -36,8 +42,7 @@ static async Task Login(ApiClient apiClient)
     const string endpoint = "api/Auth/login";
     var request = new LoginRequest
     {
-        Login = "",
-        Password = ""
+        Login = "", Password = ""
     };
 
     try
