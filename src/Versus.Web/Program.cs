@@ -1,8 +1,12 @@
 using MudBlazor.Services;
 using Serilog;
+using Versus.Core.Services;
 using Versus.Core.Services.Countries;
+using Versus.Core.Services.Session;
 using Versus.Web.Components;
-using _Imports = Versus.Core.Components._Imports;
+using Versus.Web.Services.Session;
+using CoreImports = Versus.Core.Components._Imports;
+using ISession = Versus.Core.Services.Session.ISession;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +27,25 @@ builder.Services.AddLogging(options =>
     options.AddSerilog();
 });
 
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddDistributedMemoryCache();
+
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(15);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+
+HttpClient httpClient = new()
+{
+    BaseAddress = new Uri(builder.Configuration["ApiAddress"]!)
+};
+builder.Services.AddSingleton(new ApiClient(httpClient));
+builder.Services.AddSingleton<ISession, HttpStorageSession>();
+builder.Services.AddSingleton<SessionManager>();
+
 WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -37,9 +60,10 @@ app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 app.UseAntiforgery();
+app.UseSession();
 
 app.MapRazorComponents<App>()
-    .AddAdditionalAssemblies(typeof(_Imports).Assembly)
+    .AddAdditionalAssemblies(typeof(CoreImports).Assembly)
     .AddInteractiveServerRenderMode();
 
 app.Run();
