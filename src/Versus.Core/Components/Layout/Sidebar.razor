@@ -1,5 +1,5 @@
-﻿
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+﻿@using Microsoft.JSInterop;
+<div class="offcanvas offcanvas-start"   tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class=" d-flex justify-content-end" >
         <button class="btn" type="button" style="width: 40px;margin-right: 5px;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
             <i class="fas fa-bars"></i>
@@ -17,9 +17,9 @@
         </div>
      </div>
     <div class="row m-auto d-flex justify-content-center mt-2">
-        <div style="min-width:60px" class="col-4  text-center d-block mb-0 font-weight-light"><h3 style="font-family: serif;">124</h3><span><MudIcon  Icon="@Icons.Material.Outlined.VideogameAsset" Title="Reddit" /></span></div>
-        <div style="min-width:60px" class="col-4 text-center d-block mb-0 font-weight-light"><h3 style="font-family: serif;">84</h3><span><i class="fa fa-trophy" aria-hidden="true"></i></span></div>
-        <div style="min-width:60px" class="col-4 text-center d-block mb-0 font-weight-light"><h3 style="font-family: serif;">40</h3><span><i class="fa fa-times" aria-hidden="true"></i></span></div>
+        <div style="min-width:60px" class="col-4  text-center d-block mb-0 font-weight-light"><p class="mb-1" style="font-size: larger">124</p><span><MudIcon Icon="@Icons.Material.Outlined.VideogameAsset" Title="Reddit" /></span></div>
+        <div style="min-width:60px" class="col-4 text-center d-block mb-0 font-weight-light"><p class="mb-2" style="font-size: larger">84</p><span><i class="fa fa-trophy" aria-hidden="true"></i></span></div>
+        <div style="min-width:60px" class="col-4 text-center d-block mb-0 font-weight-light"><p class="mb-2" style="font-size: larger">40</p><span><i class="fa fa-times" aria-hidden="true"></i></span></div>
      </div>
     
     <div class="offcanvas-body mt-3">
@@ -38,5 +38,28 @@
 
         <RadzenButton Text="Log Out" class="btn py-3 w-100 w-md-auto mt-5" ButtonType="Radzen.ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" />
     </div>
-</div>
+   
+ </div>
+    
+ <script>
+        let startX;
 
+        document.getElementById('offcanvasExample').addEventListener('touchstart', function (e) {
+            const touch = e.touches[0];
+            startX = touch.clientX;
+        }, false);
+
+        document.getElementById('offcanvasExample').addEventListener('touchmove', function (e) {
+            const touch = e.touches[0];
+            const change = startX - touch.clientX;
+
+            if (change > 50) {
+
+                var offcanvasElement = document.getElementById('offcanvasExample');
+                var bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+                bsOffcanvas.hide();
+
+                e.preventDefault();
+            }
+        }, false);
+</script>
