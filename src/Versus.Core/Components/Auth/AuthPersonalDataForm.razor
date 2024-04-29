@@ -21,7 +21,7 @@
                                         Data=@countries TextProperty="Name" ValueProperty="Code" AllowClear="true" @bind-Value=value class="vs-form-style" Name="DropDownFiltering" />
                     </div>
                     <div class="mb-2">
-                        <InputText @bind-Value="Model!.Nickname" class="vs-form-style" placeholder="Nickname" />
+                        <InputText @bind-Value="Model!.Nickname" class="vs-form-style" placeholder="@Localizer["Auth_Username"]" />
                     </div>
               
                     <div class="mb-2">
@@ -105,7 +105,7 @@
     {
         try
         {
-            NavManager.NavigateTo("/HomePage");
+            NavManager.NavigateTo("/Home");
            
         }
         catch (ApiException)

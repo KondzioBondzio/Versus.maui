@@ -9,16 +9,6 @@ html, body {
     background: url("../images/Background.jpg") center/cover no-repeat;
 }
 
-.brand-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.brand-google {
-    background: #dd4b39;
-    color: white;
-}
-
 /* versus-flip */
 .vs-flip-container {
     perspective: 1000px;
@@ -107,8 +97,6 @@ html, body {
     bottom: 0;
     border-radius: 34px;
     transition: .4s;
-
-    background: lightgray;
 }
 
 .vs-slider:before {
@@ -119,21 +107,13 @@ html, body {
     top: -4px;
     border-radius: 50%;
     transition: .4s;
-
     content: '';
-    background: white;
+}
+.vs-switch > input:checked + .vs-slider:before {
+    transform: translateX(32px);
+    background: #e91e63;
     box-shadow: 0 2px 2px lightgray;
-}
-
-.vs-switch > input:checked + .vs-slider {
-    background-color: #e91e63;
-}
-
-    .vs-switch > input:checked + .vs-slider:before {
-        transform: translateX(32px);
-        background: #e91e63;
-        box-shadow: 0 2px 2px lightgray;
-    }
+ }
 .vs-form-style{
     padding: 13px 20px;
     height: 48px;
@@ -155,7 +135,7 @@ html, body {
     font-size: small;
 }
 .form-control::placeholder {
-    color: #ccc;
+
     opacity: 1; 
 }
 @media (max-width: 500px) {
@@ -168,6 +148,19 @@ html, body {
     backdrop-filter: blur(10px); 
 }
 
-.offcanvas-header, .offcanvas-body {
+.offcanvas-body {
     background-color: transparent;
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color:lightgray;
+    border: transparent;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #4a4a4a, #555555);
 }

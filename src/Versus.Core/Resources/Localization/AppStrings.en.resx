@@ -195,4 +195,7 @@
   <data name="Sidebar_Stats" xml:space="preserve">
     <value>Stats</value>
   </data>
+  <data name="Auth_Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
 </root>

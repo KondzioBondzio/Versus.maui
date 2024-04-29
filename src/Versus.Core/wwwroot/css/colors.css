@@ -16,3 +16,27 @@
     text-shadow: 1px 1px 1px red, 2px 2px 1px #ff0000e6;
     color:white;
 }
+.brand-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.brand-google {
+    background: #dd4b39;
+    color: white;
+}
+.vs-slider {
+    background: lightgray;
+}
+
+.vs-slider:before {
+    background: white;
+    box-shadow: 0 2px 2px lightgray;
+}
+.vs-switch > input:checked + .vs-slider {
+    background-color: #e91e63;
+}
+.form-control::placeholder {
+    color: #ccc;
+    opacity: 1;
+}

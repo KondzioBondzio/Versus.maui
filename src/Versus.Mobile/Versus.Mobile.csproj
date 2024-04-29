@@ -135,4 +135,6 @@
     <Folder Include="Resources\Localization\" />
   </ItemGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties XamarinHotReloadDebuggerTimeoutExceptionVersusMobileHideInfoBar="True" /></VisualStudio></ProjectExtensions>
+
 </Project>

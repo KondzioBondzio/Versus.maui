@@ -1,11 +1,12 @@
 ﻿@using Microsoft.JSInterop;
 <div class="offcanvas offcanvas-start"   tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-body p-2">
     <div class=" d-flex justify-content-end" >
         <button class="btn" type="button" style="width: 40px;margin-right: 5px;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
             <i class="fas fa-bars"></i>
         </button>
     </div>
-    <div class="offcanvas-header d-block">
+       <div class="d-block">
         <div class="profile-picture-container d-flex justify-content-center mt-3 col-12 "> 
         <MudImage Src="_content/Versus.Core/images/JohnyWick.jpg" Alt="Mony the dog" Width="110" Height="110" Elevation="25" Style="border-radius:100px" />
         </div>
@@ -15,32 +16,34 @@
         <div class=" d-flex justify-content-center col-12 ">
             <span><MudIcon Size="Size.Small" Icon="@Icons.Material.Filled.LocationOn" /> Polska, Kielce</span>
         </div>
-     </div>
-    <div class="row m-auto d-flex justify-content-center mt-2">
+       </div>
+    <div class="row m-auto d-flex justify-content-center mt-4 mb-4">
         <div style="min-width:60px" class="col-4  text-center d-block mb-0 font-weight-light"><p class="mb-1" style="font-size: larger">124</p><span><MudIcon Icon="@Icons.Material.Outlined.VideogameAsset" Title="Reddit" /></span></div>
         <div style="min-width:60px" class="col-4 text-center d-block mb-0 font-weight-light"><p class="mb-2" style="font-size: larger">84</p><span><i class="fa fa-trophy" aria-hidden="true"></i></span></div>
         <div style="min-width:60px" class="col-4 text-center d-block mb-0 font-weight-light"><p class="mb-2" style="font-size: larger">40</p><span><i class="fa fa-times" aria-hidden="true"></i></span></div>
      </div>
     
-    <div class="offcanvas-body mt-3">
+    
         <div class="row m-auto"> <MudDivider DividerType="DividerType.FullWidth" /></div>
         <MudPaper  Elevation="0">
             <MudNavMenu Rounded="true" Margin="Margin.Dense" Color="Color.Primary" Class="pa-2">
-                <MudNavLink Href="/HomePage" Icon="@Icons.Material.Filled.Dashboard">@Localizer["Sidebar_Home"]</MudNavLink>
-                    <MudNavLink Href="/MatchmakingPage" Icon="@Icons.Material.Filled.Handshake">@Localizer["Sidebar_Matchmaking"]</MudNavLink>
-                    <MudNavLink Href="/MatchesPage" Icon="@Icons.Material.Outlined.VideogameAsset">@Localizer["Sidebar_Matches"]</MudNavLink>
-                    <MudNavLink Href="/FriendsPage" Icon="@Icons.Material.Filled.Groups3">@Localizer["Sidebar_Friends"]</MudNavLink>
-                    <MudNavLink Href="/StatsPage" Icon="@Icons.Material.Filled.QueryStats">@Localizer["Sidebar_Stats"]</MudNavLink>
-                    <MudNavLink Href="/thelab" Icon="@Icons.Material.Filled.Info">@Localizer["Sidebar_HowToPlay"]</MudNavLink>
-                    <MudNavLink Href="/SettingsPage" Icon="@Icons.Material.Filled.Settings">@Localizer["Sidebar_Settings"]</MudNavLink>
+                <MudNavLink Href="/Home" Icon="@Icons.Material.Filled.Dashboard">@Localizer["Sidebar_Home"]</MudNavLink>
+                    <MudNavLink Href="/MatchmakingIndex" Icon="@Icons.Material.Filled.Handshake">@Localizer["Sidebar_Matchmaking"]</MudNavLink>
+                    <MudNavLink Href="/MatchesIndex" Icon="@Icons.Material.Outlined.VideogameAsset">@Localizer["Sidebar_Matches"]</MudNavLink>
+                    <MudNavLink Href="/FriendsIndex" Icon="@Icons.Material.Filled.Groups3">@Localizer["Sidebar_Friends"]</MudNavLink>
+                    <MudNavLink Href="/StatisticsIndex" Icon="@Icons.Material.Filled.QueryStats">@Localizer["Sidebar_Stats"]</MudNavLink>
+                    <MudNavLink Href="/HowToPlayIndex" Icon="@Icons.Material.Filled.Info">@Localizer["Sidebar_HowToPlay"]</MudNavLink>
+                    <MudNavLink Href="/SettingsIndex" Icon="@Icons.Material.Filled.Settings">@Localizer["Sidebar_Settings"]</MudNavLink>
             </MudNavMenu>
         </MudPaper>
 
-        <RadzenButton Text="Log Out" class="btn py-3 w-100 w-md-auto mt-5" ButtonType="Radzen.ButtonType.Submit" ButtonStyle="ButtonStyle.Secondary" />
-    </div>
+        <RadzenButton Text="Log Out" class="btn py-3 w-100 w-md-auto mt-5" Click="Logout" ButtonStyle="ButtonStyle.Secondary" />
+     
+    <div/>
    
  </div>
-    
+ </div>
+ 
  <script>
         let startX;
 
@@ -62,4 +65,10 @@
                 e.preventDefault();
             }
         }, false);
-</script>
+</script> 
+@code{
+    private void Logout()
+    {
+        NavManager.NavigateTo("/", true);
+    }
+}
