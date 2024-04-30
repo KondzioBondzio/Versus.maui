@@ -1,5 +1,5 @@
 ﻿@using Microsoft.JSInterop;
-<div class="offcanvas offcanvas-start"   tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+<div class="offcanvas offcanvas-start d-flex flex-column" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-body p-2">
     <div class=" d-flex justify-content-end" >
         <button class="btn" type="button" style="width: 40px;margin-right: 5px;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -36,7 +36,8 @@
                     <MudNavLink Href="/SettingsIndex" Icon="@Icons.Material.Filled.Settings">@Localizer["Sidebar_Settings"]</MudNavLink>
             </MudNavMenu>
         </MudPaper>
-
+        </div>
+            <div class=" mt-auto">
         <RadzenButton Text="Log Out" class="btn py-3 w-100 w-md-auto mt-5" Click="Logout" ButtonStyle="ButtonStyle.Secondary" />
      
     <div/>

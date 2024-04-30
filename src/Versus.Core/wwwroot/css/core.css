@@ -6,7 +6,7 @@
 html, body {
     font-family: "Roboto", serif;
     height: 100vh;
-    background: url("../images/Background.jpg") center/cover no-repeat;
+    background: url("../images/Background.jpg") center/cover ;
 }
 
 /* versus-flip */
@@ -140,7 +140,7 @@ html, body {
 }
 @media (max-width: 500px) {
     .offcanvas {
-        --bs-offcanvas-width: 85%!important; 
+        --bs-offcanvas-width: 85% !important;
     }
 }
 .offcanvas {

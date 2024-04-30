@@ -198,4 +198,34 @@
   <data name="Auth_Username" xml:space="preserve">
     <value />
   </data>
+  <data name="HowToPlay_Button" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HowToPlay_Game" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HowToPlay_PreliminaryInformation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HowToPlay_Step1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HowToPlay_Step1description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HowToPlay_Step2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HowToPlay_Step2description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HowToPlay_Step3" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HowToPlay_Step3description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HowToPlay_VersusDescription" xml:space="preserve">
+    <value />
+  </data>
 </root>
