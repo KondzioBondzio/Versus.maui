@@ -201,9 +201,6 @@
   <data name="HowToPlay_Button" xml:space="preserve">
     <value>Jak zagrać ?</value>
   </data>
-  <data name="HowToPlay_Game" xml:space="preserve">
-    <value>Rozgrywka</value>
-  </data>
   <data name="HowToPlay_PreliminaryInformation" xml:space="preserve">
     <value>Informacje wstępne</value>
   </data>
@@ -211,21 +208,27 @@
     <value>Krok I</value>
   </data>
   <data name="HowToPlay_Step1description" xml:space="preserve">
-    <value>Aby rozpocząć grę w Versus, pierwszym krokiem jest znalezienie przeciwnika w zakładce matchmaking. W tym celu należy przejść do zakładki matchmaking i wybrać preferowany sposób dołączenia do rozgrywki.&lt;br&gt;&lt;br&gt;Pierwszą opcją jest dołączenie do kolejki, w której należy uzupełnić filtry, na podstawie których zostanie dobierany przeciwnik.&lt;br&gt; Drugą opcją jest ogłoszenie meczu wraz z lokalizacją, opisem i terminem, a następnie oczekiwanie na akceptację tych warunków przez przeciwnika.&lt;br&gt; Istnieje również możliwość samodzielnego dołączenia do ogłoszenia.</value>
+    <value>W Versus, aby rozpocząć grę, najpierw znajdujesz przeciwnika w zakładce matchmaking. Możesz dołączyć do kolejki, ustawić filtry i czekać na dobór przeciwnika. Inna opcja to ogłoszenie meczu z lokalizacją, opisem i terminem, czekając na akceptację przeciwnika lub dołączając do istniejącego ogłoszenia. Ogłoszenia umożliwiają rozgrywkę wieloosobową.</value>
   </data>
   <data name="HowToPlay_Step2" xml:space="preserve">
     <value>Krok II</value>
   </data>
   <data name="HowToPlay_Step2description" xml:space="preserve">
-    <value>Kolejnym krokiem jest przejście do zakładki meczy, gdzie znajdują się wszystkie dostępne rozgrywki zaakceptowane przez nas lub przeciwnika. &lt;br&gt;W tej sekcji istnieje możliwość komunikacji z przeciwnikiem poprzez czat, co umożliwia ustalenie terminu oraz lokalizacji meczu, a także zaakceptowanie meczu w przypadku korzystania z filtru kolejki. &lt;br&gt;&lt;br&gt;W przypadku meczów znalezionych poprzez ogłoszenie, będziemy mogli zobaczyć status meczu oraz dokonać zmian w terminie i lokalizacji.</value>
+    <value>Kolejnym krokiem jest przejście do zakładki "Mecze", gdzie znajdują się wszystkie dostępne rozgrywki zaakceptowane przez nas lub przeciwnika. &lt;br&gt;W tej sekcji istnieje możliwość komunikacji z przeciwnikiem poprzez czat, co umożliwia ustalenie terminu oraz lokalizacji meczu, a także zaakceptowanie meczu w przypadku korzystania z filtru kolejki. &lt;br&gt;&lt;br&gt;W przypadku meczów znalezionych poprzez ogłoszenie, będziemy mogli zobaczyć status meczu oraz śledzić informację związane z danym wydarzeniem. </value>
   </data>
   <data name="HowToPlay_Step3" xml:space="preserve">
     <value>Krok III</value>
   </data>
   <data name="HowToPlay_Step3description" xml:space="preserve">
-    <value>Ostatnim etapem jest weryfikacja meczu za pomocą aplikacji mobilnej na miejscu spotkania.&lt;br&gt;Aby to zrobić, należy pobrać aplikację Versus ze sklepu Play lub App Store, a następnie w zakładce "Mecze" wybrać aktualny mecz i zeskanować kod QR przy użyciu urządzenia przeciwnika. Dzięki temu możliwe będzie uruchomienie meczu.&lt;br&gt;&lt;br&gt;Po zakończeniu meczu należy wprowadzić wynik i ponownie zeskanować kod QR, który potwierdzi oficjalny wynik rozgrywki.</value>
+    <value>Ostatnim etapem jest weryfikacja meczu za pomocą aplikacji mobilnej na miejscu spotkania.&lt;br&gt;Aby to zrobić, należy w zakładce "Mecze" wybrać aktualny mecz i zeskanować kod QR przy użyciu urządzenia przeciwnika. Dzięki temu możliwe będzie uruchomienie meczu.&lt;br&gt;&lt;br&gt;Po zakończeniu meczu należy wprowadzić wynik i ponownie zeskanować kod QR, który potwierdzi oficjalny wynik rozgrywki. W przypadku ogłoszeń liderzy drużyn wprowadzają wyniki.</value>
   </data>
   <data name="HowToPlay_VersusDescription" xml:space="preserve">
     <value>Versus to aplikacja mająca na celu wspólne sportowe rozgrywki między graczami. Dzięki niej możemy poznać nowe osoby i doświadczyć dużo ciekawych potyczek sportowych. Rywalizuj z przyjaciółmi, polepszaj swoje umiejętności i wspinaj się w rankingu Versus.</value>
+  </data>
+  <data name="HowToPlay_HaveFun" xml:space="preserve">
+    <value>Miłej zabawy!</value>
+  </data>
+  <data name="HowToPlay_LetsStart" xml:space="preserve">
+    <value>Zaczynajmy</value>
   </data>
 </root>

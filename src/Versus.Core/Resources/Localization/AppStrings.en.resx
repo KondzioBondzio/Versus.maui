@@ -201,9 +201,6 @@
   <data name="HowToPlay_Button" xml:space="preserve">
     <value>How to play ?</value>
   </data>
-  <data name="HowToPlay_Game" xml:space="preserve">
-    <value>Game</value>
-  </data>
   <data name="HowToPlay_PreliminaryInformation" xml:space="preserve">
     <value>Preliminary information</value>
   </data>
@@ -211,21 +208,27 @@
     <value>Step I</value>
   </data>
   <data name="HowToPlay_Step1description" xml:space="preserve">
-    <value>To start playing Versus, the first step is to find an opponent in the matchmaking tab. To do this, go to the matchmaking tab and select the preferred way to join the game.&lt;br&gt;&lt;br&gt;The first option is to join the queue, in which you need to complete the filters based on which the opponent will be matched.&lt;br&gt; The second option is to announce the match together with the location, description and date, and then waiting for the acceptance of these conditions by the opponent.&lt;br&gt; It is also possible to join the advertisement yourself.</value>
+    <value>In Versus, to start the game, you first find an opponent in the matchmaking tab. You can join the queue, set filters and wait for your opponent to be selected. Another option is to announce a match with the location, description and date, waiting for your opponent's approval or adding to an existing announcement. Announcements enable multiplayer gameplay.</value>
   </data>
   <data name="HowToPlay_Step2" xml:space="preserve">
     <value>Step II</value>
   </data>
   <data name="HowToPlay_Step2description" xml:space="preserve">
-    <value>The next step is to go to the matches tab, where you can find all available games accepted by you or your opponent. &lt;br&gt;In this section, you can communicate with your opponent via chat, which allows you to set the date and location of the match, as well as accept the match when using the queue filter. &lt;br&gt;&lt;br&gt;For matches found through an ad, we will be able to see the status of the match and make changes to the date and location.</value>
+    <value>The next step is to go to the "Matches" tab, where you will find all available games approved by us or your opponent. &lt;br&gt;In this section, you can communicate with your opponent via chat, which allows you to set the date and location of the match, as well as accept the match when using the queue filter. &lt;br&gt;&lt;br&gt;In the case of matches found through an advertisement, we will be able to see the match status and track information related to a given event.</value>
   </data>
   <data name="HowToPlay_Step3" xml:space="preserve">
     <value>Step III</value>
   </data>
   <data name="HowToPlay_Step3description" xml:space="preserve">
-    <value>The last step is to verify the match using the mobile application at the meeting place.&lt;br&gt;To do this, download the Versus application from the Play or App Store, then select the current match in the "Matches" tab and scan the QR code using the opponent's device. This will allow you to start the match.&lt;br&gt;&lt;br&gt;After the match is over, enter the score and scan the QR code again, which will confirm the official match result.</value>
+    <value>The last stage is to verify the match using a mobile application at the match venue.&lt;br&gt;To do this, select the current match in the "Matches" tab and scan the QR code using the opponent's device. Thanks to this, it will be possible to start the match.&lt;br&gt;&lt;br&gt;After the match ends, enter the result and scan the QR code again, which will confirm the official result of the game. For announcements, team leaders enter the results.</value>
   </data>
   <data name="HowToPlay_VersusDescription" xml:space="preserve">
     <value>Versus is an application aimed at joint sports games between players. Thanks to it, we can meet new people and experience a lot of interesting sports matches. Compete with friends, improve your skills and climb the Versus rank.</value>
+  </data>
+  <data name="HowToPlay_HaveFun" xml:space="preserve">
+    <value>Have fun!</value>
+  </data>
+  <data name="HowToPlay_LetsStart" xml:space="preserve">
+    <value>Let's get started</value>
   </data>
 </root>

@@ -252,9 +252,18 @@ namespace Versus.Core.Resources.Localization {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
         /// </summary>
-        internal static string HowToPlay_Game {
+        internal static string HowToPlay_HaveFun {
             get {
-                return ResourceManager.GetString("HowToPlay_Game", resourceCulture);
+                return ResourceManager.GetString("HowToPlay_HaveFun", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string HowToPlay_LetsStart {
+            get {
+                return ResourceManager.GetString("HowToPlay_LetsStart", resourceCulture);
             }
         }
         

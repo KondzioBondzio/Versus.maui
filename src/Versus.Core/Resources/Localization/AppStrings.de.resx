@@ -180,8 +180,11 @@
   <data name="HowToPlay_Button" xml:space="preserve">
     <value>Spielanleitung ?</value>
   </data>
-  <data name="HowToPlay_Game" xml:space="preserve">
-    <value>Spiel</value>
+  <data name="HowToPlay_HaveFun" xml:space="preserve">
+    <value>Viel Spaß!</value>
+  </data>
+  <data name="HowToPlay_LetsStart" xml:space="preserve">
+    <value>Lass uns anfangen</value>
   </data>
   <data name="HowToPlay_PreliminaryInformation" xml:space="preserve">
     <value>Vorabinformationen</value>
@@ -190,19 +193,19 @@
     <value>Schritt I</value>
   </data>
   <data name="HowToPlay_Step1description" xml:space="preserve">
-    <value>Um mit dem Spielen von Versus zu beginnen, besteht der erste Schritt darin, im Matchmaking-Tab einen Gegner zu finden. Gehen Sie dazu zur Registerkarte „Matchmaking“ und wählen Sie die bevorzugte Art der Teilnahme am Spiel aus.&lt;br&gt;&lt;br&gt;Die erste Option besteht darin, sich der Warteschlange anzuschließen, in der Sie die Filter ausfüllen müssen, auf deren Grundlage der Gegner zugeordnet wird .&lt;br&gt; Die zweite Möglichkeit besteht darin, das Spiel mit Ort, Beschreibung und Datum anzukündigen und dann auf die Akzeptanz dieser Bedingungen durch den Gegner zu warten.&lt;br&gt; Es ist auch möglich, selbst an der Werbung teilzunehmen.</value>
+    <value>Um das Spiel in Versus zu starten, suchen Sie zunächst im Matchmaking-Tab einen Gegner. Sie können sich der Warteschlange anschließen, Filter festlegen und darauf warten, dass Ihr Gegner ausgewählt wird. Eine andere Möglichkeit besteht darin, ein Spiel mit Ort, Beschreibung und Datum anzukündigen und auf die Zustimmung Ihres Gegners zu warten oder eine bestehende Ankündigung zu ergänzen. Ankündigungen ermöglichen Multiplayer-Gameplay.</value>
   </data>
   <data name="HowToPlay_Step2" xml:space="preserve">
     <value>Schritt II</value>
   </data>
   <data name="HowToPlay_Step2description" xml:space="preserve">
-    <value>Der nächste Schritt besteht darin, zur Registerkarte „Spiele“ zu gehen, wo Sie alle verfügbaren Spiele finden, die von Ihnen oder Ihrem Gegner akzeptiert wurden. &lt;br&gt;In diesem Abschnitt können Sie mit Ihrem Gegner per Chat kommunizieren, wodurch Sie das Datum und den Ort des Spiels festlegen und das Spiel akzeptieren können, wenn Sie den Warteschlangenfilter verwenden. &lt;br&gt;&lt;br&gt;Bei Übereinstimmungen, die über eine Anzeige gefunden wurden, können wir den Status der Übereinstimmung sehen und Änderungen am Datum und Ort vornehmen.</value>
+    <value>Im nächsten Schritt gehen Sie zum Reiter „Spiele“, wo Sie alle verfügbaren Spiele finden, die von uns oder Ihrem Gegner genehmigt wurden. &lt;br&gt;In diesem Abschnitt können Sie mit Ihrem Gegner per Chat kommunizieren, wodurch Sie das Datum und den Ort des Spiels festlegen und das Spiel akzeptieren können, wenn Sie den Warteschlangenfilter verwenden. &lt;br&gt;&lt;br&gt;Im Falle von Übereinstimmungen, die über eine Anzeige gefunden werden, können wir den Spielstatus sehen und Informationen zu einem bestimmten Ereignis verfolgen.</value>
   </data>
   <data name="HowToPlay_Step3" xml:space="preserve">
     <value>Schritt III</value>
   </data>
   <data name="HowToPlay_Step3description" xml:space="preserve">
-    <value>Der letzte Schritt besteht darin, die Übereinstimmung mithilfe der mobilen Anwendung am Treffpunkt zu überprüfen.&lt;br&gt;Laden Sie dazu die Versus-Anwendung aus dem Play- oder App Store herunter, wählen Sie dann die aktuelle Übereinstimmung im Tab „Übereinstimmungen“ aus und scannen Sie den QR Code mit dem Gerät des Gegners. Dadurch können Sie das Spiel beginnen.&lt;br&gt;&lt;br&gt;Nachdem das Spiel vorbei ist, geben Sie den Punktestand ein und scannen Sie den QR-Code erneut, um das offizielle Spielergebnis zu bestätigen.</value>
+    <value>Der letzte Schritt besteht darin, das Spiel mithilfe einer mobilen Anwendung am Spielort zu überprüfen.&lt;br&gt;Wählen Sie dazu das aktuelle Spiel im Reiter „Spiele“ aus und scannen Sie den QR-Code mit dem Gerät des Gegners. Dadurch ist es möglich, das Spiel zu starten.&lt;br&gt;&lt;br&gt;Geben Sie nach Ende des Spiels das Ergebnis ein und scannen Sie den QR-Code erneut, um das offizielle Ergebnis des Spiels zu bestätigen. Bei Ankündigungen tragen die Teamleiter die Ergebnisse ein.</value>
   </data>
   <data name="HowToPlay_VersusDescription" xml:space="preserve">
     <value>Versus ist eine Anwendung, die auf gemeinsame Sportspiele zwischen Spielern abzielt. Dadurch können wir neue Leute kennenlernen und viele interessante Sportwettkämpfe erleben. Messen Sie sich mit Freunden, verbessern Sie Ihre Fähigkeiten und erklimmen Sie den Versus-Rang.</value>

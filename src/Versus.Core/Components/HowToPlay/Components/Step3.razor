@@ -1,0 +1,20 @@
+﻿@using MudBlazor
+<div class="justify-content-center text-center mt-5" >
+    <h3 class="vs-text-shadow mb-3">@Localizer["HowToPlay_Step3"]</h3>
+    <p class="vs-white p-3">@Step_3_description</p>
+        <div class="col-12 col-md-8 col-lg-6 col-xl-4 mx-auto">
+            <img  src="_content/Versus.Core/images/ScanMe.png" class="img-fluid" alt="app_logo" />
+      @*   Image by <a href="https://www.freepik.com/free-vector/qr-code-scanning-concept_9809773.htm#fromView=search&page=2&position=6&uuid=e1dfcd69-ab15-4ed4-9673-2fb0b6f63682?log-in=google">Freepik</a> *@
+        </div>
+</div>
+@code {
+
+    MarkupString Step_3_description;
+
+    protected override void OnInitialized()
+    {
+
+        Step_3_description = new MarkupString(Localizer["HowToPlay_Step3description"]);
+    }
+}
+

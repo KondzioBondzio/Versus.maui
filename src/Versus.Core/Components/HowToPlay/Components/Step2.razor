@@ -1,0 +1,19 @@
+﻿@using MudBlazor
+<div class="justify-content-center text-center mt-5" >
+    <h3 class="vs-text-shadow mb-3">@Localizer["HowToPlay_Step2"]</h3>
+    <p class="vs-white p-3">@Step_2_description</p>
+    <div class="col-12 col-md-8 col-lg-6 col-xl-4 mx-auto">
+        <img src="_content/Versus.Core/images/ChatMe.png" class="img-fluid" />
+        @*<a href="https://www.freepik.com/free-vector/man-woman-chatting-online-people-using-mobile-phones-speech-bubble-distance-flat-vector-illustration-communication-internet_10173148.htm#fromView=search&page=1&position=13&uuid=db410aea-e3a0-4fe1-a559-c8793a140995">Image by pch.vector</a> on Freepik*@
+    </div>
+</div>
+@code {
+
+    MarkupString Step_2_description;
+
+    protected override void OnInitialized()
+    {
+        Step_2_description = new MarkupString(Localizer["HowToPlay_Step2description"]);
+    }
+}
+
