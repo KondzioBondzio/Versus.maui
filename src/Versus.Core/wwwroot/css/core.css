@@ -98,6 +98,17 @@ html, body {
     border-radius: 34px;
     transition: .4s;
 }
+.vs-background-matchmaking {
+    height: 85vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.vs-custom-divider {
+    width: 80%;
+    margin: 0 auto;
+}
 
 .vs-slider:before {
     position: absolute;

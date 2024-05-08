@@ -1,6 +1,29 @@
 ﻿@page "/MatchmakingIndex"
-<h3>MatchmakingIndex</h3>
 
-@code {
+<style>
+    .vs-background-matchmaking {
 
-}
+        background-image: url('_content/Versus.Core/images/VS-matchmaking-black.png');
+
+    }
+</style>
+@* <a href="https://www.freepik.com/free-vector/versus-vs-comparison-battle-screen-background-comic-style_17819845.htm#fromView=search&page=1&position=39&uuid=440f3906-3e55-4967-9549-b36c3c1081ba"></a> *@ 
+
+<div class="row m-auto text-center">
+    <h3 class="vs-text-shadow-black ">@Localizer["Matchmaking_SelectMode"]</h3>
+</div>
+<MudDivider Class="mb-2 vs-custom-divider "></MudDivider>
+<div class="vs-background-matchmaking d-flex flex-column">
+    <div class="row flex-grow-1">
+        <div class="col d-flex justify-content-start align-items-center">
+            <div class="content  "><RadzenButton Text="@Localizer["Matchmaking_Advertisements"]" Style="min-width:160px;height:75px; max-width:160px" Size="ButtonSize.Large" class="rz-border-radius-2 rz-shadow-15" ButtonStyle="ButtonStyle.Dark" /></div>
+        </div>
+        <div class="col"></div>
+    </div>
+    <div class="row flex-grow-1">
+        <div class="col"></div>
+        <div class="col d-flex justify-content-end align-items-center">
+            <div class="content  "><RadzenButton Text="@Localizer["Matchmaking_Queue"]" Style="min-width:160px;height:75px; max-width:160px" Size="ButtonSize.Large" class="rz-border-radius-2 rz-shadow-15" ButtonStyle="ButtonStyle.Light" /></div>
+        </div>
+    </div>
+</div>

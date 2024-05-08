@@ -342,6 +342,33 @@ namespace Versus.Core.Resources.Localization {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
         /// </summary>
+        internal static string Matchmaking_Advertisements {
+            get {
+                return ResourceManager.GetString("Matchmaking_Advertisements", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Matchmaking_Queue {
+            get {
+                return ResourceManager.GetString("Matchmaking_Queue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Matchmaking_SelectMode {
+            get {
+                return ResourceManager.GetString("Matchmaking_SelectMode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
         internal static string Sidebar_Friends {
             get {
                 return ResourceManager.GetString("Sidebar_Friends", resourceCulture);
@@ -363,6 +390,15 @@ namespace Versus.Core.Resources.Localization {
         internal static string Sidebar_HowToPlay {
             get {
                 return ResourceManager.GetString("Sidebar_HowToPlay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Sidebar_LogOut {
+            get {
+                return ResourceManager.GetString("Sidebar_LogOut", resourceCulture);
             }
         }
         

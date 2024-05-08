@@ -19,6 +19,10 @@ color:white;
     text-shadow: 1px 1px 1px red, 2px 2px 1px #ff0000e6;
     color:white;
 }
+.vs-text-shadow-black {
+    text-shadow: 1px 1px 1px black, 2px 2px 1px #ff0000e6;
+    color: white;
+}
 .brand-facebook {
     background: #3B5998;
     color: white;

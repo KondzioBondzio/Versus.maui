@@ -231,4 +231,16 @@
   <data name="HowToPlay_LetsStart" xml:space="preserve">
     <value>Let's get started</value>
   </data>
+  <data name="Matchmaking_Advertisements" xml:space="preserve">
+    <value>Advertisements</value>
+  </data>
+  <data name="Matchmaking_Queue" xml:space="preserve">
+    <value>Queue</value>
+  </data>
+  <data name="Matchmaking_SelectMode" xml:space="preserve">
+    <value>Select a mode</value>
+  </data>
+  <data name="Sidebar_LogOut" xml:space="preserve">
+    <value>Log out</value>
+  </data>
 </root>
