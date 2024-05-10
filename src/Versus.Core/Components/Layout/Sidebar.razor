@@ -46,24 +46,24 @@
  </div>
  
  <script>
-        let startX;
+        let startX, offcanvasWidth;
 
         document.getElementById('offcanvasExample').addEventListener('touchstart', function (e) {
             const touch = e.touches[0];
             startX = touch.clientX;
+            offcanvasWidth = this.offsetWidth;
         }, false);
 
         document.getElementById('offcanvasExample').addEventListener('touchmove', function (e) {
             const touch = e.touches[0];
             const change = startX - touch.clientX;
+            const swipeThreshold = offcanvasWidth * 0.50; 
 
-            if (change > 50) {
-
+            if (Math.abs(change) > swipeThreshold) {
                 var offcanvasElement = document.getElementById('offcanvasExample');
                 var bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
                 bsOffcanvas.hide();
-
-                e.preventDefault();
+                e.preventDefault(); 
             }
         }, false);
 </script> 

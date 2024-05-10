@@ -214,13 +214,13 @@
     <value>Step II</value>
   </data>
   <data name="HowToPlay_Step2description" xml:space="preserve">
-    <value>The next step is to go to the "Matches" tab, where you will find all available games approved by us or your opponent. &lt;br&gt;In this section, you can communicate with your opponent via chat, which allows you to set the date and location of the match, as well as accept the match when using the queue filter. &lt;br&gt;&lt;br&gt;In the case of matches found through an advertisement, we will be able to see the match status and track information related to a given event.</value>
+    <value>The next step is to go to the "Matches" tab, where you will find all available games approved by us or your opponent. &lt;br&gt;In this section, you can communicate with your opponent via chat, which allows you to set the date and location of the match, as well as accept the match when using the queue filter. </value>
   </data>
   <data name="HowToPlay_Step3" xml:space="preserve">
     <value>Step III</value>
   </data>
   <data name="HowToPlay_Step3description" xml:space="preserve">
-    <value>The last stage is to verify the match using a mobile application at the match venue.&lt;br&gt;To do this, select the current match in the "Matches" tab and scan the QR code using the opponent's device. Thanks to this, it will be possible to start the match.&lt;br&gt;&lt;br&gt;After the match ends, enter the result and scan the QR code again, which will confirm the official result of the game. For announcements, team leaders enter the results.</value>
+    <value>The last stage is to verify the match using a mobile application at the match venue.&lt;br&gt;To do this, select the current match in the "Matches" tab and scan the QR code using the opponent's device. Thanks to this, it will be possible to start the match. After the match ends, enter the result and scan the QR code again, which will confirm the official result of the game. For announcements, team leaders enter the results.</value>
   </data>
   <data name="HowToPlay_VersusDescription" xml:space="preserve">
     <value>Versus is an application aimed at joint sports games between players. Thanks to it, we can meet new people and experience a lot of interesting sports matches. Compete with friends, improve your skills and climb the Versus rank.</value>

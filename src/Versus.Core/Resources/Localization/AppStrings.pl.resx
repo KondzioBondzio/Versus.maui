@@ -214,13 +214,13 @@
     <value>Krok II</value>
   </data>
   <data name="HowToPlay_Step2description" xml:space="preserve">
-    <value>Kolejnym krokiem jest przejście do zakładki "Mecze", gdzie znajdują się wszystkie dostępne rozgrywki zaakceptowane przez nas lub przeciwnika. &lt;br&gt;W tej sekcji istnieje możliwość komunikacji z przeciwnikiem poprzez czat, co umożliwia ustalenie terminu oraz lokalizacji meczu, a także zaakceptowanie meczu w przypadku korzystania z filtru kolejki. &lt;br&gt;&lt;br&gt;W przypadku meczów znalezionych poprzez ogłoszenie, będziemy mogli zobaczyć status meczu oraz śledzić informację związane z danym wydarzeniem. </value>
+    <value>Kolejnym krokiem jest przejście do zakładki "Mecze", gdzie znajdują się wszystkie dostępne rozgrywki zaakceptowane przez nas lub przeciwnika. &lt;br&gt;W tej sekcji istnieje możliwość komunikacji z przeciwnikiem poprzez czat, co umożliwia ustalenie terminu oraz lokalizacji meczu, a także zaakceptowanie meczu w przypadku korzystania z filtru kolejki. </value>
   </data>
   <data name="HowToPlay_Step3" xml:space="preserve">
     <value>Krok III</value>
   </data>
   <data name="HowToPlay_Step3description" xml:space="preserve">
-    <value>Ostatnim etapem jest weryfikacja meczu za pomocą aplikacji mobilnej na miejscu spotkania.&lt;br&gt;Aby to zrobić, należy w zakładce "Mecze" wybrać aktualny mecz i zeskanować kod QR przy użyciu urządzenia przeciwnika. Dzięki temu możliwe będzie uruchomienie meczu.&lt;br&gt;&lt;br&gt;Po zakończeniu meczu należy wprowadzić wynik i ponownie zeskanować kod QR, który potwierdzi oficjalny wynik rozgrywki. W przypadku ogłoszeń liderzy drużyn wprowadzają wyniki.</value>
+    <value>Ostatnim etapem jest weryfikacja meczu za pomocą aplikacji mobilnej na miejscu spotkania.&lt;br&gt;Aby to zrobić, należy w zakładce "Mecze" wybrać aktualny mecz i zeskanować kod QR przy użyciu urządzenia przeciwnika. Dzięki temu możliwe będzie uruchomienie meczu. Po zakończeniu meczu należy wprowadzić wynik i ponownie zeskanować kod QR, który potwierdzi oficjalny wynik rozgrywki. W przypadku ogłoszeń liderzy drużyn wprowadzają wyniki.</value>
   </data>
   <data name="HowToPlay_VersusDescription" xml:space="preserve">
     <value>Versus to aplikacja mająca na celu wspólne sportowe rozgrywki między graczami. Dzięki niej możemy poznać nowe osoby i doświadczyć dużo ciekawych potyczek sportowych. Rywalizuj z przyjaciółmi, polepszaj swoje umiejętności i wspinaj się w rankingu Versus.</value>

@@ -35,7 +35,7 @@ public class SessionManager
         {
             Login = model.Login,
             Password = model.Password,
-            Email = model.Email
+
         };
         await _client.PostAsync(endpoint, request, cancellationToken);
     }

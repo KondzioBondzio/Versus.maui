@@ -199,13 +199,13 @@
     <value>Schritt II</value>
   </data>
   <data name="HowToPlay_Step2description" xml:space="preserve">
-    <value>Im nächsten Schritt gehen Sie zum Reiter „Spiele“, wo Sie alle verfügbaren Spiele finden, die von uns oder Ihrem Gegner genehmigt wurden. &lt;br&gt;In diesem Abschnitt können Sie mit Ihrem Gegner per Chat kommunizieren, wodurch Sie das Datum und den Ort des Spiels festlegen und das Spiel akzeptieren können, wenn Sie den Warteschlangenfilter verwenden. &lt;br&gt;&lt;br&gt;Im Falle von Übereinstimmungen, die über eine Anzeige gefunden werden, können wir den Spielstatus sehen und Informationen zu einem bestimmten Ereignis verfolgen.</value>
+    <value>Im nächsten Schritt gehen Sie zum Reiter „Spiele“, wo Sie alle verfügbaren Spiele finden, die von uns oder Ihrem Gegner genehmigt wurden. &lt;br&gt;In diesem Abschnitt können Sie mit Ihrem Gegner per Chat kommunizieren, wodurch Sie das Datum und den Ort des Spiels festlegen und das Spiel akzeptieren können, wenn Sie den Warteschlangenfilter verwenden. </value>
   </data>
   <data name="HowToPlay_Step3" xml:space="preserve">
     <value>Schritt III</value>
   </data>
   <data name="HowToPlay_Step3description" xml:space="preserve">
-    <value>Der letzte Schritt besteht darin, das Spiel mithilfe einer mobilen Anwendung am Spielort zu überprüfen.&lt;br&gt;Wählen Sie dazu das aktuelle Spiel im Reiter „Spiele“ aus und scannen Sie den QR-Code mit dem Gerät des Gegners. Dadurch ist es möglich, das Spiel zu starten.&lt;br&gt;&lt;br&gt;Geben Sie nach Ende des Spiels das Ergebnis ein und scannen Sie den QR-Code erneut, um das offizielle Ergebnis des Spiels zu bestätigen. Bei Ankündigungen tragen die Teamleiter die Ergebnisse ein.</value>
+    <value>Der letzte Schritt besteht darin, das Spiel mithilfe einer mobilen Anwendung am Spielort zu überprüfen.&lt;br&gt;Wählen Sie dazu das aktuelle Spiel im Reiter „Spiele“ aus und scannen Sie den QR-Code mit dem Gerät des Gegners. Dadurch ist es möglich, das Spiel zu starten. Geben Sie nach Ende des Spiels das Ergebnis ein und scannen Sie den QR-Code erneut, um das offizielle Ergebnis des Spiels zu bestätigen. Bei Ankündigungen tragen die Teamleiter die Ergebnisse ein.</value>
   </data>
   <data name="HowToPlay_VersusDescription" xml:space="preserve">
     <value>Versus ist eine Anwendung, die auf gemeinsame Sportspiele zwischen Spielern abzielt. Dadurch können wir neue Leute kennenlernen und viele interessante Sportwettkämpfe erleben. Messen Sie sich mit Freunden, verbessern Sie Ihre Fähigkeiten und erklimmen Sie den Versus-Rang.</value>
