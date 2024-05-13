@@ -9,11 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versus.Mobile", "src\Versus
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versus.Core", "src\Versus.Core\Versus.Core.csproj", "{3BEA66BA-6598-4BDB-8315-E1998F6D37DF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versus.Shared", "..\Versus.api\src\Versus.Shared\Versus.Shared.csproj", "{C5287273-3FC0-43C0-94A2-6768F0730D10}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versus.ApiClient.Console", "src\Versus.ApiClient.Console\Versus.ApiClient.Console.csproj", "{A33402D9-71BE-4D97-95B0-A30E4DF90BE1}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versus.Web", "src\Versus.Web\Versus.Web.csproj", "{C9672D82-D393-4568-9C12-CB93F03B4961}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Versus.Shared", "src\Versus.Shared\src\Versus.Shared\Versus.Shared.csproj", "{63BA7171-B42F-4D68-8C4A-9B9CC7EEE4F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,18 +28,14 @@ Global
 		{3BEA66BA-6598-4BDB-8315-E1998F6D37DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BEA66BA-6598-4BDB-8315-E1998F6D37DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BEA66BA-6598-4BDB-8315-E1998F6D37DF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C5287273-3FC0-43C0-94A2-6768F0730D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C5287273-3FC0-43C0-94A2-6768F0730D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C5287273-3FC0-43C0-94A2-6768F0730D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C5287273-3FC0-43C0-94A2-6768F0730D10}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A33402D9-71BE-4D97-95B0-A30E4DF90BE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A33402D9-71BE-4D97-95B0-A30E4DF90BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A33402D9-71BE-4D97-95B0-A30E4DF90BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A33402D9-71BE-4D97-95B0-A30E4DF90BE1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C9672D82-D393-4568-9C12-CB93F03B4961}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C9672D82-D393-4568-9C12-CB93F03B4961}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9672D82-D393-4568-9C12-CB93F03B4961}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9672D82-D393-4568-9C12-CB93F03B4961}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63BA7171-B42F-4D68-8C4A-9B9CC7EEE4F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63BA7171-B42F-4D68-8C4A-9B9CC7EEE4F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63BA7171-B42F-4D68-8C4A-9B9CC7EEE4F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63BA7171-B42F-4D68-8C4A-9B9CC7EEE4F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,9 +43,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F66D0664-E85C-421E-B061-A74F4A7C6A5C} = {9FE6D5EA-A464-4BEA-BC59-51F138A746F2}
 		{3BEA66BA-6598-4BDB-8315-E1998F6D37DF} = {9FE6D5EA-A464-4BEA-BC59-51F138A746F2}
-		{C5287273-3FC0-43C0-94A2-6768F0730D10} = {9FE6D5EA-A464-4BEA-BC59-51F138A746F2}
-		{A33402D9-71BE-4D97-95B0-A30E4DF90BE1} = {9FE6D5EA-A464-4BEA-BC59-51F138A746F2}
 		{C9672D82-D393-4568-9C12-CB93F03B4961} = {9FE6D5EA-A464-4BEA-BC59-51F138A746F2}
+		{63BA7171-B42F-4D68-8C4A-9B9CC7EEE4F1} = {9FE6D5EA-A464-4BEA-BC59-51F138A746F2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3A55B57-95C3-4641-B1F4-01998FAFC940}
