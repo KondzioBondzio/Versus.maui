@@ -19,8 +19,7 @@ public class SessionManager
         const string endpoint = "api/Auth/login";
         var request = new LoginRequest
         {
-            Login = model.Login,
-            Password = model.Password
+            Login = model.Login, Password = model.Password
         };
         var response = await _client.PostAsync<LoginRequest, LoginResponse>(endpoint, request, cancellationToken);
         _client.TokenType = response!.TokenType;
@@ -31,13 +30,8 @@ public class SessionManager
     public async Task RegisterAsync(RegisterViewModel model, CancellationToken cancellationToken = default)
     {
         const string endpoint = "api/Auth/register";
-        var request = new RegisterRequest
-        {
-            Login = model.Login,
-            Password = model.Password,
-
-        };
-        await _client.PostAsync(endpoint, request, cancellationToken);
+        // var request = new RegisterRequest();
+        // await _client.PostAsync(endpoint, request, cancellationToken);
     }
 
     public Task LogoutAsync(CancellationToken cancellationToken)
