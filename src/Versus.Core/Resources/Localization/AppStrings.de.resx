@@ -210,13 +210,13 @@
   <data name="HowToPlay_VersusDescription" xml:space="preserve">
     <value>Versus ist eine Anwendung, die auf gemeinsame Sportspiele zwischen Spielern abzielt. Dadurch können wir neue Leute kennenlernen und viele interessante Sportwettkämpfe erleben. Messen Sie sich mit Freunden, verbessern Sie Ihre Fähigkeiten und erklimmen Sie den Versus-Rang.</value>
   </data>
-  <data name="Matchmaking_Advertisements" xml:space="preserve">
-    <value>Anzeige</value>
+  <data name="Matchmaking_SoloDescription" xml:space="preserve">
+    <value>Treten Sie der Warteschlange bei, passen Sie die Filter an und wählen Sie den Gegner aus</value>
   </data>
-  <data name="Matchmaking_Queue" xml:space="preserve">
-    <value>Warteschlange</value>
+  <data name="Matchmaking_Team" xml:space="preserve">
+    <value>Team/Solo</value>
   </data>
-  <data name="Matchmaking_SelectMode" xml:space="preserve">
+  <data name="Matchmaking_TeamDescription" xml:space="preserve">
     <value>Wählen Sie einen Modus aus</value>
   </data>
   <data name="Sidebar_Friends" xml:space="preserve">

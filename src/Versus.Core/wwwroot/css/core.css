@@ -98,12 +98,6 @@ html, body {
     border-radius: 34px;
     transition: .4s;
 }
-.vs-background-matchmaking {
-    height: 85vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .vs-custom-divider {
     width: 80%;
@@ -214,3 +208,45 @@ html, body {
 .VS-vh-100 {
     height: 100vh;
 }
+.vs-text-shadow-black {
+
+    font-family: emoji;
+}
+.vs-text-shadow {
+
+    font-family: emoji;
+}
+.vs-background-matchmaking {
+    height: 94vh;
+}
+
+.matchmaking-container {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+.vs-video-background {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+    height: -webkit-fill-available;
+    object-fit: cover;
+}
+
+.vs-circle {
+    max-width: 200px;
+    border-radius: 20%;
+    align-content: center;
+}
+
+@media (min-width: 1450px) {
+    .vs-video-background {
+        object-fit: contain;
+    }
+} 

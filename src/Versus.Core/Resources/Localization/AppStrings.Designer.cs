@@ -342,27 +342,27 @@ namespace Versus.Core.Resources.Localization {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
         /// </summary>
-        internal static string Matchmaking_Advertisements {
+        internal static string Matchmaking_SoloDescription {
             get {
-                return ResourceManager.GetString("Matchmaking_Advertisements", resourceCulture);
+                return ResourceManager.GetString("Matchmaking_SoloDescription", resourceCulture);
             }
         }
         
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
         /// </summary>
-        internal static string Matchmaking_Queue {
+        internal static string Matchmaking_Team {
             get {
-                return ResourceManager.GetString("Matchmaking_Queue", resourceCulture);
+                return ResourceManager.GetString("Matchmaking_Team", resourceCulture);
             }
         }
         
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
         /// </summary>
-        internal static string Matchmaking_SelectMode {
+        internal static string Matchmaking_TeamDescription {
             get {
-                return ResourceManager.GetString("Matchmaking_SelectMode", resourceCulture);
+                return ResourceManager.GetString("Matchmaking_TeamDescription", resourceCulture);
             }
         }
         

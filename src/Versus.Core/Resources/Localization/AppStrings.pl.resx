@@ -231,14 +231,14 @@
   <data name="HowToPlay_LetsStart" xml:space="preserve">
     <value>Zaczynajmy</value>
   </data>
-  <data name="Matchmaking_Advertisements" xml:space="preserve">
-    <value>Ogłoszenia</value>
+  <data name="Matchmaking_SoloDescription" xml:space="preserve">
+    <value>Dołącz do kolejki, dostosuj filtry i wybierz przeciwnika</value>
   </data>
-  <data name="Matchmaking_Queue" xml:space="preserve">
-    <value>Kolejka</value>
+  <data name="Matchmaking_Team" xml:space="preserve">
+    <value>Drużyna/Solo</value>
   </data>
-  <data name="Matchmaking_SelectMode" xml:space="preserve">
-    <value>Wybierz tryb</value>
+  <data name="Matchmaking_TeamDescription" xml:space="preserve">
+    <value>Stwórz lub dołącz do pokoju sportowego</value>
   </data>
   <data name="Sidebar_LogOut" xml:space="preserve">
     <value>Wyloguj</value>

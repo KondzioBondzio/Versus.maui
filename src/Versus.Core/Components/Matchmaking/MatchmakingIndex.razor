@@ -1,29 +1,39 @@
 ﻿@page "/MatchmakingIndex"
 
-<style>
-    .vs-background-matchmaking {
 
-        background-image: url('_content/Versus.Core/images/VS-matchmaking-black.png');
-
-    }
-</style>
 @* <a href="https://www.freepik.com/free-vector/versus-vs-comparison-battle-screen-background-comic-style_17819845.htm#fromView=search&page=1&position=39&uuid=440f3906-3e55-4967-9549-b36c3c1081ba"></a> *@ 
+<div class="matchmaking-container">
 
-<div class="row m-auto text-center">
-    <h3 class="vs-text-shadow-black ">@Localizer["Matchmaking_SelectMode"]</h3>
-</div>
-<MudDivider Class="mb-2 vs-custom-divider "></MudDivider>
-<div class="vs-background-matchmaking d-flex flex-column">
-    <div class="row flex-grow-1">
-        <div class="col d-flex justify-content-start align-items-center">
-            <div class="content  "><RadzenButton Text="@Localizer["Matchmaking_Advertisements"]" Style="min-width:165px;height:75px; max-width:165px" Size="ButtonSize.Large" class="rz-border-radius-2 rz-shadow-15" ButtonStyle="ButtonStyle.Dark" /></div>
-        </div>
-        <div class="col"></div>
-    </div>
-    <div class="row flex-grow-1">
-        <div class="col"></div>
-        <div class="col d-flex justify-content-end align-items-center">
-            <div class="content  "><RadzenButton Text="@Localizer["Matchmaking_Queue"]" Style="min-width:165px;height:75px; max-width:165px" Size="ButtonSize.Large" class="rz-border-radius-2 rz-shadow-15" ButtonStyle="ButtonStyle.Light" /></div>
+        <video autoplay muted loop class="vs-video-background">
+            <source src="_content/Versus.Core/images/VS-Matchmaking-Animation.webm" type="video/webm">
+        </video>
+
+    <div class="w-100">
+        <div class="vs-background-matchmaking p-1 d-flex flex-column">
+            <div class="row flex-grow-1">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <div class="d-block text-center p-2 card vs-circle">
+                        <h5 class="vs-text-shadow-black ">@Localizer["Matchmaking_Team"]</h5>
+                        <span class="vs-text-shadow-black ">@Localizer["Matchmaking_TeamDescription"]</span>
+                        <div class="mt-3">
+                            <RadzenButton  id="Btn_Choose1" Text="Wybierz"  Size="ButtonSize.Medium" class="rz-border-radius-2 rz-shadow-15" ButtonStyle="ButtonStyle.Dark" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+            <div class="row flex-grow-1">
+                <div class="col"></div>
+                <div class="col d-flex justify-content-center align-items-center ">
+                    <div class="d-block text-center p-2 card vs-circle">
+                        <h5 class="vs-text-shadow-black ">Solo</h5>
+                        <span class="vs-text-shadow-black">@Localizer["Matchmaking_SoloDescription"]</span>
+                        <div class="mt-3">
+                            <RadzenButton id="Btn_Choose2" Text="Wybierz"  Size="ButtonSize.Medium" class="rz-border-radius-2 rz-shadow-15" ButtonStyle="ButtonStyle.Dark" />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
