@@ -13,16 +13,16 @@
         <div class="">
             <div class="row my-5">
                 <div class="col text-end">
-                    <span class="vs-text-shadow">@Localizer["Auth_Login"]</span>
+                    <span class="vs-text-shadow" onclick="toggleCheckbox(false)">@Localizer["Auth_Login"]</span>
                 </div>
                 <div class="col">
                     <label class="vs-switch flex-grow-1 d-block mx-auto">
-                        <input type="checkbox" onchange="document.querySelector('.vs-flip-container').classList.toggle('flipped')">
+                        <input id="flip-checkbox" type="checkbox" onchange="toggleFlip(this)">
                         <span class="vs-slider"></span>
                     </label>
                 </div>
                 <div class="col">
-                    <span class="vs-text-shadow">@Localizer["Auth_Registration"]</span>
+                    <span class="vs-text-shadow" onclick="toggleCheckbox(true)">@Localizer["Auth_Registration"]</span>
                 </div>
             </div>
         </div>
@@ -49,3 +49,15 @@
         </div>
     </div>
 </div>
+
+<script>
+    function toggleFlip(checkbox) {
+        document.querySelector('.vs-flip-container').classList.toggle('flipped', checkbox.checked);
+    }
+
+    function toggleCheckbox(state) {
+        var checkbox = document.getElementById('flip-checkbox');
+        checkbox.checked = state;
+        toggleFlip(checkbox);
+    }
+</script>
