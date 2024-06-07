@@ -210,6 +210,36 @@
   <data name="HowToPlay_VersusDescription" xml:space="preserve">
     <value>Versus ist eine Anwendung, die auf gemeinsame Sportspiele zwischen Spielern abzielt. Dadurch können wir neue Leute kennenlernen und viele interessante Sportwettkämpfe erleben. Messen Sie sich mit Freunden, verbessern Sie Ihre Fähigkeiten und erklimmen Sie den Versus-Rang.</value>
   </data>
+  <data name="Matchmaking_Age" xml:space="preserve">
+    <value>Alter</value>
+  </data>
+  <data name="Matchmaking_Any" xml:space="preserve">
+    <value>Beliebig</value>
+  </data>
+  <data name="Matchmaking_Beginner" xml:space="preserve">
+    <value>Anfänger</value>
+  </data>
+  <data name="Matchmaking_ChooseGame" xml:space="preserve">
+    <value>Wählen Sie Spiel</value>
+  </data>
+  <data name="Matchmaking_Game" xml:space="preserve">
+    <value>Spiel</value>
+  </data>
+  <data name="Matchmaking_Level" xml:space="preserve">
+    <value>Ebene</value>
+  </data>
+  <data name="Matchmaking_Master" xml:space="preserve">
+    <value>Meister</value>
+  </data>
+  <data name="Matchmaking_Men" xml:space="preserve">
+    <value>Männer</value>
+  </data>
+  <data name="Matchmaking_OpponentGender" xml:space="preserve">
+    <value>Geschlecht des Gegners</value>
+  </data>
+  <data name="Matchmaking_ShowResult" xml:space="preserve">
+    <value>Zeige Ergebnis</value>
+  </data>
   <data name="Matchmaking_SoloDescription" xml:space="preserve">
     <value>Treten Sie der Warteschlange bei, passen Sie die Filter an und wählen Sie den Gegner aus</value>
   </data>
@@ -218,6 +248,9 @@
   </data>
   <data name="Matchmaking_TeamDescription" xml:space="preserve">
     <value>Wählen Sie einen Modus aus</value>
+  </data>
+  <data name="Matchmaking_Women" xml:space="preserve">
+    <value>Frauen</value>
   </data>
   <data name="Sidebar_Friends" xml:space="preserve">
     <value>Freunde</value>

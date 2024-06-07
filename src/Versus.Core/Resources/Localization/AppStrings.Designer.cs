@@ -342,6 +342,96 @@ namespace Versus.Core.Resources.Localization {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
         /// </summary>
+        internal static string Matchmaking_Age {
+            get {
+                return ResourceManager.GetString("Matchmaking_Age", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Matchmaking_Any {
+            get {
+                return ResourceManager.GetString("Matchmaking_Any", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Matchmaking_Beginner {
+            get {
+                return ResourceManager.GetString("Matchmaking_Beginner", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Matchmaking_ChooseGame {
+            get {
+                return ResourceManager.GetString("Matchmaking_ChooseGame", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Matchmaking_Game {
+            get {
+                return ResourceManager.GetString("Matchmaking_Game", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Matchmaking_Level {
+            get {
+                return ResourceManager.GetString("Matchmaking_Level", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Matchmaking_Master {
+            get {
+                return ResourceManager.GetString("Matchmaking_Master", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Matchmaking_Men {
+            get {
+                return ResourceManager.GetString("Matchmaking_Men", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Matchmaking_OpponentGender {
+            get {
+                return ResourceManager.GetString("Matchmaking_OpponentGender", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Matchmaking_ShowResult {
+            get {
+                return ResourceManager.GetString("Matchmaking_ShowResult", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
         internal static string Matchmaking_SoloDescription {
             get {
                 return ResourceManager.GetString("Matchmaking_SoloDescription", resourceCulture);
@@ -363,6 +453,15 @@ namespace Versus.Core.Resources.Localization {
         internal static string Matchmaking_TeamDescription {
             get {
                 return ResourceManager.GetString("Matchmaking_TeamDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Matchmaking_Women {
+            get {
+                return ResourceManager.GetString("Matchmaking_Women", resourceCulture);
             }
         }
         

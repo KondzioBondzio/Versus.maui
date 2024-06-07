@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versus.Core", "src\Versus.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versus.Web", "src\Versus.Web\Versus.Web.csproj", "{C9672D82-D393-4568-9C12-CB93F03B4961}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Versus.Shared", "src\Versus.Shared\src\Versus.Shared\Versus.Shared.csproj", "{63BA7171-B42F-4D68-8C4A-9B9CC7EEE4F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Versus.Shared", "src\Versus.Shared\src\Versus.Shared\Versus.Shared.csproj", "{63BA7171-B42F-4D68-8C4A-9B9CC7EEE4F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

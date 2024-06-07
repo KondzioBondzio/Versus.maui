@@ -22,7 +22,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\..\Versus.api\src\Versus.Shared\Versus.Shared.csproj" />
-        <ProjectReference Include="..\Versus.Shared\src\Versus.Shared\Versus.Shared.csproj"/>
+        <ProjectReference Include="..\Versus.Shared\src\Versus.Shared\Versus.Shared.csproj" />
     </ItemGroup>
 
   <ItemGroup>

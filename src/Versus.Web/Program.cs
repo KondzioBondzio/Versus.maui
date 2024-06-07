@@ -17,7 +17,7 @@ Log.Logger = new LoggerConfiguration()
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
-
+builder.Services.AddScoped<Radzen.DialogService>();
 builder.Services.AddMudServices();
 builder.Services.AddSingleton<CountryService>();
 builder.Services.AddLocalization();

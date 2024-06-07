@@ -243,4 +243,37 @@
   <data name="Sidebar_LogOut" xml:space="preserve">
     <value />
   </data>
+  <data name="Matchmaking_Age" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Matchmaking_Beginner" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Matchmaking_ChooseGame" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Matchmaking_Game" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Matchmaking_Level" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Matchmaking_Master" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Matchmaking_OpponentGender" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Matchmaking_ShowResult" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Matchmaking_Any" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Matchmaking_Men" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Matchmaking_Women" xml:space="preserve">
+    <value />
+  </data>
 </root>
