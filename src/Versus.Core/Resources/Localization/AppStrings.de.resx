@@ -222,6 +222,9 @@
   <data name="Matchmaking_ChooseGame" xml:space="preserve">
     <value>Wählen Sie Spiel</value>
   </data>
+  <data name="Matchmaking_Filters" xml:space="preserve">
+    <value>Filter</value>
+  </data>
   <data name="Matchmaking_Game" xml:space="preserve">
     <value>Spiel</value>
   </data>
@@ -275,5 +278,41 @@
   </data>
   <data name="Sidebar_Stats" xml:space="preserve">
     <value>Statistiken</value>
+  </data>
+  <data name="Statistics_Bilard" xml:space="preserve">
+    <value>Billard</value>
+  </data>
+  <data name="Statistics_Bowling" xml:space="preserve">
+    <value>Bowling</value>
+  </data>
+  <data name="Statistics_Cards" xml:space="preserve">
+    <value>Karten</value>
+  </data>
+  <data name="Statistics_Chess" xml:space="preserve">
+    <value>Schach</value>
+  </data>
+  <data name="Statistics_Draws" xml:space="preserve">
+    <value>Krawatten</value>
+  </data>
+  <data name="Statistics_GeneralStatistics" xml:space="preserve">
+    <value>Allgemeine Statistiken</value>
+  </data>
+  <data name="Statistics_NumberOfMatches" xml:space="preserve">
+    <value>Anzahl der Übereinstimmungen</value>
+  </data>
+  <data name="Statistics_Others" xml:space="preserve">
+    <value>Andere</value>
+  </data>
+  <data name="Statistics_SportStatistics" xml:space="preserve">
+    <value>Statistiken aus der ausgewählten Disziplin</value>
+  </data>
+  <data name="Statistics_Stats" xml:space="preserve">
+    <value>Statistiken</value>
+  </data>
+  <data name="Statistics_Tenis" xml:space="preserve">
+    <value>Tenis</value>
+  </data>
+  <data name="Statistics_Wins" xml:space="preserve">
+    <value>Gewinnt</value>
   </data>
 </root>

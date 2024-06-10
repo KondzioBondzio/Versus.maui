@@ -276,4 +276,43 @@
   <data name="Matchmaking_Women" xml:space="preserve">
     <value>Kobieta</value>
   </data>
+  <data name="Statistics_Bilard" xml:space="preserve">
+    <value>Bilard</value>
+  </data>
+  <data name="Statistics_Bowling" xml:space="preserve">
+    <value>Kręgle</value>
+  </data>
+  <data name="Statistics_Cards" xml:space="preserve">
+    <value>Karty</value>
+  </data>
+  <data name="Statistics_Chess" xml:space="preserve">
+    <value>Szachy</value>
+  </data>
+  <data name="Statistics_Draws" xml:space="preserve">
+    <value>Remisy</value>
+  </data>
+  <data name="Statistics_GeneralStatistics" xml:space="preserve">
+    <value>Statystyki ogólne</value>
+  </data>
+  <data name="Statistics_NumberOfMatches" xml:space="preserve">
+    <value>Ilość meczy</value>
+  </data>
+  <data name="Statistics_Others" xml:space="preserve">
+    <value>Inne</value>
+  </data>
+  <data name="Statistics_SportStatistics" xml:space="preserve">
+    <value>Statystyki z wybranej dyscypliny</value>
+  </data>
+  <data name="Statistics_Stats" xml:space="preserve">
+    <value>Statystyki</value>
+  </data>
+  <data name="Statistics_Tenis" xml:space="preserve">
+    <value>Tenis</value>
+  </data>
+  <data name="Statistics_Wins" xml:space="preserve">
+    <value>Wygrane</value>
+  </data>
+  <data name="Matchmaking_Filters" xml:space="preserve">
+    <value>Filtry</value>
+  </data>
 </root>

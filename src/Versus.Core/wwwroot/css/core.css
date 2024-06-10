@@ -284,7 +284,9 @@ html, body {
     background-color: #b33d3d !important;
 }
 .rz-dialog-titlebar {
-    background: rgb(49, 50, 54) !important;
+     background: rgb(49, 50, 54) !important;
+   
+    backdrop-filter: blur(10px);
 }
 
 .rz-dialog {
@@ -356,3 +358,9 @@ html, body {
     .cta:active {
         transform: scale(0.96);
     }
+.vs-img {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px black, 2px 2px 1px #ff0000e6;
+}

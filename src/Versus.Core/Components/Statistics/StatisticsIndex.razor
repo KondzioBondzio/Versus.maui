@@ -1,6 +1,98 @@
 ﻿@page "/StatisticsIndex"
-<h3>StatisticsIndex</h3>
+@using Versus.Core.Components.Statistics.Components
+@inject Radzen.DialogService DialogService
 
+<div id="statcontent" class=" justify-content-center text-center">
+
+    <div class="row mt-1" style=" background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));">
+        <div class="col-12 col-md-4">
+            <h3 class="vs-text-shadow-black mt-2" style="text-align: center;">@Localizer["Statistics_GeneralStatistics"]</h3>
+            <div class="profile-picture-container d-flex justify-content-center mt-3 col-12 ">
+                <MudImage Src="_content/Versus.Core/images/JohnyWick.jpg" Alt="" Width="110" Height="110" Elevation="25" Style="border-radius:100px" />
+            </div>
+            <div class=" d-flex justify-content-center mt-3 col-12 ">
+                <h5 class="vs-text-shadow-black">Baba Jaga</h5>
+            </div>
+        </div>
+
+        <div style="align-self: end;" class="mt-4 mt-md-0 col-12 col-md-4">
+            <div class="mb-2"> <span style="color: green;">@Localizer["Statistics_Wins"]: </span> <span>15</span></div>
+            <div class="mb-2"> <span style="color:red">@Localizer["Statistics_Draws"]: </span> <span>15</span></div>
+            <div class="mb-2"> <span>@Localizer["Statistics_NumberOfMatches"]: </span> <span>30</span></div>
+        </div>
+
+
+
+    </div>
+    <div class="row mt-5">
+        <h3 class ="vs-text-shadow-black" style="text-align: center;">@Localizer["Statistics_SportStatistics"]</h3>
+    </div>
+    <div class="row mt-5 mb-3 ">
+
+        <div class="col-6  mt-2 mb-2 col-md-4">
+            <label class="vs-text-shadow-black mb-1" style="display: block;" for="">@Localizer["Statistics_Tenis"]</label>
+            <a @onclick="@(e=>FetchStat("_content/Versus.Core/images/Tenis.png", Localizer["Statistics_Tenis"]))">
+                <img class="img-fluid vs-img" src="_content/Versus.Core/images/Tenis.png" />
+            </a>
+        </div>
+        <div class="col-6 mt-2 mb-2 col-md-4">
+            <label class="vs-text-shadow-black mb-1" style="display: block;" for="">Dart</label>
+            <a @onclick="@(e=>FetchStat("_content/Versus.Core/images/Dart.png","Dart"))">
+                <img class="img-fluid vs-img" src="_content/Versus.Core/images/Dart.png" />
+            </a>
+        </div>
+        <div class="col-6 mt-2 mb-2 col-md-4">
+            <label class="vs-text-shadow-black mb-1" style="display: block;" for="">@Localizer["Statistics_Bowling"]</label>
+            <a @onclick="@(e=>FetchStat("_content/Versus.Core/images/Bowling.png",Localizer["Statistics_Bowling"]))">
+                <img class="img-fluid vs-img" src="_content/Versus.Core/images/Bowling.png" />
+            </a>
+        </div>
+        <div class="col-6 mt-2 mb-2 col-md-4">
+            <label class="vs-text-shadow-black mb-1" style="display: block;" for="">@Localizer["Statistics_Bilard"]</label>
+            <a @onclick="@(e=>FetchStat("_content/Versus.Core/images/Billard.png",Localizer["Statistics_Bilard"]))">
+                <img class="img-fluid vs-img" src="_content/Versus.Core/images/Billard.png" />
+            </a>
+        </div>
+        <div class="col-6 mt-2 mb-2 col-md-4">
+            <label class="vs-text-shadow-black mb-1" style="display: block;" for="">Ping Pong</label>
+            <a @onclick="@(e=>FetchStat("_content/Versus.Core/images/pingpong.png","Ping Pong"))">
+                <img class="img-fluid vs-img" src="_content/Versus.Core/images/pingpong.png" />
+            </a>
+        </div>
+        <div class="col-6 mt-2 mb-2 col-md-4">
+            <label class="vs-text-shadow-black mb-1" style="display: block;" for="">Squash</label>
+            <a @onclick="@(e=>FetchStat("_content/Versus.Core/images/Squash.png","Squash"))">
+                <img class="img-fluid vs-img" src="_content/Versus.Core/images/Squash.png" />
+            </a>
+        </div>
+        <div class="col-6 mt-2 mb-2 col-md-4">
+            <label class="vs-text-shadow-black mb-1" style="display: block;" for="">@Localizer["Statistics_Chess"]</label>
+            <a @onclick="@(e=>FetchStat("_content/Versus.Core/images/Chess.png",Localizer["Statistics_Chess"]))">
+                <img class="img-fluid vs-img" src="_content/Versus.Core/images/Chess.png" />
+            </a>
+        </div>
+        <div class="col-6 mt-2 mb-2 col-md-4">
+            <label class="vs-text-shadow-black mb-1" style="display: block;" for="">@Localizer["Statistics_Cards"]</label>
+            <a @onclick="@(e=>FetchStat("_content/Versus.Core/images/Cards.png",Localizer["Statistics_Cards"]))">
+                <img class="img-fluid vs-img" src="_content/Versus.Core/images/Cards.png" />
+            </a>
+        </div>
+        <div class="col-6 mt-2 mb-2 col-md-4">
+            <label class="vs-text-shadow-black mb-1" style="display: block;" for="">@Localizer["Statistics_Others"]</label>
+            <a @onclick="@(e=>FetchStat("_content/Versus.Core/images/Sports.png",Localizer["Statistics_Others"]))">
+                <img class="img-fluid vs-img" src="_content/Versus.Core/images/Sports.png" />
+            </a>
+        </div>
+    </div>
+</div>
+<!-- <a href="https://www.freepik.com/free-vector/game-icons-set_3924725.htm#query=sport&position=11&from_view=author">Image by macrovector</a> on Freepik -->
 @code {
+    public async Task FetchStat(string src, string name)
+    {
 
+        await DialogService.OpenAsync<DisciplineStat>(Localizer["Statistics_Stats"],
+               new Dictionary<string, object>() { { "Source", src }, { "Name", name } },
+               new Radzen.DialogOptions() { CssClass = "vs-responsive-dialog vs-animated-dialog", Height = "fit-content", Resizable = false, AutoFocusFirstElement = false, Draggable = false });
+    }
 }
+

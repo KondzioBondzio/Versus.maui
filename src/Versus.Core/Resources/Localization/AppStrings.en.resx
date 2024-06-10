@@ -276,4 +276,43 @@
   <data name="Matchmaking_Women" xml:space="preserve">
     <value>Women</value>
   </data>
+  <data name="Statistics_Bilard" xml:space="preserve">
+    <value>Billard</value>
+  </data>
+  <data name="Statistics_Bowling" xml:space="preserve">
+    <value>Bowling</value>
+  </data>
+  <data name="Statistics_Cards" xml:space="preserve">
+    <value>Cards</value>
+  </data>
+  <data name="Statistics_Chess" xml:space="preserve">
+    <value>Chess</value>
+  </data>
+  <data name="Statistics_Draws" xml:space="preserve">
+    <value>Draws</value>
+  </data>
+  <data name="Statistics_GeneralStatistics" xml:space="preserve">
+    <value>General Statistics</value>
+  </data>
+  <data name="Statistics_NumberOfMatches" xml:space="preserve">
+    <value>Number of matches</value>
+  </data>
+  <data name="Statistics_Others" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="Statistics_SportStatistics" xml:space="preserve">
+    <value>Statistics from the selected discipline</value>
+  </data>
+  <data name="Statistics_Stats" xml:space="preserve">
+    <value>Stats</value>
+  </data>
+  <data name="Statistics_Tenis" xml:space="preserve">
+    <value>Tenis</value>
+  </data>
+  <data name="Statistics_Wins" xml:space="preserve">
+    <value>Wins</value>
+  </data>
+  <data name="Matchmaking_Filters" xml:space="preserve">
+    <value>Filters</value>
+  </data>
 </root>

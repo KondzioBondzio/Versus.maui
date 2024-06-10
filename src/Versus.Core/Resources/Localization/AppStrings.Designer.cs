@@ -378,6 +378,15 @@ namespace Versus.Core.Resources.Localization {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
         /// </summary>
+        internal static string Matchmaking_Filters {
+            get {
+                return ResourceManager.GetString("Matchmaking_Filters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
         internal static string Matchmaking_Game {
             get {
                 return ResourceManager.GetString("Matchmaking_Game", resourceCulture);
@@ -534,6 +543,114 @@ namespace Versus.Core.Resources.Localization {
         internal static string Sidebar_Stats {
             get {
                 return ResourceManager.GetString("Sidebar_Stats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Statistics_Bilard {
+            get {
+                return ResourceManager.GetString("Statistics_Bilard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Statistics_Bowling {
+            get {
+                return ResourceManager.GetString("Statistics_Bowling", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Statistics_Cards {
+            get {
+                return ResourceManager.GetString("Statistics_Cards", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Statistics_Chess {
+            get {
+                return ResourceManager.GetString("Statistics_Chess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Statistics_Draws {
+            get {
+                return ResourceManager.GetString("Statistics_Draws", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Statistics_GeneralStatistics {
+            get {
+                return ResourceManager.GetString("Statistics_GeneralStatistics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Statistics_NumberOfMatches {
+            get {
+                return ResourceManager.GetString("Statistics_NumberOfMatches", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Statistics_Others {
+            get {
+                return ResourceManager.GetString("Statistics_Others", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Statistics_SportStatistics {
+            get {
+                return ResourceManager.GetString("Statistics_SportStatistics", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Statistics_Stats {
+            get {
+                return ResourceManager.GetString("Statistics_Stats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Statistics_Tenis {
+            get {
+                return ResourceManager.GetString("Statistics_Tenis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Statistics_Wins {
+            get {
+                return ResourceManager.GetString("Statistics_Wins", resourceCulture);
             }
         }
     }

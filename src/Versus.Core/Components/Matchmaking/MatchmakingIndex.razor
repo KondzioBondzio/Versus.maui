@@ -45,7 +45,7 @@
     int osobaID = 10023;
     public async Task SearchOpponentPopup()
     {    
-        await DialogService.OpenAsync<Queue>("Filtry",
+        await DialogService.OpenAsync<Queue>(Localizer["Matchmaking_Filters"],
                    new Dictionary<string, object>() { { "OsobaID", osobaID } },
                    new Radzen.DialogOptions() { CssClass = "vs-responsive-dialog vs-animated-dialog", Height = "fit-content", Resizable = false, AutoFocusFirstElement = false, Draggable = false });
           

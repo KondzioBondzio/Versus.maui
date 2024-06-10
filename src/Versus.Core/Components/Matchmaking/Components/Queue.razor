@@ -95,12 +95,12 @@
         await DialogService.OpenAsync<Pair>("",
                        new Dictionary<string, object>()
                 {
-        { "Game", valueGame },
-        { "Gender", valueGender },
-        { "AgeMax", AgeMax },
-        { "AgeMin", AgeMin },
-        { "Level", lvl }
-                },
+                    { "Game", valueGame },
+                    { "Gender", valueGender },
+                    { "AgeMax", AgeMax },
+                    { "AgeMin", AgeMin },
+                    { "Level", lvl }
+                            },
                        new Radzen.DialogOptions() { CssClass = "vs-responsive-dialog vs-animated-dialog", Height = "fit-content", Resizable = false, AutoFocusFirstElement = false, Draggable = false });
 
     }
