@@ -9,6 +9,9 @@ html, body {
     background: url("../images/Background.jpg") center/cover ;
 }
 
+:root {
+    --rz-dialog-title-padding: 1rem 1rem 1rem 1rem; /* Zmieñ wartoœæ na odpowiedni¹ */
+}
 /* versus-flip */
 .vs-flip-container {
     perspective: 1000px;
@@ -208,10 +211,7 @@ html, body {
 .VS-vh-100 {
     height: 100vh;
 }
-.vs-text-shadow-black {
 
-    font-family: emoji;
-}
 .vs-text-shadow {
 
     font-family: emoji;
@@ -261,7 +261,10 @@ html, body {
 .vs-animated-dialog {
     animation: fadeIn 0.5s ease-out;
 }
-
+.rz-selectbutton {
+    display: flex;
+    justify-content: center;
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -284,22 +287,20 @@ html, body {
     background-color: #b33d3d !important;
 }
 .rz-dialog-titlebar {
-     background: rgb(49, 50, 54) !important;
-   
-    backdrop-filter: blur(10px);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #ff5a47;
 }
 
 .rz-dialog {
-    background: rgb(49, 50, 54) !important;
+    background: linear-gradient(180deg, #ff5a47 0%, #ff9966 50%, #d9cba8 100%);
 }
 
 .rz-dialog-title {
     color: white !important;
-    text-shadow: 1px 1px 1px red, 2px 2px 1px #ff0000e6 !important;
+    text-shadow: 1px 1px 1px black, 2px 2px 1px #ff0000e6 !important;
 }
 .vs-box {
     border-radius: 20px !important;
-    background: linear-gradient(1deg, #e37676, transparent) !important;
+    background: linear-gradient(1deg, #e37676, #424242) !important;
     box-shadow: rgb(195 185 185) 0px 0px 20px -5px;
 }
 
