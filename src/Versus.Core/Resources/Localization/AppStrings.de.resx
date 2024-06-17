@@ -177,6 +177,24 @@
   <data name="Auth_Username" xml:space="preserve">
     <value>Nutzername</value>
   </data>
+  <data name="Friendlist_City" xml:space="preserve">
+    <value>Stadt</value>
+  </data>
+  <data name="Friendlist_Draws" xml:space="preserve">
+    <value>Krawatten</value>
+  </data>
+  <data name="Friendlist_Findplayer" xml:space="preserve">
+    <value>Suchen Sie einen Freund...</value>
+  </data>
+  <data name="Friendlist_NumberOfMatches" xml:space="preserve">
+    <value>Anzahl der Übereinstimmungen</value>
+  </data>
+  <data name="Friendlist_Player" xml:space="preserve">
+    <value>Spieler</value>
+  </data>
+  <data name="Friendlist_Wins" xml:space="preserve">
+    <value>Gewinnt</value>
+  </data>
   <data name="HowToPlay_Button" xml:space="preserve">
     <value>Spielanleitung ?</value>
   </data>

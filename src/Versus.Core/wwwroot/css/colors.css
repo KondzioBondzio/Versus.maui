@@ -54,3 +54,84 @@
     color: #ccc;
     opacity: 1;
 }
+.rz-text-overline {
+    color: white;
+}
+.vs-img {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px black, 2px 2px 1px #ff0000e6;
+}
+.rz-selectbutton .rz-button.rz-button-md {
+    color: #b1b1b1 !important;
+    min-width: 60px !important;
+}
+
+.rz-slider-handle {
+    background-color: #b33d3d !important;
+}
+
+.rz-slider-range {
+    background-color: #b33d3d !important;
+}
+
+.rz-dialog-titlebar {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #ff5a47;
+}
+
+.rz-dialog {
+    background: linear-gradient(180deg, #ff5a47 0%, #ff9966 50%, #d9cba8 100%);
+}
+
+.rz-dialog-title {
+    color: white !important;
+    text-shadow: 1px 1px 1px black, 2px 2px 1px #ff0000e6 !important;
+}
+.vs-box {
+    border-radius: 20px !important;
+    background: linear-gradient(1deg, #e37676, #424242) !important;
+    box-shadow: rgb(195 185 185) 0px 0px 20px -5px;
+}
+::-webkit-scrollbar-track {
+    background-color: lightgray;
+    border: transparent;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to right, #4a4a4a, #555555);
+}
+.offcanvas {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+}
+
+.offcanvas-body {
+    background-color: transparent;
+}
+.vs-form-style {
+    color: #c4c3ca;
+    background-color: #1f2029;
+    box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
+}
+.vs-switch > input:checked + .vs-slider:before {
+    transform: translateX(32px);
+    background: #e91e63;
+    box-shadow: 0 2px 2px lightgray;
+}
+.rz-text-body1 {
+    color: #bfadad;
+}
+.card-front {
+    box-shadow: rgb(251 5 17 / 47%) 0px 30px 60px -12px inset, rgb(149 118 118 / 30%) 0px 18px 36px -18px inset;
+    background-color: #040404;
+}
+
+.card-back {
+    box-shadow: rgb(251 5 17 / 47%) 0px 30px 60px -12px inset, rgb(149 118 118 / 30%) 0px 18px 36px -18px inset;
+    background-color: #040404;
+}
+.vs-card-friendlist {
+    background-color: transparent;
+}

@@ -315,4 +315,22 @@
   <data name="Matchmaking_Filters" xml:space="preserve">
     <value>Filters</value>
   </data>
+  <data name="Friendlist_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Friendlist_Draws" xml:space="preserve">
+    <value>Draws</value>
+  </data>
+  <data name="Friendlist_Findplayer" xml:space="preserve">
+    <value>Search a friend...</value>
+  </data>
+  <data name="Friendlist_NumberOfMatches" xml:space="preserve">
+    <value>Number of matches</value>
+  </data>
+  <data name="Friendlist_Player" xml:space="preserve">
+    <value>Player</value>
+  </data>
+  <data name="Friendlist_Wins" xml:space="preserve">
+    <value>Wins</value>
+  </data>
 </root>

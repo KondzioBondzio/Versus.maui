@@ -1,6 +1,163 @@
 ﻿@page "/FriendsIndex"
-<h3>FriendsIndex</h3>
+
+@using MudBlazor
+
+<div class="row col-12 justify-content-center  m-auto">
+   
+    <div class="d-flex justify-content-center mb-4" style="max-width: 300px; margin: 0 auto;">
+        <input type="text" @bind="searchQuery" placeholder="@Localizer["Friendlist_Findplayer"]" class="form-control" style="flex: 1; margin-right: 10px;">
+        <MudIconButton Icon="@Icons.Material.Filled.Add" Size="Size.Medium" Color="Color.Primary"  />
+    </div>
+    @foreach (var person in FilteredFriends)
+    {
+        <div class=" col-12 col-md-6  col-xl-4 rz-mx-auto mb-3">
+            <div class=" @GetCardClass(person)">
+                <div class="card-front">
+                    <div class="card-content">
+                        <RadzenStack id="test" Orientation="Radzen.Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
+                            <RadzenStack Orientation="Radzen.Orientation.Vertical" JustifyContent="JustifyContent.Center" AlignItems="Radzen.AlignItems.Center">
+                                <RadzenImage Path="@person.Photo" Style="max-width: 100px;border-radius: 50%;" />
+                                <RadzenText Style="@( $"color:{GetStatusColor(person.Status)};" )" TextStyle="TextStyle.Overline" class="rz-my-0">@person.Status</RadzenText>
+                                </RadzenStack>
+
+                                <RadzenStack Gap="0">
+                                    <RadzenText TextStyle="TextStyle.Overline" class=" rz-mt-2 rz-my-0">@Localizer["Friendlist_Player"]</RadzenText>
+                                    <RadzenText TextStyle="TextStyle.Body1"><b>@person.Name</b></RadzenText>
+                                <RadzenText TextStyle="TextStyle.Overline" class=" rz-mt-4 rz-mb-0">@Localizer["Friendlist_City"]</RadzenText>
+                                    <RadzenText TextStyle="TextStyle.Body1"><b>@person.City</b></RadzenText>
+                                <RadzenText TextStyle="TextStyle.Body1"></RadzenText>
+                            </RadzenStack>
+                        </RadzenStack>
+
+                        <RadzenStack Orientation="Radzen.Orientation.Horizontal" JustifyContent="JustifyContent.End" Gap="0">
+                            <MudIconButton Icon="@Icons.Material.Filled.Loop" Size="Size.Small" Class="vs-white" @onclick="@(() => FlipCard(person))" />
+                            <MudIconButton Icon="@Icons.Material.Filled.Chat" Size="Size.Small" Class="vs-white" @onclick="@(() => OpenChat())" />
+                        </RadzenStack>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <div class="card-content-back">
+                        <RadzenStack Orientation="Radzen.Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4 ">
+                            <img style="max-width: 100px;" src="_content/Versus.Core/images/VersusLogo2.png" />
+                            <div style="align-self: end;" class="mt-4">
+                                <div class="m-2"><span class="vs-green">@Localizer["Friendlist_Wins"]: </span><span class="vs-white">15</span></div>
+                                <div class="m-2"><span class="vs-red">@Localizer["Friendlist_Draws"]: </span><span class="vs-white">15</span></div>
+                                <div class="m-2"><span class="vs-white">@Localizer["Friendlist_NumberOfMatches"]: </span><span class="vs-white">30</span></div>
+                            </div>
+                        </RadzenStack>
+                        <RadzenStack Orientation="Radzen.Orientation.Horizontal" JustifyContent="JustifyContent.End" Gap="0">
+                            <MudIconButton Icon="@Icons.Material.Filled.Loop" Size="Size.Small" Class="vs-white" @onclick="@(() => FlipCard(person))" />
+                        </RadzenStack>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
 
 @code {
+    public class Friends
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string City { get; set; }
+        public int gamesPlayed { get; set; }
+        public int Wins { get; set; }
+        public int draws { get; set; }
+        public string Status { get; set; }
+        public string Photo { get; set; }
+        public bool IsFlipped { get; set; } = false;
+    }
+    private List<Friends> ListFriends = new List<Friends>
+    {
+        new Friends()
+        {
+            Id = 1,
+            Name = "Megumi",
+            City = "Galaktyka Kurwix",
+            Photo = "_content/Versus.Core/images/FemaleAvatar.png",
+            gamesPlayed = 6,
+            Status = "Online",
+            Wins = 3,
+            draws = 0,
 
+        },
+        new Friends()
+        {
+            Id = 2,
+            Name = "S3d",
+            City = "Tunguska",
+            gamesPlayed = 6,
+            Photo = "_content/Versus.Core/images/MaleAvatar.png",
+            Status = "Online",
+            Wins = 3,
+            draws = 0
+        },
+        new Friends()
+        {
+            Id = 3,
+            Name = "Katechetka",
+            City = "Kamienicy",
+            gamesPlayed = 6,
+            Status = "Offline",
+            Photo = "_content/Versus.Core/images/FemaleAvatar.png",
+            Wins = 3,
+            draws = 0
+        },
+        new Friends()
+        {
+            Id = 4,
+            Name = "Epikurczak",
+            City = "Starachowice",
+            gamesPlayed = 6,
+            Status = "Offline",
+            Wins = 3,
+            Photo = "_content/Versus.Core/images/MaleAvatar.png",
+            draws = 0
+        },
+        new Friends()
+        {
+            Id = 4,
+            Name = "Moriendi",
+            City = "Z Głuchowa",
+            gamesPlayed = 6,
+            Status = "Offline",
+            Wins = 3,
+            Photo = "_content/Versus.Core/images/FemaleAvatar.png",
+            draws = 0
+        },
+    };
+    private string searchQuery = "";
+
+    private List<Friends> FilteredFriends
+    {
+        get
+        {
+            if (string.IsNullOrEmpty(searchQuery))
+            {
+                return ListFriends;
+            }
+
+            return ListFriends.Where(friend => friend.Name.Contains(searchQuery, StringComparison.OrdinalIgnoreCase)).ToList();
+        }
+    }
+    private string GetCardClass(Friends person)
+    {
+        return person.IsFlipped ? "vs-card-friendlist flipped" : "vs-card-friendlist";
+    }
+    private string GetStatusColor(string status)
+    {
+        return status == "Online" ? "lightgreen" : "red";
+    }
+    private void FlipCard(Friends person)
+    {
+        person.IsFlipped = !person.IsFlipped;
+    }
+    private void OpenChat()
+    {
+      
+    }
+  
+
+ 
 }

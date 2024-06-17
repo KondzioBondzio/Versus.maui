@@ -243,6 +243,60 @@ namespace Versus.Core.Resources.Localization {
         /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
         /// </summary>
+        internal static string Friendlist_City {
+            get {
+                return ResourceManager.GetString("Friendlist_City", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Friendlist_Draws {
+            get {
+                return ResourceManager.GetString("Friendlist_Draws", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Friendlist_Findplayer {
+            get {
+                return ResourceManager.GetString("Friendlist_Findplayer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Friendlist_NumberOfMatches {
+            get {
+                return ResourceManager.GetString("Friendlist_NumberOfMatches", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Friendlist_Player {
+            get {
+                return ResourceManager.GetString("Friendlist_Player", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
+        internal static string Friendlist_Wins {
+            get {
+                return ResourceManager.GetString("Friendlist_Wins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu .
+        /// </summary>
         internal static string HowToPlay_Button {
             get {
                 return ResourceManager.GetString("HowToPlay_Button", resourceCulture);

@@ -119,10 +119,8 @@ html, body {
 }
 .vs-switch > input:checked + .vs-slider:before {
     transform: translateX(32px);
-    background: #e91e63;
-    box-shadow: 0 2px 2px lightgray;
  }
-.vs-form-style{
+.vs-form-style {
     padding: 13px 20px;
     height: 48px;
     width: 100%;
@@ -132,12 +130,9 @@ html, body {
     line-height: 22px;
     letter-spacing: 0.5px;
     outline: none;
-    color: #c4c3ca;
-    background-color: #1f2029;
     border: none;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
-    box-shadow: 0 4px 8px 0 rgba(21,21,21,.2);
 }
 .vs-link {
     font-size: small;
@@ -151,27 +146,11 @@ html, body {
         --bs-offcanvas-width: 85% !important;
     }
 }
-.offcanvas {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1)); 
-    backdrop-filter: blur(10px); 
-}
 
-.offcanvas-body {
-    background-color: transparent;
-}
 ::-webkit-scrollbar {
     width: 8px;
 }
 
-::-webkit-scrollbar-track {
-    background-color:lightgray;
-    border: transparent;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
-}
-
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(to right, #4a4a4a, #555555);
-}
 .VS-vh-10 {
     height: 10vh;
 }
@@ -277,31 +256,11 @@ html, body {
     }
 }
 .rz-selectbutton .rz-button.rz-button-md {
-    color: #b1b1b1 !important;
     min-width: 60px !important;
 }
-.rz-slider-handle {
-    background-color: #b33d3d !important;
-}
-.rz-slider-range {
-    background-color: #b33d3d !important;
-}
-.rz-dialog-titlebar {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), #ff5a47;
-}
 
-.rz-dialog {
-    background: linear-gradient(180deg, #ff5a47 0%, #ff9966 50%, #d9cba8 100%);
-}
-
-.rz-dialog-title {
-    color: white !important;
-    text-shadow: 1px 1px 1px black, 2px 2px 1px #ff0000e6 !important;
-}
 .vs-box {
     border-radius: 20px !important;
-    background: linear-gradient(1deg, #e37676, #424242) !important;
-    box-shadow: rgb(195 185 185) 0px 0px 20px -5px;
 }
 
 .cta {
@@ -359,9 +318,29 @@ html, body {
     .cta:active {
         transform: scale(0.96);
     }
-.vs-img {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.1));
-    backdrop-filter: blur(10px);
-    border-radius: 25px;
-    box-shadow: 3px 3px 3px black, 2px 2px 1px #ff0000e6;
+
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    z-index: 2;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.vs-card-friendlist.flipped {
+    transform: rotateY(180deg);
+}
+.vs-card-friendlist {
+    position: relative;
+    border: none;
+    height: 200px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
